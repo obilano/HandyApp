@@ -56,6 +56,7 @@ class jazzlist extends StatelessWidget {
                   onPressed: () {
                     //SnackBarClosedReason
                   },
+                  ),
             );
             Scaffold.of(context).showSnackBar(snackbar);
           },
