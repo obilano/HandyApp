@@ -2,9 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4ae2cd73-f37a-45a9-8d8d-ddb7ee3cb44a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.dart_tool/package_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/package_config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/dc62a18c65bb1085c5f4ef93e19cd3c1/.filecache" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/dc62a18c65bb1085c5f4ef93e19cd3c1/.filecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/dc62a18c65bb1085c5f4ef93e19cd3c1/app.dill" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/dc62a18c65bb1085c5f4ef93e19cd3c1/app.dill" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/dc62a18c65bb1085c5f4ef93e19cd3c1/kernel_snapshot.d" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/dc62a18c65bb1085c5f4ef93e19cd3c1/kernel_snapshot.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/dc62a18c65bb1085c5f4ef93e19cd3c1/kernel_snapshot.stamp" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/dc62a18c65bb1085c5f4ef93e19cd3c1/kernel_snapshot.stamp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.packages" beforeDir="false" afterPath="$PROJECT_DIR$/.packages" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/app/intermediates/flutter/debug/flutter_assets/kernel_blob.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/flutter/debug/flutter_assets/kernel_blob.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/app/intermediates/flutter/debug/flutter_build.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/flutter/debug/flutter_build.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/app/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/app/intermediates/merged_assets/debug/out/flutter_assets/kernel_blob.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/merged_assets/debug/out/flutter_assets/kernel_blob.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/app/outputs/apk/app.apk" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/outputs/apk/app.apk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/app/outputs/apk/app.apk.sha1" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/outputs/apk/app.apk.sha1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/app/outputs/apk/debug/app-debug.apk" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/outputs/apk/debug/app-debug.apk" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -75,8 +84,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/pages/blues.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="125" column="36" lean-forward="true" selection-start-line="125" selection-start-column="36" selection-end-line="125" selection-end-column="36" />
+            <state relative-caret-position="289">
+              <caret line="131" column="3" lean-forward="true" selection-start-line="131" selection-start-column="3" selection-end-line="131" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -104,8 +113,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="412" />
-    <option name="y" value="20" />
+    <option name="x" value="366" />
+    <option name="y" value="18" />
     <option name="width" value="1370" />
     <option name="height" value="980" />
   </component>
@@ -200,11 +209,18 @@
       <option name="project" value="LOCAL" />
       <updated>1582234280106</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Update 2202020">
+      <created>1582235713106</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1582235713106</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="270" y="21" width="1096" height="784" extended-state="1" />
+    <frame x="293" y="15" width="1096" height="784" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
@@ -237,7 +253,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="2202020" />
-    <option name="LAST_COMMIT_MESSAGE" value="2202020" />
+    <MESSAGE value="Update 2202020" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update 2202020" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -330,8 +347,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/pages/blues.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="125" column="36" lean-forward="true" selection-start-line="125" selection-start-column="36" selection-end-line="125" selection-end-column="36" />
+        <state relative-caret-position="289">
+          <caret line="131" column="3" lean-forward="true" selection-start-line="131" selection-start-column="3" selection-end-line="131" selection-end-column="3" />
         </state>
       </provider>
     </entry>
