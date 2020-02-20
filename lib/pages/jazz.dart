@@ -51,12 +51,12 @@ class jazzlist extends StatelessWidget {
                   "\nCost: Free – especially for kids!!!"
                   "\nFeaturing: Hands-on activities making musical instruments from "
                   "recycled materials / for ages 3 and older"),
-                  action: SnackBarAction(
-                  label: 'Close',
-                  onPressed: () {
-                    //SnackBarClosedReason
-                  },
-                  ),
+              action: SnackBarAction(
+                label: 'Close',
+                onPressed: () {
+                  //SnackBarClosedReason
+                },
+              ),
             );
             Scaffold.of(context).showSnackBar(snackbar);
           },
