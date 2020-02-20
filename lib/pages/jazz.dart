@@ -37,6 +37,7 @@ class jazzlist extends StatelessWidget {
           title: Text("JAZZ IT UP WITH TRASH"),
           subtitle: Text("Performer: Microwave Dave"),
           onTap: () {
+            Scaffold.of(context).removeCurrentSnackBar();
             final snackbar = SnackBar(
               duration: Duration(seconds: 30),
               backgroundColor: Colors.red[900],
@@ -51,12 +52,6 @@ class jazzlist extends StatelessWidget {
                   "\nCost: Free – especially for kids!!!"
                   "\nFeaturing: Hands-on activities making musical instruments from "
                   "recycled materials / for ages 3 and older"),
-              action: SnackBarAction(
-                label: 'Close',
-                onPressed: () {
-                  //SnackBarClosedReason
-                },
-              ),
             );
             Scaffold.of(context).showSnackBar(snackbar);
           },
@@ -80,6 +75,7 @@ class jazzlist extends StatelessWidget {
           title: Text("KEESTONE OF FLORENCE JAZZFEST"),
           subtitle: Text("Performer: Thompson Trio"),
           onTap: () {
+            Scaffold.of(context).removeCurrentSnackBar();
             final snackbar = SnackBar(
               backgroundColor: Colors.red[900],
               content: Text("KEESTONE OF FLORENCE JAZZFEST"
@@ -112,6 +108,7 @@ class jazzlist extends StatelessWidget {
           title: Text("SUNRISE CENTER JAZZ"),
           subtitle: Text("Performer: Mars Hill Alumni Jazz Band"),
           onTap: () {
+            Scaffold.of(context).removeCurrentSnackBar();
             final snackbar = SnackBar(
               backgroundColor: Colors.red[900],
               content: Text("SUNRISE CENTER JAZZ"

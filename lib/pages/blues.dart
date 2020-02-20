@@ -37,6 +37,7 @@ class bluesList extends StatelessWidget {
           title: Text("MORNINGSIDE BLUES AND BARBECUE"),
           subtitle: Text("Performer: Max Russell"),
           onTap: () {
+            Scaffold.of(context).removeCurrentSnackBar();
             final snackbar = SnackBar(
               backgroundColor: Colors.green,
               content: Text("MORNINGSIDE BLUES AND BARBECUE"
@@ -70,6 +71,7 @@ class bluesList extends StatelessWidget {
           title: Text("BARBEQUE & BLUES WITH THE BEAT DADDYS"),
           subtitle: Text("Performer: The Beat Daddys"),
           onTap: () {
+            Scaffold.of(context).removeCurrentSnackBar();
             final snackbar = SnackBar(
               backgroundColor: Colors.green,
               content: Text("BARBEQUE & BLUES WITH THE BEAT DADDYS"
@@ -102,6 +104,7 @@ class bluesList extends StatelessWidget {
           title: Text("W.C. HANDY MOVIE: ST. LOUIS BLUES"),
           subtitle: Text("Featuring: Nat \"King\" Cole"),
           onTap: () {
+            Scaffold.of(context).removeCurrentSnackBar();
             final snackbar = SnackBar(
               backgroundColor: Colors.green,
               content: Text("W.C. HANDY MOVIE: ST. LOUIS BLUES"
