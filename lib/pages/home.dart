@@ -43,7 +43,7 @@ class Homepage extends StatelessWidget {
                       child: Container(
                         // container for jazz
                         height: 150,
-                        width: 80,
+                        width: 100,
                         padding:
                             EdgeInsets.only(left: 20, right: 10, bottom: 20),
                         child: FloatingActionButton(
@@ -63,7 +63,7 @@ class Homepage extends StatelessWidget {
                             textDirection: TextDirection.ltr,
                             style: TextStyle(
                                 decoration: TextDecoration.none,
-                                fontSize: 25.0,
+                                fontSize: 20.0,
                                 fontFamily: 'Roboto',
                                 fontWeight: FontWeight.w500,
                                 color: Colors.white),
@@ -80,7 +80,7 @@ class Homepage extends StatelessWidget {
                       // start of row 1 column 2 (Blues) ***********************
                       child: Container(
                         height: 150,
-                        width: 80,
+                        width: 100,
                         padding:
                             EdgeInsets.only(left: 10, right: 20, bottom: 20),
                         child: FloatingActionButton(
@@ -101,7 +101,7 @@ class Homepage extends StatelessWidget {
                             textDirection: TextDirection.ltr,
                             style: TextStyle(
                                 decoration: TextDecoration.none,
-                                fontSize: 25.0,
+                                fontSize: 20.0,
                                 fontFamily: 'Roboto',
                                 fontWeight: FontWeight.w500,
                                 color: Colors.white),
@@ -123,7 +123,7 @@ class Homepage extends StatelessWidget {
                     Expanded(
                       child: Container(
                         height: 150,
-                        width: 80,
+                        width: 100,
                         padding:
                             EdgeInsets.only(left: 20, right: 10, bottom: 20),
                         child: FloatingActionButton(
@@ -144,7 +144,7 @@ class Homepage extends StatelessWidget {
                             textDirection: TextDirection.ltr,
                             style: TextStyle(
                                 decoration: TextDecoration.none,
-                                fontSize: 25.0,
+                                fontSize: 20.0,
                                 fontFamily: 'Roboto',
                                 fontWeight: FontWeight.w500,
                                 color: Colors.white),
@@ -162,7 +162,7 @@ class Homepage extends StatelessWidget {
                     Expanded(
                       child: Container(
                         height: 150,
-                        width: 80,
+                        width: 100,
                         padding:
                             EdgeInsets.only(left: 10, right: 20, bottom: 20),
                         child: FloatingActionButton(
@@ -182,7 +182,7 @@ class Homepage extends StatelessWidget {
                             textDirection: TextDirection.ltr,
                             style: TextStyle(
                                 decoration: TextDecoration.none,
-                                fontSize: 25.0,
+                                fontSize: 20.0,
                                 fontFamily: 'Roboto',
                                 fontWeight: FontWeight.w500,
                                 color: Colors.white),
@@ -204,7 +204,7 @@ class Homepage extends StatelessWidget {
                     Expanded(
                       child: Container(
                         height: 150,
-                        width: 80,
+                        width: 100,
                         padding:
                             EdgeInsets.only(left: 20, right: 10, bottom: 20),
                         child: FloatingActionButton(
@@ -226,7 +226,7 @@ class Homepage extends StatelessWidget {
                             textDirection: TextDirection.ltr,
                             style: TextStyle(
                                 decoration: TextDecoration.none,
-                                fontSize: 25.0,
+                                fontSize: 20.0,
                                 fontFamily: 'Roboto',
                                 fontWeight: FontWeight.w500,
                                 color: Colors.white),
@@ -244,7 +244,7 @@ class Homepage extends StatelessWidget {
                     Expanded(
                       child: Container(
                         height: 150,
-                        width: 80,
+                        width: 100,
                         padding:
                             EdgeInsets.only(left: 10, right: 20, bottom: 20),
                         child: FloatingActionButton(
@@ -264,7 +264,7 @@ class Homepage extends StatelessWidget {
                             textDirection: TextDirection.ltr,
                             style: TextStyle(
                                 decoration: TextDecoration.none,
-                                fontSize: 25.0,
+                                fontSize: 20.0,
                                 fontFamily: 'Roboto',
                                 fontWeight: FontWeight.w500,
                                 color: Colors.white),
@@ -286,7 +286,7 @@ class Homepage extends StatelessWidget {
                     Expanded(
                       child: Container(
                         height: 150,
-                        width: 80,
+                        width: 100,
                         padding:
                             EdgeInsets.only(left: 20, right: 10, bottom: 20),
                         child: FloatingActionButton(
@@ -307,7 +307,7 @@ class Homepage extends StatelessWidget {
                             textDirection: TextDirection.ltr,
                             style: TextStyle(
                                 decoration: TextDecoration.none,
-                                fontSize: 25.0,
+                                fontSize: 20.0,
                                 fontFamily: 'Roboto',
                                 fontWeight: FontWeight.w500,
                                 color: Colors.white),
@@ -325,7 +325,7 @@ class Homepage extends StatelessWidget {
                     Expanded(
                       child: Container(
                         height: 150,
-                        width: 80,
+                        width: 100,
                         padding:
                             EdgeInsets.only(left: 10, right: 20, bottom: 20),
                         child: FloatingActionButton(
@@ -345,7 +345,7 @@ class Homepage extends StatelessWidget {
                             "    View \nSchedule",
                             textDirection: TextDirection.ltr,
                             style: TextStyle(
-                                fontSize: 25.0,
+                                fontSize: 20.0,
                                 fontFamily: 'Roboto',
                                 fontWeight: FontWeight.w500,
                                 color: Colors.white),

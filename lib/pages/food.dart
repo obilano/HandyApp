@@ -30,8 +30,6 @@ class Food extends StatelessWidget {
 }
 
 class foodlist extends StatelessWidget {
-  final String stephanosUrl =
-      "https://zmenu.com/stephanos-southland-sheffield-online-menu/";
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -52,7 +50,7 @@ class foodlist extends StatelessWidget {
                           builder: (BuildContext context) => FoodWebView(
                             title: "Stephano's Southland",
                             selectedUrl:
-                                "https://zmenu.com/stephanos-southland-sheffield-online-menu",
+                                "https://slicelife.com/restaurants/al/sheffield/35660/stephano-s-southland/menu",
                           ),
                         ),
                       );
@@ -82,7 +80,7 @@ class foodlist extends StatelessWidget {
                         MaterialPageRoute(
                           builder: (BuildContext context) => FoodWebView(
                             title: "On the Rocks",
-                            selectedUrl: "https://florenceontherocks.com/",
+                            selectedUrl: "https://www.florenceontherocks.com/",
                           ),
                         ),
                       );
@@ -112,7 +110,7 @@ class foodlist extends StatelessWidget {
                         MaterialPageRoute(
                           builder: (BuildContext context) => FoodWebView(
                             title: "Lil Capones Bar & Grill",
-                            selectedUrl: "https://lilcapones.com/",
+                            selectedUrl: "https://www.lilcapones.com/",
                           ),
                         ),
                       );
@@ -142,7 +140,8 @@ class foodlist extends StatelessWidget {
                         MaterialPageRoute(
                           builder: (BuildContext context) => FoodWebView(
                             title: "Superhero Chefs",
-                            selectedUrl: "http://www.superherochefs.com/",
+                            selectedUrl:
+                                "https://www.yelp.com/biz/superhero-chefs-tuscumbia-2",
                           ),
                         ),
                       );

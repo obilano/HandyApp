@@ -22,7 +22,7 @@
 20         FlutterApplication and put your custom class here.
 21    -->
 22    <application
-22-->C:\Users\obi20\Desktop\HandyApp\android\app\src\main\AndroidManifest.xml:8:5-29:19
+22-->C:\Users\obi20\Desktop\HandyApp\android\app\src\main\AndroidManifest.xml:8:5-30:19
 23        android:name="io.flutter.app.FlutterApplication"
 23-->C:\Users\obi20\Desktop\HandyApp\android\app\src\main\AndroidManifest.xml:9:9-57
 24        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -32,68 +32,69 @@
 26-->C:\Users\obi20\Desktop\HandyApp\android\app\src\main\AndroidManifest.xml:11:9-43
 27        android:label="W. C. Handy" >
 27-->C:\Users\obi20\Desktop\HandyApp\android\app\src\main\AndroidManifest.xml:10:9-36
-28        <activity
-28-->C:\Users\obi20\Desktop\HandyApp\android\app\src\main\AndroidManifest.xml:12:9-23:20
-29            android:name="com.wchandymusicfestival.handy_app.MainActivity"
-29-->C:\Users\obi20\Desktop\HandyApp\android\app\src\main\AndroidManifest.xml:13:13-41
-30            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
-30-->C:\Users\obi20\Desktop\HandyApp\android\app\src\main\AndroidManifest.xml:16:13-163
-31            android:hardwareAccelerated="true"
-31-->C:\Users\obi20\Desktop\HandyApp\android\app\src\main\AndroidManifest.xml:17:13-47
-32            android:launchMode="singleTop"
-32-->C:\Users\obi20\Desktop\HandyApp\android\app\src\main\AndroidManifest.xml:14:13-43
-33            android:theme="@style/LaunchTheme"
-33-->C:\Users\obi20\Desktop\HandyApp\android\app\src\main\AndroidManifest.xml:15:13-47
-34            android:windowSoftInputMode="adjustResize" >
-34-->C:\Users\obi20\Desktop\HandyApp\android\app\src\main\AndroidManifest.xml:18:13-55
-35            <intent-filter>
-35-->C:\Users\obi20\Desktop\HandyApp\android\app\src\main\AndroidManifest.xml:19:13-22:29
-36                <action android:name="android.intent.action.MAIN" />
-36-->C:\Users\obi20\Desktop\HandyApp\android\app\src\main\AndroidManifest.xml:20:17-68
-36-->C:\Users\obi20\Desktop\HandyApp\android\app\src\main\AndroidManifest.xml:20:25-66
-37
-38                <category android:name="android.intent.category.LAUNCHER" />
-38-->C:\Users\obi20\Desktop\HandyApp\android\app\src\main\AndroidManifest.xml:21:17-76
-38-->C:\Users\obi20\Desktop\HandyApp\android\app\src\main\AndroidManifest.xml:21:27-74
-39            </intent-filter>
-40        </activity>
-41        <!--
-42             Don't delete the meta-data below.
-43             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
-44        -->
-45        <meta-data
-45-->C:\Users\obi20\Desktop\HandyApp\android\app\src\main\AndroidManifest.xml:26:9-28:33
-46            android:name="flutterEmbedding"
-46-->C:\Users\obi20\Desktop\HandyApp\android\app\src\main\AndroidManifest.xml:27:13-44
-47            android:value="2" />
-47-->C:\Users\obi20\Desktop\HandyApp\android\app\src\main\AndroidManifest.xml:28:13-30
-48
-49        <activity
-49-->[:url_launcher] C:\Users\obi20\Desktop\HandyApp\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-11:74
-50            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
-50-->[:url_launcher] C:\Users\obi20\Desktop\HandyApp\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-74
-51            android:exported="false"
-51-->[:url_launcher] C:\Users\obi20\Desktop\HandyApp\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:10:13-37
-52            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
-52-->[:url_launcher] C:\Users\obi20\Desktop\HandyApp\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:11:13-71
-53
-54        <provider
-54-->[:flutter_webview_plugin] C:\Users\obi20\Desktop\HandyApp\build\flutter_webview_plugin\intermediates\library_manifest\debug\AndroidManifest.xml:9:9-18:20
-55            android:name="androidx.core.content.FileProvider"
-55-->[:flutter_webview_plugin] C:\Users\obi20\Desktop\HandyApp\build\flutter_webview_plugin\intermediates\library_manifest\debug\AndroidManifest.xml:10:13-62
-56            android:authorities="com.wchandymusicfestival.handy_app.fileprovider"
-56-->[:flutter_webview_plugin] C:\Users\obi20\Desktop\HandyApp\build\flutter_webview_plugin\intermediates\library_manifest\debug\AndroidManifest.xml:11:13-64
-57            android:exported="false"
-57-->[:flutter_webview_plugin] C:\Users\obi20\Desktop\HandyApp\build\flutter_webview_plugin\intermediates\library_manifest\debug\AndroidManifest.xml:12:13-37
-58            android:grantUriPermissions="true" >
-58-->[:flutter_webview_plugin] C:\Users\obi20\Desktop\HandyApp\build\flutter_webview_plugin\intermediates\library_manifest\debug\AndroidManifest.xml:13:13-47
-59            <meta-data
-59-->[:flutter_webview_plugin] C:\Users\obi20\Desktop\HandyApp\build\flutter_webview_plugin\intermediates\library_manifest\debug\AndroidManifest.xml:15:13-17:53
-60                android:name="android.support.FILE_PROVIDER_PATHS"
-60-->[:flutter_webview_plugin] C:\Users\obi20\Desktop\HandyApp\build\flutter_webview_plugin\intermediates\library_manifest\debug\AndroidManifest.xml:16:17-67
-61                android:resource="@xml/filepaths" />
-61-->[:flutter_webview_plugin] C:\Users\obi20\Desktop\HandyApp\build\flutter_webview_plugin\intermediates\library_manifest\debug\AndroidManifest.xml:17:17-50
-62        </provider>
-63    </application>
-64
-65</manifest>
+28        android:usesCleartextTraffic="true"
+29        <activity
+29-->C:\Users\obi20\Desktop\HandyApp\android\app\src\main\AndroidManifest.xml:13:9-24:20
+30            android:name="com.wchandymusicfestival.handy_app.MainActivity"
+30-->C:\Users\obi20\Desktop\HandyApp\android\app\src\main\AndroidManifest.xml:14:13-41
+31            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+31-->C:\Users\obi20\Desktop\HandyApp\android\app\src\main\AndroidManifest.xml:17:13-163
+32            android:hardwareAccelerated="true"
+32-->C:\Users\obi20\Desktop\HandyApp\android\app\src\main\AndroidManifest.xml:18:13-47
+33            android:launchMode="singleTop"
+33-->C:\Users\obi20\Desktop\HandyApp\android\app\src\main\AndroidManifest.xml:15:13-43
+34            android:theme="@style/LaunchTheme"
+34-->C:\Users\obi20\Desktop\HandyApp\android\app\src\main\AndroidManifest.xml:16:13-47
+35            android:windowSoftInputMode="adjustResize" >
+35-->C:\Users\obi20\Desktop\HandyApp\android\app\src\main\AndroidManifest.xml:19:13-55
+36            <intent-filter>
+36-->C:\Users\obi20\Desktop\HandyApp\android\app\src\main\AndroidManifest.xml:20:13-23:29
+37                <action android:name="android.intent.action.MAIN" />
+37-->C:\Users\obi20\Desktop\HandyApp\android\app\src\main\AndroidManifest.xml:21:17-68
+37-->C:\Users\obi20\Desktop\HandyApp\android\app\src\main\AndroidManifest.xml:21:25-66
+38
+39                <category android:name="android.intent.category.LAUNCHER" />
+39-->C:\Users\obi20\Desktop\HandyApp\android\app\src\main\AndroidManifest.xml:22:17-76
+39-->C:\Users\obi20\Desktop\HandyApp\android\app\src\main\AndroidManifest.xml:22:27-74
+40            </intent-filter>
+41        </activity>
+42        <!--
+43             Don't delete the meta-data below.
+44             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+45        -->
+46        <meta-data
+46-->C:\Users\obi20\Desktop\HandyApp\android\app\src\main\AndroidManifest.xml:27:9-29:33
+47            android:name="flutterEmbedding"
+47-->C:\Users\obi20\Desktop\HandyApp\android\app\src\main\AndroidManifest.xml:28:13-44
+48            android:value="2" />
+48-->C:\Users\obi20\Desktop\HandyApp\android\app\src\main\AndroidManifest.xml:29:13-30
+49
+50        <activity
+50-->[:url_launcher] C:\Users\obi20\Desktop\HandyApp\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-11:74
+51            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+51-->[:url_launcher] C:\Users\obi20\Desktop\HandyApp\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-74
+52            android:exported="false"
+52-->[:url_launcher] C:\Users\obi20\Desktop\HandyApp\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:10:13-37
+53            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+53-->[:url_launcher] C:\Users\obi20\Desktop\HandyApp\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:11:13-71
+54
+55        <provider
+55-->[:flutter_webview_plugin] C:\Users\obi20\Desktop\HandyApp\build\flutter_webview_plugin\intermediates\library_manifest\debug\AndroidManifest.xml:9:9-18:20
+56            android:name="androidx.core.content.FileProvider"
+56-->[:flutter_webview_plugin] C:\Users\obi20\Desktop\HandyApp\build\flutter_webview_plugin\intermediates\library_manifest\debug\AndroidManifest.xml:10:13-62
+57            android:authorities="com.wchandymusicfestival.handy_app.fileprovider"
+57-->[:flutter_webview_plugin] C:\Users\obi20\Desktop\HandyApp\build\flutter_webview_plugin\intermediates\library_manifest\debug\AndroidManifest.xml:11:13-64
+58            android:exported="false"
+58-->[:flutter_webview_plugin] C:\Users\obi20\Desktop\HandyApp\build\flutter_webview_plugin\intermediates\library_manifest\debug\AndroidManifest.xml:12:13-37
+59            android:grantUriPermissions="true" >
+59-->[:flutter_webview_plugin] C:\Users\obi20\Desktop\HandyApp\build\flutter_webview_plugin\intermediates\library_manifest\debug\AndroidManifest.xml:13:13-47
+60            <meta-data
+60-->[:flutter_webview_plugin] C:\Users\obi20\Desktop\HandyApp\build\flutter_webview_plugin\intermediates\library_manifest\debug\AndroidManifest.xml:15:13-17:53
+61                android:name="android.support.FILE_PROVIDER_PATHS"
+61-->[:flutter_webview_plugin] C:\Users\obi20\Desktop\HandyApp\build\flutter_webview_plugin\intermediates\library_manifest\debug\AndroidManifest.xml:16:17-67
+62                android:resource="@xml/filepaths" />
+62-->[:flutter_webview_plugin] C:\Users\obi20\Desktop\HandyApp\build\flutter_webview_plugin\intermediates\library_manifest\debug\AndroidManifest.xml:17:17-50
+63        </provider>
+64    </application>
+65
+66</manifest>
