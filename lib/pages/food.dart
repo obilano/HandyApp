@@ -185,6 +185,7 @@ class FoodWebView extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text(title),
+        backgroundColor: Colors.amber[100],
       ),
       body: WebView(
         initialUrl: selectedUrl,

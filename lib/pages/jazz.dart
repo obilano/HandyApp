@@ -77,6 +77,7 @@ class jazzlist extends StatelessWidget {
           onTap: () {
             Scaffold.of(context).removeCurrentSnackBar();
             final snackbar = SnackBar(
+              duration: Duration(seconds: 30),
               backgroundColor: Colors.red[900],
               content: Text("KEESTONE OF FLORENCE JAZZFEST"
                   "\nPerformer: Thompson Trio"
@@ -110,6 +111,7 @@ class jazzlist extends StatelessWidget {
           onTap: () {
             Scaffold.of(context).removeCurrentSnackBar();
             final snackbar = SnackBar(
+              duration: Duration(seconds: 30),
               backgroundColor: Colors.red[900],
               content: Text("SUNRISE CENTER JAZZ"
                   "\nPerformer: Mars Hill Alumini Jazz Band"
