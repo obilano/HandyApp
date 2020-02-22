@@ -56,18 +56,8 @@ class jazzlist extends StatelessWidget {
             Scaffold.of(context).showSnackBar(snackbar);
           },
           enabled: true,
-          leading: ConstrainedBox(
-            constraints: BoxConstraints(
-              minWidth: 50,
-              minHeight: 300,
-              maxWidth: 80,
-              maxHeight: 500,
-            ),
-            child: Image.asset(
-              'images/md.jpg',
-              fit: BoxFit.fitHeight,
-            ),
-          ),
+          leading:
+              new Image.asset('images/md.jpg', fit: BoxFit.cover, width: 100.0),
         ),
 
         // list 2 **********************************************
@@ -90,18 +80,8 @@ class jazzlist extends StatelessWidget {
             Scaffold.of(context).showSnackBar(snackbar);
           },
           enabled: true,
-          leading: ConstrainedBox(
-            constraints: BoxConstraints(
-              minWidth: 50,
-              minHeight: 300,
-              maxWidth: 80,
-              maxHeight: 500,
-            ),
-            child: Image.asset(
-              'images/tt.jpg',
-              fit: BoxFit.fitHeight,
-            ),
-          ),
+          leading:
+              Image.asset('images/tt.jpg', fit: BoxFit.cover, width: 100.0),
         ),
 
         //list 3 ******************************************************
@@ -123,17 +103,10 @@ class jazzlist extends StatelessWidget {
             Scaffold.of(context).showSnackBar(snackbar);
           },
           enabled: true,
-          leading: ConstrainedBox(
-            constraints: BoxConstraints(
-              minWidth: 50,
-              minHeight: 300,
-              maxWidth: 80,
-              maxHeight: 500,
-            ),
-            child: Image.asset(
-              'images/mh.jpg',
-              fit: BoxFit.fitHeight,
-            ),
+          leading: Image.asset(
+            'images/mh.jpg',
+            fit: BoxFit.cover,
+            width: 100.0,
           ),
         ),
       ],

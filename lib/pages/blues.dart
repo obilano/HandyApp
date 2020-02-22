@@ -53,17 +53,10 @@ class bluesList extends StatelessWidget {
             Scaffold.of(context).showSnackBar(snackbar);
           },
           enabled: true,
-          leading: ConstrainedBox(
-            constraints: BoxConstraints(
-              minWidth: 50,
-              minHeight: 300,
-              maxWidth: 80,
-              maxHeight: 500,
-            ),
-            child: Image.asset(
-              'images/mr.jpg',
-              fit: BoxFit.fitHeight,
-            ),
+          leading: Image.asset(
+            'images/mr.jpg',
+            fit: BoxFit.cover,
+            width: 100.0,
           ),
         ),
 
@@ -87,17 +80,10 @@ class bluesList extends StatelessWidget {
             Scaffold.of(context).showSnackBar(snackbar);
           },
           enabled: true,
-          leading: ConstrainedBox(
-            constraints: BoxConstraints(
-              minWidth: 50,
-              minHeight: 300,
-              maxWidth: 80,
-              maxHeight: 500,
-            ),
-            child: Image.asset(
-              'images/tbd.jpg',
-              fit: BoxFit.fitHeight,
-            ),
+          leading: Image.asset(
+            'images/tbd.jpg',
+            fit: BoxFit.cover,
+            width: 100.0,
           ),
         ),
 
@@ -120,17 +106,10 @@ class bluesList extends StatelessWidget {
             Scaffold.of(context).showSnackBar(snackbar);
           },
           enabled: true,
-          leading: ConstrainedBox(
-            constraints: BoxConstraints(
-              minWidth: 50,
-              minHeight: 300,
-              maxWidth: 80,
-              maxHeight: 500,
-            ),
-            child: Image.asset(
-              'images/slb.jpg',
-              fit: BoxFit.fitHeight,
-            ),
+          leading: Image.asset(
+            'images/slb.jpg',
+            fit: BoxFit.cover,
+            width: 100.0,
           ),
         ),
       ],

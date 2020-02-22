@@ -42,7 +42,7 @@ class Homepage extends StatelessWidget {
                     Expanded(
                       child: Container(
                         // container for jazz
-                        height: 150,
+                        height: 140,
                         width: 100,
                         padding:
                             EdgeInsets.only(left: 20, right: 10, bottom: 20),
@@ -79,7 +79,7 @@ class Homepage extends StatelessWidget {
                     Expanded(
                       // start of row 1 column 2 (Blues) ***********************
                       child: Container(
-                        height: 150,
+                        height: 140,
                         width: 100,
                         padding:
                             EdgeInsets.only(left: 10, right: 20, bottom: 20),
@@ -122,7 +122,7 @@ class Homepage extends StatelessWidget {
                   children: <Widget>[
                     Expanded(
                       child: Container(
-                        height: 150,
+                        height: 140,
                         width: 100,
                         padding:
                             EdgeInsets.only(left: 20, right: 10, bottom: 20),
@@ -161,7 +161,7 @@ class Homepage extends StatelessWidget {
                     //start of row 2 column 2 (food) ***************************
                     Expanded(
                       child: Container(
-                        height: 150,
+                        height: 140,
                         width: 100,
                         padding:
                             EdgeInsets.only(left: 10, right: 20, bottom: 20),
@@ -203,7 +203,7 @@ class Homepage extends StatelessWidget {
                   children: <Widget>[
                     Expanded(
                       child: Container(
-                        height: 150,
+                        height: 140,
                         width: 100,
                         padding:
                             EdgeInsets.only(left: 20, right: 10, bottom: 20),
@@ -243,7 +243,7 @@ class Homepage extends StatelessWidget {
                     // start of row 3 column 2 (Misc) **************************
                     Expanded(
                       child: Container(
-                        height: 150,
+                        height: 140,
                         width: 100,
                         padding:
                             EdgeInsets.only(left: 10, right: 20, bottom: 20),
@@ -285,7 +285,7 @@ class Homepage extends StatelessWidget {
                   children: <Widget>[
                     Expanded(
                       child: Container(
-                        height: 150,
+                        height: 140,
                         width: 100,
                         padding:
                             EdgeInsets.only(left: 20, right: 10, bottom: 20),
@@ -324,7 +324,7 @@ class Homepage extends StatelessWidget {
                     // start of row 4 column 2 (view schedule) *****************
                     Expanded(
                       child: Container(
-                        height: 150,
+                        height: 140,
                         width: 100,
                         padding:
                             EdgeInsets.only(left: 10, right: 20, bottom: 20),
