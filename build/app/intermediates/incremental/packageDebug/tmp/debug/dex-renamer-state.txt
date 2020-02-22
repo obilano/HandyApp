@@ -1,4 +1,4 @@
-#Fri Feb 21 16:31:02 CST 2020
-base.0=C\:\\Users\\obi20\\Desktop\\HandyApp\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
+#Sat Feb 22 12:15:14 CST 2020
+base.0=C\:\\src\\handy_app_git\\HandyApp\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
 path.0=classes.dex
 renamed.0=classes.dex
