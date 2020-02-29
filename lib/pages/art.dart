@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:webview_flutter/webview_flutter.dart';
-import 'dart:async';
+import 'package:handy_app/misc/handywebview.dart';
 
 class Art extends StatelessWidget {
   @override
@@ -37,7 +36,7 @@ class artList extends StatelessWidget {
         constraints: BoxConstraints(minWidth: 100, minHeight: 50),
         child: Center(
           child: SizedBox(
-            height: 1000,
+            height: 200,
             width: 350,
             child: Column(
               mainAxisSize: MainAxisSize.min,
@@ -52,10 +51,11 @@ class artList extends StatelessWidget {
                       onPressed: () {
                         Navigator.of(context).push(
                           MaterialPageRoute(
-                            builder: (BuildContext context) => ArtWebView(
+                            builder: (BuildContext context) => HandyWebView(
                               title: "Tennessee Valley Museum of Art",
                               selectedUrl:
                                   "https://www.tvaa.net/visit-the-museum.html",
+                              bgrColor: Colors.orange[300],
                             ),
                           ),
                         );
@@ -77,36 +77,6 @@ class artList extends StatelessWidget {
             ),
           ),
         ),
-      ),
-    );
-  }
-}
-
-class ArtWebView extends StatelessWidget {
-  final String title;
-  final String selectedUrl;
-
-  final Completer<WebViewController> _controller =
-      Completer<WebViewController>();
-
-  ArtWebView({
-    @required this.title,
-    @required this.selectedUrl,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(title),
-        backgroundColor: Colors.amber[100],
-      ),
-      body: WebView(
-        initialUrl: selectedUrl,
-        javascriptMode: JavascriptMode.unrestricted,
-        onWebViewCreated: (WebViewController webViewController) {
-          _controller.complete(webViewController);
-        },
       ),
     );
   }

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:webview_flutter/webview_flutter.dart';
-import 'dart:async';
+import 'package:handy_app/misc/handywebview.dart';
 
 class Food extends StatelessWidget {
   @override
@@ -52,10 +51,11 @@ class foodlist extends StatelessWidget {
                       onPressed: () {
                         Navigator.of(context).push(
                           MaterialPageRoute(
-                            builder: (BuildContext context) => FoodWebView(
+                            builder: (BuildContext context) => HandyWebView(
                               title: "On the Rocks",
                               selectedUrl:
                                   "https://www.florenceontherocks.com/",
+                              bgrColor: Colors.amber[100],
                             ),
                           ),
                         );
@@ -83,9 +83,10 @@ class foodlist extends StatelessWidget {
                       onPressed: () {
                         Navigator.of(context).push(
                           MaterialPageRoute(
-                            builder: (BuildContext context) => FoodWebView(
+                            builder: (BuildContext context) => HandyWebView(
                               title: "Lil Capones Bar & Grill",
                               selectedUrl: "https://www.lilcapones.com/",
+                              bgrColor: Colors.amber[100],
                             ),
                           ),
                         );
@@ -113,10 +114,11 @@ class foodlist extends StatelessWidget {
                       onPressed: () {
                         Navigator.of(context).push(
                           MaterialPageRoute(
-                            builder: (BuildContext context) => FoodWebView(
+                            builder: (BuildContext context) => HandyWebView(
                               title: "Ricatoni's Italian Grill",
                               selectedUrl:
                                   "https://www.visitflorenceal.com/directory/ricatonis-italian-grill-2/",
+                              bgrColor: Colors.amber[100],
                             ),
                           ),
                         );
@@ -144,10 +146,11 @@ class foodlist extends StatelessWidget {
                       onPressed: () {
                         Navigator.of(context).push(
                           MaterialPageRoute(
-                            builder: (BuildContext context) => FoodWebView(
+                            builder: (BuildContext context) => HandyWebView(
                               title: "Stephano's Southland",
                               selectedUrl:
                                   "https://slicelife.com/restaurants/al/sheffield/35660/stephano-s-southland/menu",
+                              bgrColor: Colors.amber[100],
                             ),
                           ),
                         );
@@ -175,10 +178,11 @@ class foodlist extends StatelessWidget {
                       onPressed: () {
                         Navigator.of(context).push(
                           MaterialPageRoute(
-                            builder: (BuildContext context) => FoodWebView(
+                            builder: (BuildContext context) => HandyWebView(
                               title: "Superhero Chefs",
                               selectedUrl:
                                   "https://www.yelp.com/biz/superhero-chefs-tuscumbia-2",
+                              bgrColor: Colors.amber[100],
                             ),
                           ),
                         );
@@ -206,10 +210,11 @@ class foodlist extends StatelessWidget {
                       onPressed: () {
                         Navigator.of(context).push(
                           MaterialPageRoute(
-                            builder: (BuildContext context) => FoodWebView(
+                            builder: (BuildContext context) => HandyWebView(
                               title: "306 Barberque",
                               selectedUrl:
                                   "https://www.postmates.com/merchant/306-bbq-florence?client=customer.web&version=3.0.0",
+                              bgrColor: Colors.amber[100],
                             ),
                           ),
                         );
@@ -237,10 +242,11 @@ class foodlist extends StatelessWidget {
                       onPressed: () {
                         Navigator.of(context).push(
                           MaterialPageRoute(
-                            builder: (BuildContext context) => FoodWebView(
+                            builder: (BuildContext context) => HandyWebView(
                               title: "Champy's",
                               selectedUrl:
                                   "https://www.yelp.com/biz/champys-famous-fried-chicken-muscle-shoals",
+                              bgrColor: Colors.amber[100],
                             ),
                           ),
                         );
@@ -262,36 +268,6 @@ class foodlist extends StatelessWidget {
             ),
           ),
         ),
-      ),
-    );
-  }
-}
-
-class FoodWebView extends StatelessWidget {
-  final String title;
-  final String selectedUrl;
-
-  final Completer<WebViewController> _controller =
-      Completer<WebViewController>();
-
-  FoodWebView({
-    @required this.title,
-    @required this.selectedUrl,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(title),
-        backgroundColor: Colors.amber[100],
-      ),
-      body: WebView(
-        initialUrl: selectedUrl,
-        javascriptMode: JavascriptMode.unrestricted,
-        onWebViewCreated: (WebViewController webViewController) {
-          _controller.complete(webViewController);
-        },
       ),
     );
   }

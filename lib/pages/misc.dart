@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:webview_flutter/webview_flutter.dart';
-import 'dart:async';
 import 'package:photo_view/photo_view.dart';
 
 class Misc extends StatelessWidget {
@@ -127,36 +125,6 @@ class misclist extends StatelessWidget {
             ),
           ),
         ),
-      ),
-    );
-  }
-}
-
-class MiscWebView extends StatelessWidget {
-  final String title;
-  final String selectedUrl;
-
-  final Completer<WebViewController> _controller =
-      Completer<WebViewController>();
-
-  MiscWebView({
-    @required this.title,
-    @required this.selectedUrl,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(title),
-        backgroundColor: Colors.red[300],
-      ),
-      body: WebView(
-        initialUrl: selectedUrl,
-        javascriptMode: JavascriptMode.unrestricted,
-        onWebViewCreated: (WebViewController webViewController) {
-          _controller.complete(webViewController);
-        },
       ),
     );
   }

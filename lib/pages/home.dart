@@ -68,7 +68,6 @@ class Homepage extends StatelessWidget {
                                 fontWeight: FontWeight.w500,
                                 color: Colors.white),
                           ),
-                          foregroundColor: Colors.white,
                           backgroundColor: Colors.red[900],
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(10.0),
@@ -106,7 +105,6 @@ class Homepage extends StatelessWidget {
                                 fontWeight: FontWeight.w500,
                                 color: Colors.white),
                           ),
-                          foregroundColor: Colors.white,
                           backgroundColor: Colors.green,
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(10.0),
@@ -149,7 +147,6 @@ class Homepage extends StatelessWidget {
                                 fontWeight: FontWeight.w500,
                                 color: Colors.white),
                           ),
-                          foregroundColor: Colors.white,
                           backgroundColor: Colors.deepOrange[300],
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(10.0),
@@ -187,7 +184,6 @@ class Homepage extends StatelessWidget {
                                 fontWeight: FontWeight.w500,
                                 color: Colors.white),
                           ),
-                          foregroundColor: Colors.white,
                           backgroundColor: Colors.amber[100],
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(10.0),
@@ -231,7 +227,6 @@ class Homepage extends StatelessWidget {
                                 fontWeight: FontWeight.w500,
                                 color: Colors.white),
                           ),
-                          foregroundColor: Colors.white,
                           backgroundColor: Colors.orange[300],
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(10.0),
@@ -269,7 +264,6 @@ class Homepage extends StatelessWidget {
                                 fontWeight: FontWeight.w500,
                                 color: Colors.white),
                           ),
-                          foregroundColor: Colors.white,
                           backgroundColor: Colors.red[300],
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(10.0),
@@ -312,7 +306,6 @@ class Homepage extends StatelessWidget {
                                 fontWeight: FontWeight.w500,
                                 color: Colors.white),
                           ),
-                          foregroundColor: Colors.white,
                           backgroundColor: Colors.teal[900],
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(10.0),
@@ -350,7 +343,6 @@ class Homepage extends StatelessWidget {
                                 fontWeight: FontWeight.w500,
                                 color: Colors.white),
                           ),
-                          foregroundColor: Colors.white,
                           backgroundColor: Colors.indigo[900],
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(10.0),
