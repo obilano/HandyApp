@@ -40,77 +40,18 @@ class Homepage extends StatelessWidget {
                 Row(
                   children: <Widget>[
                     Expanded(
-                      child: Container(
-                        // container for jazz
-                        height: 140,
-                        width: 100,
-                        padding:
-                            EdgeInsets.only(left: 20, right: 10, bottom: 20),
-                        child: FloatingActionButton(
-                          //button to call jazz page
-                          heroTag: Jazz(),
-                          onPressed: () {
-                            Navigator.push(
-                              context,
-                              new MaterialPageRoute(
-                                builder: (context) =>
-                                    Jazz(), //call jazz class page
-                              ),
-                            );
-                          },
-                          child: Text(
-                            "Jazz",
-                            textDirection: TextDirection.ltr,
-                            style: TextStyle(
-                                decoration: TextDecoration.none,
-                                fontSize: 20.0,
-                                fontFamily: 'Roboto',
-                                fontWeight: FontWeight.w500,
-                                color: Colors.white),
-                          ),
-                          backgroundColor: Colors.red[900],
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(10.0),
-                          ),
-                        ),
+                      child: Page(
+                        pg: Jazz(),
+                        bgrColor: Colors.red[900],
+                        pageName: "Jazz",
                       ),
                     ),
                     Expanded(
                       // start of row 1 column 2 (Blues) ***********************
-                      child: Container(
-                        height: 140,
-                        width: 100,
-                        padding:
-                            EdgeInsets.only(left: 10, right: 20, bottom: 20),
-                        child: FloatingActionButton(
-                          // button for blues class/page
-                          heroTag: Blues(),
-                          onPressed: () {
-                            Navigator.push(
-                              context,
-                              new MaterialPageRoute(
-                                builder: (context) =>
-                                    Blues(), // call blues class/page
-                              ),
-                            );
-                          },
-                          // need function Jazz page
-                          child: Text(
-                            "Blues",
-                            textDirection: TextDirection.ltr,
-                            style: TextStyle(
-                                decoration: TextDecoration.none,
-                                fontSize: 20.0,
-                                fontFamily: 'Roboto',
-                                fontWeight: FontWeight.w500,
-                                color: Colors.white),
-                          ),
-                          backgroundColor: Colors.green,
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(10.0),
-                          ),
-                        ),
-                      ),
+                      child: Page(
+                          pg: Blues(),
+                          bgrColor: Colors.green,
+                          pageName: "Blues"),
                     ),
                   ],
                 ),
@@ -119,77 +60,17 @@ class Homepage extends StatelessWidget {
                 Row(
                   children: <Widget>[
                     Expanded(
-                      child: Container(
-                        height: 140,
-                        width: 100,
-                        padding:
-                            EdgeInsets.only(left: 20, right: 10, bottom: 20),
-                        child: FloatingActionButton(
-                          //button for rock class/page
-                          // still need Rock class
-                          heroTag: Rock(),
-                          onPressed: () {
-                            Navigator.push(
-                              context,
-                              new MaterialPageRoute(
-                                builder: (context) =>
-                                    Rock(), //call rock class/page
-                              ),
-                            );
-                          },
-                          child: Text(
-                            "Rock",
-                            textDirection: TextDirection.ltr,
-                            style: TextStyle(
-                                decoration: TextDecoration.none,
-                                fontSize: 20.0,
-                                fontFamily: 'Roboto',
-                                fontWeight: FontWeight.w500,
-                                color: Colors.white),
-                          ),
-                          backgroundColor: Colors.deepOrange[300],
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(10.0),
-                          ),
-                        ),
-                      ),
+                      child: Page(
+                          pg: Rock(), //call rock class/page
+                          bgrColor: Colors.deepOrange[300],
+                          pageName: "Rock"),
                     ),
-
                     //start of row 2 column 2 (food) ***************************
                     Expanded(
-                      child: Container(
-                        height: 140,
-                        width: 100,
-                        padding:
-                            EdgeInsets.only(left: 10, right: 20, bottom: 20),
-                        child: FloatingActionButton(
-                          //button for food class/page
-                          heroTag: Food(),
-                          onPressed: () {
-                            Navigator.push(
-                              context,
-                              new MaterialPageRoute(
-                                builder: (context) =>
-                                    Food(), //call food class/page
-                              ),
-                            );
-                          },
-                          child: Text(
-                            "Food",
-                            textDirection: TextDirection.ltr,
-                            style: TextStyle(
-                                decoration: TextDecoration.none,
-                                fontSize: 20.0,
-                                fontFamily: 'Roboto',
-                                fontWeight: FontWeight.w500,
-                                color: Colors.white),
-                          ),
-                          backgroundColor: Colors.amber[100],
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(10.0),
-                          ),
-                        ),
-                      ),
+                      child: Page(
+                          pg: Food(),
+                          bgrColor: Colors.amber[100],
+                          pageName: "Food"),
                     ),
                   ],
                 ),
@@ -198,78 +79,18 @@ class Homepage extends StatelessWidget {
                 Row(
                   children: <Widget>[
                     Expanded(
-                      child: Container(
-                        height: 140,
-                        width: 100,
-                        padding:
-                            EdgeInsets.only(left: 20, right: 10, bottom: 20),
-                        child: FloatingActionButton(
-                          //button for art festivities class/page
-                          // still need art festivities class
-                          heroTag: Art(),
-                          onPressed: () {
-                            Navigator.push(
-                              context,
-                              new MaterialPageRoute(
-                                builder: (context) =>
-                                    Art(), // call art festivities class/page
-                              ),
-                            );
-                          },
-
-                          child: Text(
-                            "     Art \nFestivities",
-                            textDirection: TextDirection.ltr,
-                            style: TextStyle(
-                                decoration: TextDecoration.none,
-                                fontSize: 20.0,
-                                fontFamily: 'Roboto',
-                                fontWeight: FontWeight.w500,
-                                color: Colors.white),
-                          ),
-                          backgroundColor: Colors.orange[300],
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(10.0),
-                          ),
-                        ),
-                      ),
+                      child: Page(
+                          pg: Art(), //call rock class/page
+                          bgrColor: Colors.orange[300],
+                          pageName: "      Art\nFestivities"),
                     ),
 
                     // start of row 3 column 2 (Misc) **************************
                     Expanded(
-                      child: Container(
-                        height: 140,
-                        width: 100,
-                        padding:
-                            EdgeInsets.only(left: 10, right: 20, bottom: 20),
-                        child: FloatingActionButton(
-                          // button for misc class/page
-                          // still need Misc class
-                          heroTag: Misc(),
-                          onPressed: () {
-                            Navigator.push(
-                              context,
-                              new MaterialPageRoute(
-                                builder: (context) => Misc(), //call misc class
-                              ),
-                            );
-                          },
-                          child: Text(
-                            "Misc",
-                            textDirection: TextDirection.ltr,
-                            style: TextStyle(
-                                decoration: TextDecoration.none,
-                                fontSize: 20.0,
-                                fontFamily: 'Roboto',
-                                fontWeight: FontWeight.w500,
-                                color: Colors.white),
-                          ),
-                          backgroundColor: Colors.red[300],
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(10.0),
-                          ),
-                        ),
-                      ),
+                      child: Page(
+                          pg: Misc(), //call rock class/page
+                          bgrColor: Colors.red[300],
+                          pageName: "Misc"),
                     ),
                   ],
                 ),
@@ -278,83 +99,70 @@ class Homepage extends StatelessWidget {
                 Row(
                   children: <Widget>[
                     Expanded(
-                      child: Container(
-                        height: 140,
-                        width: 100,
-                        padding:
-                            EdgeInsets.only(left: 20, right: 10, bottom: 20),
-                        child: FloatingActionButton(
-                          //button for all events
-                          // still need event class
-                          heroTag: Events(),
-                          onPressed: () {
-                            Navigator.push(
-                              context,
-                              new MaterialPageRoute(
-                                builder: (context) =>
-                                    Events(), // call all event class
-                              ),
-                            );
-                          },
-                          child: Text(
-                            "    All \nEvents",
-                            textDirection: TextDirection.ltr,
-                            style: TextStyle(
-                                decoration: TextDecoration.none,
-                                fontSize: 20.0,
-                                fontFamily: 'Roboto',
-                                fontWeight: FontWeight.w500,
-                                color: Colors.white),
-                          ),
-                          backgroundColor: Colors.teal[900],
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(10.0),
-                          ),
-                        ),
-                      ),
+                      child: Page(
+                          pg: Events(), //call rock class/page
+                          bgrColor: Colors.teal[900],
+                          pageName: "   All \nEvents"),
                     ),
 
                     // start of row 4 column 2 (view schedule) *****************
                     Expanded(
-                      child: Container(
-                        height: 140,
-                        width: 100,
-                        padding:
-                            EdgeInsets.only(left: 10, right: 20, bottom: 20),
-                        child: FloatingActionButton(
-                          //buttom for view schedule
-                          // still need view class
-                          heroTag: Schedule(),
-                          onPressed: () {
-                            Navigator.push(
-                              context,
-                              new MaterialPageRoute(
-                                builder: (context) =>
-                                    Schedule(), //call view schedule class
-                              ),
-                            );
-                          },
-                          child: Text(
-                            "    View \nSchedule",
-                            textDirection: TextDirection.ltr,
-                            style: TextStyle(
-                                fontSize: 20.0,
-                                fontFamily: 'Roboto',
-                                fontWeight: FontWeight.w500,
-                                color: Colors.white),
-                          ),
-                          backgroundColor: Colors.indigo[900],
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(10.0),
-                          ),
-                        ),
-                      ),
+                      child: Page(
+                          pg: Schedule(), //call rock class/page
+                          bgrColor: Colors.indigo[900],
+                          pageName: "   View \nSchedule"),
                     ),
                   ],
                 )
               ],
             ),
           ),
+        ),
+      ),
+    );
+  }
+}
+
+class Page extends StatelessWidget {
+  StatelessWidget pg;
+  Color bgrColor;
+  final String pageName;
+
+  Page({
+    @required this.pg,
+    @required this.bgrColor,
+    @required this.pageName,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      height: 140,
+      width: 100,
+      padding: EdgeInsets.only(left: 20, right: 20, bottom: 20),
+      child: FloatingActionButton(
+        heroTag: pg,
+        onPressed: () {
+          Navigator.push(
+            context,
+            new MaterialPageRoute(
+              builder: (context) => pg, //call jazz class page
+            ),
+          );
+        },
+        child: Text(
+          pageName,
+          textDirection: TextDirection.ltr,
+          style: TextStyle(
+              decoration: TextDecoration.none,
+              fontSize: 20.0,
+              fontFamily: 'Roboto',
+              fontWeight: FontWeight.w500,
+              color: Colors.white),
+        ),
+        backgroundColor: bgrColor,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(10.0),
         ),
       ),
     );

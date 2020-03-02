@@ -2,23 +2,25 @@ import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:handy_app/misc/handywebview.dart';
 
-class jazzEventInfo extends StatelessWidget {
+class EventInfo extends StatelessWidget {
   final String eventName;
-  final String artistName;
+  final String eventDate;
   final String artistImage;
   final String info;
   final String playlistName;
   final String youtubeUrl;
   final String mapUrl;
+  Color themeColor;
 
-  jazzEventInfo({
+  EventInfo({
     @required this.eventName,
-    @required this.artistName,
+    @required this.eventDate,
     @required this.artistImage,
     @required this.info,
     @required this.playlistName,
     @required this.youtubeUrl,
     @required this.mapUrl,
+    @required this.themeColor,
   });
 
   @override
@@ -27,12 +29,12 @@ class jazzEventInfo extends StatelessWidget {
       children: <Widget>[
         ListTile(
           title: Text(eventName),
-          subtitle: Text(artistName),
+          subtitle: Text(eventDate),
           onTap: () {
             Scaffold.of(context).removeCurrentSnackBar();
             final snackbar = SnackBar(
               duration: Duration(seconds: 30),
-              backgroundColor: Colors.red[900],
+              backgroundColor: themeColor,
               content: Text(info),
             );
             Scaffold.of(context).showSnackBar(snackbar);
@@ -47,7 +49,7 @@ class jazzEventInfo extends StatelessWidget {
         Container(
           padding: EdgeInsets.only(left: 50.0),
           decoration: BoxDecoration(
-              border: Border(bottom: BorderSide(color: Colors.red[900]))),
+              border: Border(bottom: BorderSide(color: themeColor))),
           child: Row(
             children: <Widget>[
               FlatButton(
@@ -57,7 +59,7 @@ class jazzEventInfo extends StatelessWidget {
                       builder: (BuildContext context) => HandyWebView(
                         title: playlistName,
                         selectedUrl: youtubeUrl,
-                        bgrColor: Colors.red[900],
+                        bgrColor: themeColor,
                       ),
                     ),
                   );
@@ -71,7 +73,7 @@ class jazzEventInfo extends StatelessWidget {
                       builder: (BuildContext context) => HandyWebView(
                         title: "Map",
                         selectedUrl: mapUrl,
-                        bgrColor: Colors.red[900],
+                        bgrColor: themeColor,
                       ),
                     ),
                   );
@@ -84,9 +86,9 @@ class jazzEventInfo extends StatelessWidget {
                   Navigator.of(context).push(
                     MaterialPageRoute(
                       builder: (BuildContext context) => HandyWebView(
-                        title: "Map",
-                        selectedUrl: "https://bit.ly/399hNgL",
-                        bgrColor: Colors.red[900],
+                        title: "Favorite",
+                        selectedUrl: mapUrl,
+                        bgrColor: themeColor,
                       ),
                     ),
                   );
