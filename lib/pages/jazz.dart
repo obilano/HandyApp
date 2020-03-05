@@ -35,23 +35,23 @@ class jazzlist extends StatelessWidget {
       children: <Widget>[
         // list 1 **********************************************************
         EventListLayout(
-          eventName: "JAZZ IT UP WITH TRASH",
-          eventDate: "July 19",
-          artistImage: "images/md.jpg",
+          eventName: JazzWithIt().event,
+          eventDate: JazzWithIt().date,
+          eventImage: JazzWithIt().image,
           eventInfo: JazzWithIt(thmColor: Jazz().bgrColor),
         ),
         // list 2 **********************************************
         EventListLayout(
-          eventName: "KEESTONE OF FLORENCE JAZZFEST",
-          eventDate: "July 20",
-          artistImage: "images/tt.jpg",
+          eventName: KeestoneJazzFest().event,
+          eventDate: KeestoneJazzFest().date,
+          eventImage: KeestoneJazzFest().image,
           eventInfo: KeestoneJazzFest(thmColor: Jazz().bgrColor),
         ),
         //list 3 ***********************************************
         EventListLayout(
-          eventName: "SUNRISE CENTER JAZZ",
-          eventDate: "July 20",
-          artistImage: "images/mh.jpg",
+          eventName: SunriseCenter().event,
+          eventDate: SunriseCenter().date,
+          eventImage: SunriseCenter().image,
           eventInfo: SunriseCenter(thmColor: Jazz().bgrColor),
         ),
       ],

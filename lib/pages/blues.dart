@@ -34,23 +34,23 @@ class bluesList extends StatelessWidget {
       children: <Widget>[
         // list 1 **********************************************************
         EventListLayout(
-          eventName: "MORNINGSIDE BLUES AND BARBECUE",
-          eventDate: "July 19",
-          artistImage: "images/mr.jpg",
+          eventName: Morningside().event,
+          eventDate: Morningside().date,
+          eventImage: Morningside().image,
           eventInfo: Morningside(thmColor: Blues().bgrColor),
         ),
         // list 2 **********************************************
         EventListLayout(
-          eventName: "BARBEQUE & BLUES WITH THE BEAT DADDYS",
-          eventDate: "July 21",
-          artistImage: "images/tbd.jpg",
+          eventName: BbqBlues().event,
+          eventDate: BbqBlues().date,
+          eventImage: BbqBlues().image,
           eventInfo: BbqBlues(thmColor: Blues().bgrColor),
         ),
         //list 3 ******************************************************
         EventListLayout(
-          eventName: "W.C. HANDY MOVIE: ST. LOUIS BLUES",
-          eventDate: "July 23",
-          artistImage: "images/slb.jpg",
+          eventName: WCHandyMovie().event,
+          eventDate: WCHandyMovie().date,
+          eventImage: WCHandyMovie().image,
           eventInfo: WCHandyMovie(thmColor: Blues().bgrColor),
         ),
       ],

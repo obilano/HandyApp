@@ -34,33 +34,32 @@ class alleventlist extends StatelessWidget {
       children: <Widget>[
         // list 1 **********************************************************
         EventListLayout(
-            eventName: "LAMB JAM",
-            eventDate: "July 18",
-            artistImage: 'images/md.jpg',
-            eventInfo: LambJam(
-              thmColor: Events().bgrColor,
-            )),
+          eventName: LambJam().event,
+          eventDate: LambJam().date,
+          eventImage: LambJam().image,
+          eventInfo: LambJam(thmColor: Events().bgrColor),
+        ),
 
         // list 2 **********************************************
         EventListLayout(
-          eventName: "FONDA SKIPWORTH PRESENTS: R&B SOUL SINGER GLENN JONES",
-          eventDate: "July 19",
-          artistImage: "images/tt.jpg",
+          eventName: FondaSkipworth().event,
+          eventDate: FondaSkipworth().date,
+          eventImage: FondaSkipworth().image,
           eventInfo: FondaSkipworth(thmColor: Events().bgrColor),
         ),
 
         //list 3 ******************************************************
         EventListLayout(
-          eventName: "JAZZ IT UP WITH TRASH",
-          eventDate: "July 19",
-          artistImage: "images/md.jpg",
+          eventName: JazzWithIt().event,
+          eventDate: JazzWithIt().date,
+          eventImage: JazzWithIt().image,
           eventInfo: JazzWithIt(thmColor: Events().bgrColor),
         ),
         // list 4 *****************************************************
         EventListLayout(
-          eventName: "KEESTONE OF FLORENCE JAZZFEST",
-          eventDate: "July 19",
-          artistImage: "images/tt.jpg",
+          eventName: KeestoneJazzFest().event,
+          eventDate: KeestoneJazzFest().date,
+          eventImage: KeestoneJazzFest().image,
           eventInfo: KeestoneJazzFest(thmColor: Events().bgrColor),
         ),
       ],

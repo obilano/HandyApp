@@ -2,6 +2,23 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:handy_app/misc/eventInfoLayout.dart';
 
+/*class EventInfo {
+  Color thmColor;
+  String event;
+  String artist;
+  String genre;
+  String location;
+  String date;
+  String time;
+  String sponsor;
+  String cost;
+  String feat;
+  String info;
+  String YTUrl;
+  String mapUrl;
+
+}*/
+
 class LambJam extends StatelessWidget {
   final Color thmColor;
   final String event = "LAMB JAM";
@@ -21,9 +38,10 @@ class LambJam extends StatelessWidget {
       "https://www.youtube.com/watch?v=USWRNalM0pU&list=UUaX58lZJuRLr_Vk18kQQGFQ";
   final String mapUrl =
       "https://www.google.com/maps/place/502+S+Royal+Ave,+Florence,+AL+35630/@34.8029789,-87.6601327,17z/data=!3m1!4b1!4m5!3m4!1s0x887d49accba1e73b:0x36162476b4907103!8m2!3d34.8029745!4d-87.657944";
+  final String image = "";
 
   LambJam({
-    @required this.thmColor,
+    this.thmColor,
   });
 
   @override
@@ -42,6 +60,7 @@ class LambJam extends StatelessWidget {
       description: info,
       youtubeUrl: YTUrl,
       mapUrl: mapUrl,
+      image: image,
     );
   }
 }
@@ -73,9 +92,10 @@ class FondaSkipworth extends StatelessWidget {
   final String YTUrl = "https://www.youtube.com/watch?v=i3g0ETRu_9U";
   final String mapUrl =
       "https://www.google.com/maps/place/123+N+Seminary+St,+Florence,+AL+35630/@34.8012544,-87.6774447,17z/data=!3m1!4b1!4m5!3m4!1s0x887d485e9033391f:0x48fee0fdd0435edf!8m2!3d34.80125!4d-87.675256";
+  final String image = "";
 
   FondaSkipworth({
-    @required this.thmColor,
+    this.thmColor,
   });
   @override
   Widget build(BuildContext context) {
@@ -93,6 +113,7 @@ class FondaSkipworth extends StatelessWidget {
       description: info,
       youtubeUrl: YTUrl,
       mapUrl: mapUrl,
+      image: image,
     );
   }
 }
@@ -115,9 +136,10 @@ class JazzWithIt extends StatelessWidget {
       "https://www.youtube.com/watch?v=SAu7gQGIErU&list=PLT0lvJBrkeeLG5-bQJ6HAan_cY7MC1PYf/";
   final String mapUrl =
       "https://www.google.com/maps/place/316+N+Montgomery+Ave,+Sheffield,+AL+35660/@34.7616087,-87.7006678,17z/data=!4m13!1m7!3m6!1s0x887d460293d7892b:0x7661a5e71dd6d9d0!2s316+N+Montgomery+Ave,+Sheffield,+AL+35660!3b1!8m2!3d34.7616087!4d-87.6984845!3m4!1s0x887d460293d7892b:0x7661a5e71dd6d9d0!8m2!3d34.7616087!4d-87.6984845";
+  final String image = "images/md.jpg";
 
   JazzWithIt({
-    @required this.thmColor,
+    this.thmColor,
   });
 
   @override
@@ -136,6 +158,7 @@ class JazzWithIt extends StatelessWidget {
       description: info,
       youtubeUrl: YTUrl,
       mapUrl: mapUrl,
+      image: image,
     );
   }
 }
@@ -156,9 +179,10 @@ class KeestoneJazzFest extends StatelessWidget {
   final String YTUrl = "https://www.youtube.com/watch?v=fzTVbIszJS8";
   final String mapUrl =
       "https://www.google.com/maps/place/Keestone+Independent%2FAssisted/@34.8001035,-87.6816488,17z/data=!3m1!4b1!4m5!3m4!1s0x887d4860933feeb5:0x9df8e4988641eaf6!8m2!3d34.8001035!4d-87.6794601";
+  final String image = "images/tt.jpg";
 
   KeestoneJazzFest({
-    @required this.thmColor,
+    this.thmColor,
   });
 
   @override
@@ -177,6 +201,7 @@ class KeestoneJazzFest extends StatelessWidget {
       description: info,
       youtubeUrl: YTUrl,
       mapUrl: mapUrl,
+      image: image,
     );
   }
 }
@@ -198,9 +223,10 @@ class SunriseCenter extends StatelessWidget {
       "https://www.youtube.com/watch?v=Du6JH9FRoHU&list=PL0IKFcWvXyK07E31CiztAU0sdckcTeSt_&index=2";
   final String mapUrl =
       "https://www.google.com/maps/place/307+N+Montgomery+Ave,+Sheffield,+AL+35660/@34.7611046,-87.7013211,17z/data=!3m1!4b1!4m5!3m4!1s0x887d4602f3976e85:0x301e9be265f4a6fd!8m2!3d34.7611046!4d-87.6991324";
+  final String image = "images/mh.jpg";
 
   SunriseCenter({
-    @required this.thmColor,
+    this.thmColor,
   });
   @override
   Widget build(BuildContext context) {
@@ -218,6 +244,7 @@ class SunriseCenter extends StatelessWidget {
       description: info,
       youtubeUrl: YTUrl,
       mapUrl: mapUrl,
+      image: image,
     );
   }
 }
@@ -238,9 +265,10 @@ class Morningside extends StatelessWidget {
   final String info = "";
   final String YTUrl = "";
   final String mapUrl = "";
+  final String image = "images/mr.jpg";
 
   Morningside({
-    @required this.thmColor,
+    this.thmColor,
   });
 
   @override
@@ -259,6 +287,7 @@ class Morningside extends StatelessWidget {
       description: info,
       youtubeUrl: YTUrl,
       mapUrl: mapUrl,
+      image: image,
     );
   }
 }
@@ -278,9 +307,10 @@ class BbqBlues extends StatelessWidget {
   final String info = "";
   final String YTUrl = "";
   final String mapUrl = "";
+  final String image = "images/tbd.jpg";
 
   BbqBlues({
-    @required this.thmColor,
+    this.thmColor,
   });
 
   @override
@@ -299,6 +329,7 @@ class BbqBlues extends StatelessWidget {
       description: info,
       youtubeUrl: YTUrl,
       mapUrl: mapUrl,
+      image: image,
     );
   }
 }
@@ -319,9 +350,10 @@ class WCHandyMovie extends StatelessWidget {
   final String info = "";
   final String YTUrl = "";
   final String mapUrl = "";
+  final String image = "images/slb.jpg";
 
   WCHandyMovie({
-    @required this.thmColor,
+    this.thmColor,
   });
 
   @override
@@ -340,6 +372,7 @@ class WCHandyMovie extends StatelessWidget {
       description: info,
       youtubeUrl: YTUrl,
       mapUrl: mapUrl,
+      image: image,
     );
   }
 }

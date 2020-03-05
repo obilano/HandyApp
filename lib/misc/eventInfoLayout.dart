@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:handy_app/misc/handywebview.dart';
 import 'package:auto_size_text/auto_size_text.dart';
@@ -16,23 +17,25 @@ class pageInfo extends StatelessWidget {
   final String description;
   final String youtubeUrl;
   final String mapUrl;
+  final String image;
 
-  pageInfo({
-    //@required this.pg,
-    @required this.bgrColor,
-    @required this.event,
-    @required this.artist,
-    this.genre,
-    @required this.location,
-    @required this.time,
-    @required this.date,
-    @required this.sponsor,
-    @required this.feat,
-    @required this.cost,
-    @required this.description,
-    @required this.youtubeUrl,
-    @required this.mapUrl,
-  });
+  pageInfo(
+      {
+      //@required this.pg,
+      @required this.bgrColor,
+      @required this.event,
+      @required this.artist,
+      this.genre,
+      @required this.location,
+      @required this.time,
+      @required this.date,
+      @required this.sponsor,
+      @required this.feat,
+      @required this.cost,
+      @required this.description,
+      @required this.youtubeUrl,
+      @required this.mapUrl,
+      @required this.image});
 
   @override
   Widget build(BuildContext context) {
@@ -54,6 +57,8 @@ class pageInfo extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: <Widget>[
+            new Image.asset(image,
+                fit: BoxFit.fill, height: 175.0, width: 450.0),
             new AutoSizeText("Performer: " + artist, textAlign: TextAlign.left),
             new AutoSizeText("Genre: " + genre, textAlign: TextAlign.left),
             new AutoSizeText("Location: " + location,
@@ -66,20 +71,20 @@ class pageInfo extends StatelessWidget {
                 overflow: TextOverflow.visible, textAlign: TextAlign.left),
             new Flexible(
               //children: <Widget>[
-              child: Container(
+              child: new Container(
                 padding: new EdgeInsets.only(right: 13.0),
-                child: AutoSizeText("Description: " + description,
+                child: new AutoSizeText("Description: " + description,
                     overflow: TextOverflow.visible, textAlign: TextAlign.left),
                 //    ],
               ),
             ),
-            Row(
+            new Row(
               children: <Widget>[
-                FlatButton(
+                new FlatButton(
                   onPressed: () {
                     Navigator.of(context).push(
-                      MaterialPageRoute(
-                        builder: (BuildContext context) => HandyWebView(
+                      new MaterialPageRoute(
+                        builder: (BuildContext context) => new HandyWebView(
                           title: artist,
                           selectedUrl: youtubeUrl,
                           bgrColor: bgrColor,
@@ -89,11 +94,11 @@ class pageInfo extends StatelessWidget {
                   },
                   child: Icon(Icons.library_music),
                 ),
-                FlatButton(
+                new FlatButton(
                   onPressed: () {
                     Navigator.of(context).push(
                       MaterialPageRoute(
-                        builder: (BuildContext context) => HandyWebView(
+                        builder: (BuildContext context) => new HandyWebView(
                           title: "Map",
                           selectedUrl: mapUrl,
                           bgrColor: bgrColor,
@@ -103,12 +108,12 @@ class pageInfo extends StatelessWidget {
                   },
                   child: Icon(Icons.map),
                 ),
-                FlatButton(
+                new FlatButton(
                   //favorite needs a function that collects fav data
                   onPressed: () {
                     Navigator.of(context).push(
-                      MaterialPageRoute(
-                        builder: (BuildContext context) => HandyWebView(
+                      new MaterialPageRoute(
+                        builder: (BuildContext context) => new HandyWebView(
                           title: "Favorite",
                           selectedUrl: mapUrl,
                           bgrColor: bgrColor,

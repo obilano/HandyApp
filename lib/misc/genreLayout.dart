@@ -4,19 +4,19 @@ import 'package:flutter/cupertino.dart';
 class EventListLayout extends StatelessWidget {
   final String eventName;
   final String eventDate;
-  final String artistImage;
+  final String eventImage;
   final StatelessWidget eventInfo;
 
   EventListLayout({
     @required this.eventName,
     @required this.eventDate,
-    @required this.artistImage,
+    @required this.eventImage,
     @required this.eventInfo,
   });
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return new Container(
       padding: EdgeInsets.only(top: 5.0, bottom: 5.0),
       decoration: BoxDecoration(
         border: Border(
@@ -24,11 +24,11 @@ class EventListLayout extends StatelessWidget {
           top: BorderSide(color: Colors.black45),
         ),
       ),
-      child: Column(
+      child: new Column(
         children: <Widget>[
-          ListTile(
-            title: Text(eventName),
-            subtitle: Text(eventDate),
+          new ListTile(
+            title: new Text(eventName),
+            subtitle: new Text(eventDate),
             onTap: () {
               Navigator.push(
                 context,
@@ -39,7 +39,7 @@ class EventListLayout extends StatelessWidget {
             },
             enabled: true,
             leading: new Image.asset(
-              artistImage,
+              eventImage,
               fit: BoxFit.cover,
               width: 100.0,
             ),
