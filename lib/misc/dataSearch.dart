@@ -10,8 +10,26 @@ import 'package:rflutter_alert/rflutter_alert.dart';
 import 'package:handy_app/misc/eventClasses.dart';
 
 class DataSearch extends SearchDelegate<String> {
-  final data = ["Jazz", "Food", "Blues", "Rock", "Events", "Schedule", "Art"];
-  final recent = ["Food", "Jazz", "Rock"];
+  final data = [
+    "Jazz",
+    "Food",
+    "Blues",
+    "Rock",
+    "Events",
+    "Schedule",
+    "Art",
+    SunriseCenter().event,
+    SunriseCenter().artist,
+    SunriseCenter().location
+  ];
+  final recent = [
+    "Food",
+    "Jazz",
+    "Rock",
+    SunriseCenter().event,
+    SunriseCenter().artist,
+    SunriseCenter().location
+  ];
 
   @override
   List<Widget> buildActions(BuildContext context) {
@@ -46,11 +64,13 @@ class DataSearch extends SearchDelegate<String> {
 
 //    for (String key in search.keys) {
 
-    if (query == "Jazz") {
+    if (query == SunriseCenter().event ||
+        query == SunriseCenter().artist ||
+        query == SunriseCenter().location) {
       //key
       return new MaterialApp(
         debugShowCheckedModeBanner: false,
-        home: Jazz(),
+        home: SunriseCenter(),
         //   search[key]
       );
     } else if (query == "Blues") {

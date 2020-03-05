@@ -127,6 +127,22 @@ class KeestoneJazzFest extends StatelessWidget {
 
 class SunriseCenter extends StatelessWidget {
   final Color thmColor;
+  final String event = "SUNRISE CENTER JAZZ";
+  final String artist = "Mars Hill Alumni Jazz Band";
+  final String genre = "";
+  final String location = "Logan Room "
+      "\n307 N Montgomery Avenue Sheffield, AL 35660";
+  final String date = "July 20";
+  final String time = "7:00 - 9:00 pm";
+  final String sponsor = "RC&D";
+  final String cost = "";
+  final String feat = "";
+  final String info = "";
+  final String YTUrl =
+      "https://www.youtube.com/watch?v=Du6JH9FRoHU&list=PL0IKFcWvXyK07E31CiztAU0sdckcTeSt_&index=2";
+  final String mapUrl =
+      "https://www.google.com/maps/place/307+N+Montgomery+Ave,+Sheffield,+AL+35660/@34.7611046,-87.7013211,17z/data=!3m1!4b1!4m5!3m4!1s0x887d4602f3976e85:0x301e9be265f4a6fd!8m2!3d34.7611046!4d-87.6991324";
+
   SunriseCenter({
     @required this.thmColor,
   });
@@ -134,21 +150,18 @@ class SunriseCenter extends StatelessWidget {
   Widget build(BuildContext context) {
     return pageInfo(
       bgrColor: thmColor,
-      event: "SUNRISE CENTER JAZZ",
-      artist: "Mars Hill Alumini Jazz Band",
-      genre: "",
-      location: "Logan Room "
-          "\n307 N Montgomery Avenue Sheffield, AL 35660",
-      date: "July 20",
-      time: "7:00 - 9:00 pm",
-      sponsor: "RC&D",
+      event: event,
+      artist: artist,
+      genre: genre,
+      location: location,
+      date: date,
+      time: time,
+      sponsor: sponsor,
       cost: "",
       feat: "",
-      description: "",
-      youtubeUrl:
-          "https://www.youtube.com/watch?v=Du6JH9FRoHU&list=PL0IKFcWvXyK07E31CiztAU0sdckcTeSt_&index=2",
-      mapUrl:
-          "https://www.google.com/maps/place/307+N+Montgomery+Ave,+Sheffield,+AL+35660/@34.7611046,-87.7013211,17z/data=!3m1!4b1!4m5!3m4!1s0x887d4602f3976e85:0x301e9be265f4a6fd!8m2!3d34.7611046!4d-87.6991324",
+      description: info,
+      youtubeUrl: YTUrl,
+      mapUrl: mapUrl,
     );
   }
 }
