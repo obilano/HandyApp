@@ -3,27 +3,25 @@ import 'package:flutter/widgets.dart';
 import 'package:photo_view/photo_view.dart';
 
 class Misc extends StatelessWidget {
+  final Color bgrColor = Colors.red[300];
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false, //turn off debug mode
-      home: Scaffold(
-        appBar: AppBar(
-          automaticallyImplyLeading: true,
-          backgroundColor: Colors.red[300],
-          title: Center(
-            child: Text('Misc         '),
-          ),
-          leading: IconButton(
-            //back button
-            icon: Icon(Icons.arrow_back),
-            onPressed: () => Navigator.pop(context, false),
-          ),
+    return Scaffold(
+      appBar: AppBar(
+        automaticallyImplyLeading: true,
+        backgroundColor: Misc().bgrColor,
+        title: Center(
+          child: Text('Misc         '),
         ),
-        body: Container(
-          padding: EdgeInsets.only(left: 10.0, top: 20.0),
-          child: misclist(),
+        leading: IconButton(
+          //back button
+          icon: Icon(Icons.arrow_back),
+          onPressed: () => Navigator.pop(context, false),
         ),
+      ),
+      body: Container(
+        padding: EdgeInsets.only(left: 10.0, top: 20.0),
+        child: misclist(),
       ),
     );
   }
@@ -137,7 +135,7 @@ class miscitems extends StatelessWidget {
       backgroundColor: Colors.white,
       appBar: new AppBar(
         title: new Text("Brochure PDF"),
-        backgroundColor: Colors.red[300],
+        backgroundColor: Misc().bgrColor,
       ),
       body: new Center(
         child: new ListView(

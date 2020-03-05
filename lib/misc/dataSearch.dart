@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:handy_app/pages/art.dart';
 import 'package:handy_app/pages/blues.dart';
-import 'package:handy_app/pages/events.dart';
+import 'package:handy_app/pages/allevents.dart';
 import 'package:handy_app/pages/food.dart';
 import 'package:handy_app/pages/jazz.dart';
 import 'package:handy_app/pages/rock.dart';
 import 'package:handy_app/pages/schedule.dart';
 import 'package:rflutter_alert/rflutter_alert.dart';
+import 'package:handy_app/misc/eventClasses.dart';
 
 class DataSearch extends SearchDelegate<String> {
   final data = ["Jazz", "Food", "Blues", "Rock", "Events", "Schedule", "Art"];
@@ -36,10 +37,21 @@ class DataSearch extends SearchDelegate<String> {
 
   @override
   Widget buildResults(BuildContext context) {
+//    Map<String, StatelessWidget> search = Map();
 // show some result based on the selection
+
+//    search["microwave dave"] = JazzWithIt();
+//    search["jazz with it"] = JazzWithIt();
+//    search["sheffield library"] = JazzWithIt();
+
+//    for (String key in search.keys) {
+
     if (query == "Jazz") {
+      //key
       return new MaterialApp(
-        home: new Jazz(),
+        debugShowCheckedModeBanner: false,
+        home: Jazz(),
+        //   search[key]
       );
     } else if (query == "Blues") {
       return new MaterialApp(
@@ -74,6 +86,7 @@ class DataSearch extends SearchDelegate<String> {
           textDirection: TextDirection.ltr,
         ),
       );
+      //   }
     }
   }
 
@@ -89,7 +102,7 @@ class DataSearch extends SearchDelegate<String> {
         onTap: () {
           showResults(context);
         },
-        leading: Icon(Icons.music_note),
+        leading: Icon(Icons.event),
         title: RichText(
           text: TextSpan(
               text: suggestionList[index].substring(0, query.length),

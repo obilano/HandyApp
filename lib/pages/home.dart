@@ -6,7 +6,7 @@ import 'package:handy_app/pages/rock.dart';
 import 'package:handy_app/pages/Food.dart';
 import 'package:handy_app/pages/art.dart';
 import 'package:handy_app/pages/misc.dart';
-import 'package:handy_app/pages/events.dart';
+import 'package:handy_app/pages/allevents.dart';
 import 'package:handy_app/pages/schedule.dart';
 import 'package:handy_app/misc/dataSearch.dart';
 
@@ -124,8 +124,8 @@ class Homepage extends StatelessWidget {
 }
 
 class Page extends StatelessWidget {
-  StatelessWidget pg;
-  Color bgrColor;
+  final StatelessWidget pg;
+  final Color bgrColor;
   final String pageName;
 
   Page({
