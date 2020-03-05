@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:handy_app/misc/eventlistlayout.dart';
+import 'package:handy_app/misc/genreLayout.dart';
 import 'package:handy_app/misc/eventClasses.dart';
 
 class Events extends StatelessWidget {

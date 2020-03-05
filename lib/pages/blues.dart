@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:handy_app/misc/eventClasses.dart';
-import 'package:handy_app/misc/eventlistlayout.dart';
+import 'package:handy_app/misc/genreLayout.dart';
 
 class Blues extends StatelessWidget {
   final Color bgrColor = Colors.green;
