@@ -62,6 +62,28 @@ class alleventlist extends StatelessWidget {
           eventImage: KeestoneJazzFest().image,
           eventInfo: KeestoneJazzFest(thmColor: Events().bgrColor),
         ),
+
+        // list 5 **********************************************
+        EventListLayout(
+          eventName: Morningside().event,
+          eventDate: Morningside().date,
+          eventImage: Morningside().image,
+          eventInfo: Morningside(thmColor: Events().bgrColor),
+        ),
+        // list 6 **********************************************
+        EventListLayout(
+          eventName: BbqBlues().event,
+          eventDate: BbqBlues().date,
+          eventImage: BbqBlues().image,
+          eventInfo: BbqBlues(thmColor: Events().bgrColor),
+        ),
+        //list 3 ******************************************************
+        EventListLayout(
+          eventName: WCHandyMovie().event,
+          eventDate: WCHandyMovie().date,
+          eventImage: WCHandyMovie().image,
+          eventInfo: WCHandyMovie(thmColor: Events().bgrColor),
+        ),
       ],
     );
   }

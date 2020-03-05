@@ -125,7 +125,7 @@ class JazzWithIt extends StatelessWidget {
   final String genre = "Jazz";
   final String location =
       "Sheffield Library 316 North Montgomery Avenue, Sheffield, AL 35660";
-  final String date = "Friday July 19";
+  final String date = "July 19";
   final String time = "10:00 AM";
   final String sponsor =
       "Shoals Solid Waste Authority * Keep the Shoals Beautiful * Shoals Earth Month, Inc.";
