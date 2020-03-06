@@ -17,7 +17,6 @@ class EventInfo extends StatelessWidget {
   String YTUrl;
   String mapUrl;
   String image;
-  Widget page;
 
   EventInfo({
     this.mainColor,
