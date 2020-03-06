@@ -3,14 +3,14 @@ import 'package:flutter/material.dart';
 import 'package:handy_app/misc/genreLayout.dart';
 import 'package:handy_app/misc/eventClasses.dart';
 
-class Jazz extends StatelessWidget {
+class JazzPage extends StatelessWidget {
   final Color bgrColor = Colors.red[900];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         automaticallyImplyLeading: true,
-        backgroundColor: Jazz().bgrColor,
+        backgroundColor: JazzPage().bgrColor,
         title: Center(
           child: Text('Jazz          '),
         ),
@@ -34,25 +34,25 @@ class jazzlist extends StatelessWidget {
     return ListView(
       children: <Widget>[
         // list 1 **********************************************************
-        EventListLayout(
+        genreListLayout(
           eventName: JazzWithIt().event,
           eventDate: JazzWithIt().date,
           eventImage: JazzWithIt().image,
-          eventInfo: JazzWithIt(thmColor: Jazz().bgrColor),
+          eventInfo: JazzWithIt(thmColor: JazzPage().bgrColor),
         ),
         // list 2 **********************************************
-        EventListLayout(
+        genreListLayout(
           eventName: KeestoneJazzFest().event,
           eventDate: KeestoneJazzFest().date,
           eventImage: KeestoneJazzFest().image,
-          eventInfo: KeestoneJazzFest(thmColor: Jazz().bgrColor),
+          eventInfo: KeestoneJazzFest(thmColor: JazzPage().bgrColor),
         ),
         //list 3 ***********************************************
-        EventListLayout(
+        genreListLayout(
           eventName: SunriseCenter().event,
           eventDate: SunriseCenter().date,
           eventImage: SunriseCenter().image,
-          eventInfo: SunriseCenter(thmColor: Jazz().bgrColor),
+          eventInfo: SunriseCenter(thmColor: JazzPage().bgrColor),
         ),
       ],
     );

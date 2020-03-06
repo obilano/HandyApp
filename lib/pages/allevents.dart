@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:handy_app/misc/genreLayout.dart';
 import 'package:handy_app/misc/eventClasses.dart';
 
-class Events extends StatelessWidget {
+class allEventsPage extends StatelessWidget {
   final Color bgrColor = Colors.teal[900];
   @override
   Widget build(BuildContext context) {
@@ -33,56 +33,56 @@ class alleventlist extends StatelessWidget {
     return ListView(
       children: <Widget>[
         // list 1 **********************************************************
-        EventListLayout(
+        genreListLayout(
           eventName: LambJam().event,
           eventDate: LambJam().date,
           eventImage: LambJam().image,
-          eventInfo: LambJam(thmColor: Events().bgrColor),
+          eventInfo: LambJam(thmColor: allEventsPage().bgrColor),
         ),
 
         // list 2 **********************************************
-        EventListLayout(
+        genreListLayout(
           eventName: FondaSkipworth().event,
           eventDate: FondaSkipworth().date,
           eventImage: FondaSkipworth().image,
-          eventInfo: FondaSkipworth(thmColor: Events().bgrColor),
+          eventInfo: FondaSkipworth(thmColor: allEventsPage().bgrColor),
         ),
 
         //list 3 ******************************************************
-        EventListLayout(
+        genreListLayout(
           eventName: JazzWithIt().event,
           eventDate: JazzWithIt().date,
           eventImage: JazzWithIt().image,
-          eventInfo: JazzWithIt(thmColor: Events().bgrColor),
+          eventInfo: JazzWithIt(thmColor: allEventsPage().bgrColor),
         ),
         // list 4 *****************************************************
-        EventListLayout(
+        genreListLayout(
           eventName: KeestoneJazzFest().event,
           eventDate: KeestoneJazzFest().date,
           eventImage: KeestoneJazzFest().image,
-          eventInfo: KeestoneJazzFest(thmColor: Events().bgrColor),
+          eventInfo: KeestoneJazzFest(thmColor: allEventsPage().bgrColor),
         ),
 
         // list 5 **********************************************
-        EventListLayout(
+        genreListLayout(
           eventName: Morningside().event,
           eventDate: Morningside().date,
           eventImage: Morningside().image,
-          eventInfo: Morningside(thmColor: Events().bgrColor),
+          eventInfo: Morningside(thmColor: allEventsPage().bgrColor),
         ),
         // list 6 **********************************************
-        EventListLayout(
+        genreListLayout(
           eventName: BbqBlues().event,
           eventDate: BbqBlues().date,
           eventImage: BbqBlues().image,
-          eventInfo: BbqBlues(thmColor: Events().bgrColor),
+          eventInfo: BbqBlues(thmColor: allEventsPage().bgrColor),
         ),
         //list 3 ******************************************************
-        EventListLayout(
+        genreListLayout(
           eventName: WCHandyMovie().event,
           eventDate: WCHandyMovie().date,
           eventImage: WCHandyMovie().image,
-          eventInfo: WCHandyMovie(thmColor: Events().bgrColor),
+          eventInfo: WCHandyMovie(thmColor: allEventsPage().bgrColor),
         ),
       ],
     );

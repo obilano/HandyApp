@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class Schedule extends StatelessWidget {
+class allSchedulePage extends StatelessWidget {
   final Color bgrColor = Colors.indigo[900];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         automaticallyImplyLeading: true,
-        backgroundColor: Schedule().bgrColor,
+        backgroundColor: allSchedulePage().bgrColor,
         title: Center(
           child: Text('View Schedule     '),
         ),

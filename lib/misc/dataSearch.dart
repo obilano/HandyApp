@@ -10,6 +10,21 @@ import 'package:rflutter_alert/rflutter_alert.dart';
 import 'package:handy_app/misc/eventClasses.dart';
 
 class DataSearch extends SearchDelegate<String> {
+  static Color thmColor;
+  static String event;
+  static String artist;
+  static String genre;
+  static String location;
+  static String date;
+  static String time;
+  static String sponsor;
+  static String cost;
+  static String feat;
+  static String info;
+  static String YTUrl;
+  static String mapUrl;
+  static String image;
+
   final data = [
     "Jazz",
     "Food",
@@ -18,17 +33,17 @@ class DataSearch extends SearchDelegate<String> {
     "Events",
     "Schedule",
     "Art",
-    SunriseCenter().event,
-    SunriseCenter().artist,
-    SunriseCenter().location
+    LambJam().event,
+    LambJam().artist,
+    LambJam().location
   ];
   final recent = [
     "Food",
     "Jazz",
     "Rock",
-    SunriseCenter().event,
-    SunriseCenter().artist,
-    SunriseCenter().location
+    LambJam().event,
+    LambJam().artist,
+    LambJam().location
   ];
 
   @override
@@ -58,44 +73,38 @@ class DataSearch extends SearchDelegate<String> {
 //    Map<String, StatelessWidget> search = Map();
 // show some result based on the selection
 
-//    search["microwave dave"] = JazzWithIt();
-//    search["jazz with it"] = JazzWithIt();
-//    search["sheffield library"] = JazzWithIt();
-
-//    for (String key in search.keys) {
-
-    if (query == SunriseCenter().event ||
-        query == SunriseCenter().artist ||
-        query == SunriseCenter().location) {
+    if (query == LambJam().event ||
+        query == LambJam().artist ||
+        query == LambJam().location) {
       //key
       return new MaterialApp(
         debugShowCheckedModeBanner: false,
-        home: SunriseCenter(),
+        home: LambJam(thmColor: Colors.black12),
         //   search[key]
       );
     } else if (query == "Blues") {
       return new MaterialApp(
-        home: new Blues(),
+        home: new BluesPage(),
       );
     } else if (query == "Art") {
       return new MaterialApp(
-        home: new Art(),
+        home: new ArtPage(),
       );
     } else if (query == "Rock") {
       return new MaterialApp(
-        home: new Rock(),
+        home: new RockPage(),
       );
     } else if (query == "Events") {
       return new MaterialApp(
-        home: new Events(),
+        home: new allEventsPage(),
       );
     } else if (query == "Food") {
       return new MaterialApp(
-        home: new Food(),
+        home: new FoodPage(),
       );
     } else if (query == "Schedule") {
       return new MaterialApp(
-        home: new Schedule(),
+        home: new allSchedulePage(),
       );
     } else {
       return Container(

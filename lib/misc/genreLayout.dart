@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 
-class EventListLayout extends StatelessWidget {
+class genreListLayout extends StatelessWidget {
   final String eventName;
   final String eventDate;
   final String eventImage;
   final StatelessWidget eventInfo;
 
-  EventListLayout({
+  genreListLayout({
     @required this.eventName,
     @required this.eventDate,
     @required this.eventImage,

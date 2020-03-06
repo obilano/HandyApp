@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:handy_app/misc/eventClasses.dart';
 import 'package:handy_app/misc/genreLayout.dart';
 
-class Blues extends StatelessWidget {
+class BluesPage extends StatelessWidget {
   final Color bgrColor = Colors.green;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         automaticallyImplyLeading: true,
-        backgroundColor: Blues().bgrColor,
+        backgroundColor: BluesPage().bgrColor,
         title: Center(
           child: Text('Blues         '),
         ),
@@ -33,25 +33,25 @@ class bluesList extends StatelessWidget {
     return ListView(
       children: <Widget>[
         // list 1 **********************************************************
-        EventListLayout(
+        genreListLayout(
           eventName: Morningside().event,
           eventDate: Morningside().date,
           eventImage: Morningside().image,
-          eventInfo: Morningside(thmColor: Blues().bgrColor),
+          eventInfo: Morningside(thmColor: BluesPage().bgrColor),
         ),
         // list 2 **********************************************
-        EventListLayout(
+        genreListLayout(
           eventName: BbqBlues().event,
           eventDate: BbqBlues().date,
           eventImage: BbqBlues().image,
-          eventInfo: BbqBlues(thmColor: Blues().bgrColor),
+          eventInfo: BbqBlues(thmColor: BluesPage().bgrColor),
         ),
         //list 3 ******************************************************
-        EventListLayout(
+        genreListLayout(
           eventName: WCHandyMovie().event,
           eventDate: WCHandyMovie().date,
           eventImage: WCHandyMovie().image,
-          eventInfo: WCHandyMovie(thmColor: Blues().bgrColor),
+          eventInfo: WCHandyMovie(thmColor: BluesPage().bgrColor),
         ),
       ],
     );

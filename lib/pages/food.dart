@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:handy_app/misc/handywebview.dart';
 
-class Food extends StatelessWidget {
+class FoodPage extends StatelessWidget {
   final Color bgrColor = Colors.amber[100];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         automaticallyImplyLeading: true,
-        backgroundColor: Food().bgrColor,
+        backgroundColor: FoodPage().bgrColor,
         title: Center(
           child: Text('Food         '),
         ),
@@ -53,7 +53,7 @@ class foodlist extends StatelessWidget {
                               title: "On the Rocks",
                               selectedUrl:
                                   "https://www.florenceontherocks.com/",
-                              bgrColor: Food().bgrColor,
+                              bgrColor: FoodPage().bgrColor,
                             ),
                           ),
                         );
@@ -84,7 +84,7 @@ class foodlist extends StatelessWidget {
                             builder: (BuildContext context) => HandyWebView(
                               title: "Lil Capones Bar & Grill",
                               selectedUrl: "https://www.lilcapones.com/",
-                              bgrColor: Food().bgrColor,
+                              bgrColor: FoodPage().bgrColor,
                             ),
                           ),
                         );
@@ -116,7 +116,7 @@ class foodlist extends StatelessWidget {
                               title: "Ricatoni's Italian Grill",
                               selectedUrl:
                                   "https://www.visitflorenceal.com/directory/ricatonis-italian-grill-2/",
-                              bgrColor: Food().bgrColor,
+                              bgrColor: FoodPage().bgrColor,
                             ),
                           ),
                         );
@@ -148,7 +148,7 @@ class foodlist extends StatelessWidget {
                               title: "Stephano's Southland",
                               selectedUrl:
                                   "https://slicelife.com/restaurants/al/sheffield/35660/stephano-s-southland/menu",
-                              bgrColor: Food().bgrColor,
+                              bgrColor: FoodPage().bgrColor,
                             ),
                           ),
                         );
@@ -180,7 +180,7 @@ class foodlist extends StatelessWidget {
                               title: "Superhero Chefs",
                               selectedUrl:
                                   "https://www.yelp.com/biz/superhero-chefs-tuscumbia-2",
-                              bgrColor: Food().bgrColor,
+                              bgrColor: FoodPage().bgrColor,
                             ),
                           ),
                         );
@@ -212,7 +212,7 @@ class foodlist extends StatelessWidget {
                               title: "306 Barberque",
                               selectedUrl:
                                   "https://www.postmates.com/merchant/306-bbq-florence?client=customer.web&version=3.0.0",
-                              bgrColor: Food().bgrColor,
+                              bgrColor: FoodPage().bgrColor,
                             ),
                           ),
                         );
@@ -244,7 +244,7 @@ class foodlist extends StatelessWidget {
                               title: "Champy's",
                               selectedUrl:
                                   "https://www.yelp.com/biz/champys-famous-fried-chicken-muscle-shoals",
-                              bgrColor: Food().bgrColor,
+                              bgrColor: FoodPage().bgrColor,
                             ),
                           ),
                         );

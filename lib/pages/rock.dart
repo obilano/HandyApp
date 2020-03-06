@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:handy_app/misc/eventClasses.dart';
 import 'package:handy_app/misc/genreLayout.dart';
 
-class Rock extends StatelessWidget {
+class RockPage extends StatelessWidget {
   final Color bgrColor = Colors.deepOrange[300];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         automaticallyImplyLeading: true,
-        backgroundColor: Rock().bgrColor,
+        backgroundColor: RockPage().bgrColor,
         title: Center(
           child: Text('Rocks        '),
         ),
@@ -21,33 +21,34 @@ class Rock extends StatelessWidget {
       ),
       body: Container(
         padding: EdgeInsets.only(left: 10.0, top: 20.0),
-        //child: jazzBodyLayout(),
+        child: rocklist(),
       ),
     );
   }
 }
 
-class bluesList extends StatelessWidget {
+class rocklist extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView(
       children: <Widget>[
         // list 1 **********************************************************
-        EventListLayout(
+        genreListLayout(
           eventName: LambJam().event,
           eventDate: LambJam().date,
           eventImage: LambJam().image,
-          eventInfo: LambJam(thmColor: Rock().bgrColor),
+          eventInfo: LambJam(thmColor: RockPage().bgrColor),
+          // eventInfo: LambJam(),
         ),
         // list 2 **********************************************
-        /* EventListLayout(
+        /* genreListLayout(
           eventName: ,
           eventDate: ,
           eventImage: ,
           eventInfo: ,
         ),
         //list 3 ******************************************************
-        EventListLayout(
+        genreListLayout(
           eventName: ,
           eventDate: ,
           eventImage: ,

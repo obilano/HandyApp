@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:handy_app/misc/handywebview.dart';
 
-class Art extends StatelessWidget {
+class ArtPage extends StatelessWidget {
   final Color bgrColor = Colors.orange[300];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         automaticallyImplyLeading: true,
-        backgroundColor: Art().bgrColor,
+        backgroundColor: ArtPage().bgrColor,
         title: Center(
           child: Text('Art Festivities     '),
         ),
@@ -53,7 +53,7 @@ class artList extends StatelessWidget {
                               title: "Tennessee Valley Museum of Art",
                               selectedUrl:
                                   "https://www.tvaa.net/visit-the-museum.html",
-                              bgrColor: Art().bgrColor,
+                              bgrColor: ArtPage().bgrColor,
                             ),
                           ),
                         );

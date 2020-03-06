@@ -1,9 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:handy_app/pages/food.dart';
 import 'package:handy_app/pages/jazz.dart';
 import 'package:handy_app/pages/blues.dart';
 import 'package:handy_app/pages/rock.dart';
-import 'package:handy_app/pages/Food.dart';
 import 'package:handy_app/pages/art.dart';
 import 'package:handy_app/pages/misc.dart';
 import 'package:handy_app/pages/allevents.dart';
@@ -41,7 +41,7 @@ class Homepage extends StatelessWidget {
                   children: <Widget>[
                     Expanded(
                       child: Page(
-                        pg: Jazz(),
+                        pg: JazzPage(),
                         bgrColor: Colors.red[900],
                         pageName: "Jazz",
                       ),
@@ -49,7 +49,7 @@ class Homepage extends StatelessWidget {
                     Expanded(
                       // start of row 1 column 2 (Blues) ***********************
                       child: Page(
-                          pg: Blues(),
+                          pg: BluesPage(),
                           bgrColor: Colors.green,
                           pageName: "Blues"),
                     ),
@@ -61,14 +61,14 @@ class Homepage extends StatelessWidget {
                   children: <Widget>[
                     Expanded(
                       child: Page(
-                          pg: Rock(), //call rock class/page
+                          pg: RockPage(), //call rock class/page
                           bgrColor: Colors.deepOrange[300],
                           pageName: "Rock"),
                     ),
                     //start of row 2 column 2 (food) ***************************
                     Expanded(
                       child: Page(
-                          pg: Food(),
+                          pg: FoodPage(),
                           bgrColor: Colors.amber[100],
                           pageName: "Food"),
                     ),
@@ -80,7 +80,7 @@ class Homepage extends StatelessWidget {
                   children: <Widget>[
                     Expanded(
                       child: Page(
-                          pg: Art(), //call rock class/page
+                          pg: ArtPage(), //call rock class/page
                           bgrColor: Colors.orange[300],
                           pageName: "      Art\nFestivities"),
                     ),
@@ -88,7 +88,7 @@ class Homepage extends StatelessWidget {
                     // start of row 3 column 2 (Misc) **************************
                     Expanded(
                       child: Page(
-                          pg: Misc(), //call rock class/page
+                          pg: MiscPage(), //call rock class/page
                           bgrColor: Colors.red[300],
                           pageName: "Misc"),
                     ),
@@ -100,7 +100,7 @@ class Homepage extends StatelessWidget {
                   children: <Widget>[
                     Expanded(
                       child: Page(
-                          pg: Events(), //call rock class/page
+                          pg: allEventsPage(), //call rock class/page
                           bgrColor: Colors.teal[900],
                           pageName: "   All \nEvents"),
                     ),
@@ -108,7 +108,7 @@ class Homepage extends StatelessWidget {
                     // start of row 4 column 2 (view schedule) *****************
                     Expanded(
                       child: Page(
-                          pg: Schedule(), //call rock class/page
+                          pg: allSchedulePage(), //call rock class/page
                           bgrColor: Colors.indigo[900],
                           pageName: "   View \nSchedule"),
                     ),
