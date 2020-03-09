@@ -5,15 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4ae2cd73-f37a-45a9-8d8d-ddb7ee3cb44a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.packages" beforeDir="false" afterPath="$PROJECT_DIR$/.packages" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/misc/dataSearch.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/misc/dataSearch.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/misc/eventClasses.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/misc/eventClasses.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/misc/pageEventInfoLayout.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/misc/pageEventInfoLayout.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/pages/allevents.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pages/allevents.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/pages/blues.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pages/blues.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/pages/jazz.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pages/jazz.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/pages/rock.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pages/rock.dart" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -183,7 +175,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583522272505</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Added more data&#10;Separated location name and address">
+      <created>1583716076030</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1583716076030</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -212,7 +211,9 @@
     <MESSAGE value="Need to add the rest of the events in the eventClass.dart&#10;Most code has been shortened.&#10;Tested Search Bar with event class" />
     <MESSAGE value="Need to add the rest of the events in the eventClass.dart&#10;Most code has been shortened.&#10;Tested Search Bar with event class&#10;added eventClasses.dart, eventInfoLayout.dart, and genreLayout.dart" />
     <MESSAGE value="eventClasses.dart is now being implemented with inheritance" />
-    <option name="LAST_COMMIT_MESSAGE" value="eventClasses.dart is now being implemented with inheritance" />
+    <MESSAGE value="Added more data" />
+    <MESSAGE value="Added more data&#10;Separated location name and address" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added more data&#10;Separated location name and address" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

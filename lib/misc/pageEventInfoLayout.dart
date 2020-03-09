@@ -94,14 +94,14 @@ class pageInfo extends StatelessWidget {
                 "Sponsor: " + sponsor,
                 minFontSize: 18,
               ),
-              // if (cost != "")
-              new AutoSizeText(
-                "Cost: " + cost,
-                minFontSize: 18,
-              ),
-              // if (feat != "")
-              new AutoSizeText("Featuring: " + feat,
-                  minFontSize: 18, overflow: TextOverflow.visible),
+              if (cost != "")
+                new AutoSizeText(
+                  "Cost: " + cost,
+                  minFontSize: 18,
+                ),
+              if (feat != "")
+                new AutoSizeText("Featuring: " + feat,
+                    minFontSize: 18, overflow: TextOverflow.visible),
               if (description != "")
                 new AutoSizeText(
                   "Description: " + description,
