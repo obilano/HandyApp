@@ -125,8 +125,9 @@ class FondaSkipworth extends EventInfo {
       : super(
           mainColor: thmColor,
           name: "FONDA SKIPWORTH PRESENTS: R&B SOUL SINGER GLENN JONES ",
-          artist:
-              "Glenn Jones Love By Design Tour * Also ft: Thompson Trio * Ladies of Passion * Mr. GR",
+          artist: "Glenn Jones Love By Design Tour "
+              "\n* Also ft: Thompson Trio "
+              "\n* Ladies of Passion * Mr. GR",
           genre: "Other",
           location: "Shoals Theatre",
           address: "123 N. Seminary St. Florence, AL 35630",
@@ -134,9 +135,11 @@ class FondaSkipworth extends EventInfo {
           time: "7:30 PM",
           sponsor: "Fonda Skipworth Productions and corporate sponsors: "
               "\nFuller Heating and Air Conditioning "
-              "\n* Hickory Hills Dental Care * Midgard Self Storage "
+              "\n* Hickory Hills Dental Care "
+              "\n* Midgard Self Storage "
               "\n* Alfa Insurance Anna Drive Florence "
-              "\n* Terry Anderson * Woodruff & McCaney Law Firm "
+              "\n* Terry Anderson "
+              "\n* Woodruff & McCaney Law Firm "
               "\n* Greenway CDJR of Florence "
               "\n* Yellow Hammer Roofing "
               "\n* Holt, Mussleman, Morgan & Alvis "
