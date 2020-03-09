@@ -34,26 +34,26 @@ class rocklist extends StatelessWidget {
       children: <Widget>[
         // list 1 **********************************************************
         genreListLayout(
-          eventName: LambJam().event,
+          eventName: LambJam().name,
           eventDate: LambJam().date,
           eventImage: LambJam().image,
           eventInfo: LambJam(thmColor: RockPage().bgrColor),
           // eventInfo: LambJam(),
         ),
         // list 2 **********************************************
-        /* genreListLayout(
-          eventName: ,
-          eventDate: ,
-          eventImage: ,
-          eventInfo: ,
+        genreListLayout(
+          eventName: HHHSwampersMarriot1().name,
+          eventDate: HHHSwampersMarriot1().date,
+          eventImage: HHHSwampersMarriot1().image,
+          eventInfo: HHHSwampersMarriot1(thmColor: RockPage().bgrColor),
         ),
         //list 3 ******************************************************
         genreListLayout(
-          eventName: ,
-          eventDate: ,
-          eventImage: ,
-          eventInfo: ,
-        ),*/
+          eventName: HHHFlobama1().name,
+          eventDate: HHHFlobama1().date,
+          eventImage: HHHFlobama1().image,
+          eventInfo: HHHFlobama1(thmColor: RockPage().bgrColor),
+        ),
       ],
     );
   }

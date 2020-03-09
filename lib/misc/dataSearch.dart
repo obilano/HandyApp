@@ -33,7 +33,7 @@ class DataSearch extends SearchDelegate<String> {
     "Events",
     "Schedule",
     "Art",
-    LambJam().event,
+    LambJam().name,
     LambJam().artist,
     LambJam().location
   ];
@@ -41,7 +41,7 @@ class DataSearch extends SearchDelegate<String> {
     "Food",
     "Jazz",
     "Rock",
-    LambJam().event,
+    LambJam().name,
     LambJam().artist,
     LambJam().location
   ];
@@ -73,14 +73,19 @@ class DataSearch extends SearchDelegate<String> {
 //    Map<String, StatelessWidget> search = Map();
 // show some result based on the selection
 
-    if (query == LambJam().event ||
+    if (query == LambJam().name ||
         query == LambJam().artist ||
-        query == LambJam().location) {
+        query == LambJam().location ||
+        query == LambJam().address) {
       //key
       return new MaterialApp(
         debugShowCheckedModeBanner: false,
         home: LambJam(thmColor: Colors.black12),
         //   search[key]
+      );
+    } else if (query == "Jazz") {
+      return new MaterialApp(
+        home: new JazzPage(),
       );
     } else if (query == "Blues") {
       return new MaterialApp(
