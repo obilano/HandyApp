@@ -36,7 +36,7 @@ class bluesList extends StatelessWidget {
         genreListLayout(
           eventName: Morningside().name,
           eventDate: Morningside().date,
-          eventArtist: Morningside().artist,
+          eventTime: Morningside().time,
           eventImage: Morningside().image,
           eventInfo: Morningside(thmColor: BluesPage().bgrColor),
         ),
@@ -44,7 +44,7 @@ class bluesList extends StatelessWidget {
         genreListLayout(
           eventName: HMNCityHardware().name,
           eventDate: HMNCityHardware().date,
-          eventArtist: HMNCityHardware().artist,
+          eventTime: HMNCityHardware().time,
           eventImage: HMNCityHardware().image,
           eventInfo: HMNCityHardware(thmColor: BluesPage().bgrColor),
         ),
@@ -53,7 +53,7 @@ class bluesList extends StatelessWidget {
         genreListLayout(
           eventName: HMNSuperheroChef().name,
           eventDate: HMNSuperheroChef().date,
-          eventArtist: HMNSuperheroChef().artist,
+          eventTime: HMNSuperheroChef().time,
           eventImage: HMNSuperheroChef().image,
           eventInfo: HMNSuperheroChef(thmColor: BluesPage().bgrColor),
         ),
@@ -61,7 +61,7 @@ class bluesList extends StatelessWidget {
         genreListLayout(
           eventName: BbqBlues().name,
           eventDate: BbqBlues().date,
-          eventArtist: BbqBlues().artist,
+          eventTime: BbqBlues().time,
           eventImage: BbqBlues().image,
           eventInfo: BbqBlues(thmColor: BluesPage().bgrColor),
         ),
@@ -69,7 +69,7 @@ class bluesList extends StatelessWidget {
         genreListLayout(
           eventName: WCHandyMovie().name,
           eventDate: WCHandyMovie().date,
-          eventArtist: WCHandyMovie().artist,
+          eventTime: WCHandyMovie().time,
           eventImage: WCHandyMovie().image,
           eventInfo: WCHandyMovie(thmColor: BluesPage().bgrColor),
         ),
