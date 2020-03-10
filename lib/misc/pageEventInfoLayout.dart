@@ -31,10 +31,10 @@ class pageInfo extends StatelessWidget {
       @required this.address,
       @required this.time,
       @required this.date,
-      @required this.sponsor,
-      @required this.feat,
-      @required this.cost,
-      @required this.description,
+      this.sponsor,
+      this.feat,
+      this.cost,
+      this.description,
       @required this.youtubeUrl,
       @required this.mapUrl,
       @required this.image});
@@ -63,7 +63,7 @@ class pageInfo extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: <Widget>[
               new Image.asset(image,
-                  fit: BoxFit.cover, height: 175.0, width: 450.0),
+                  fit: BoxFit.fill, height: 175.0, width: 450.0),
               Padding(padding: EdgeInsets.only(top: 10.0)),
               new AutoSizeText(
                 "Performer: " + artist,
@@ -89,11 +89,11 @@ class pageInfo extends StatelessWidget {
                 "Time: " + time,
                 minFontSize: 18,
               ),
-              // if (sponsor != "")
-              new AutoSizeText(
-                "Sponsor: " + sponsor,
-                minFontSize: 18,
-              ),
+              if (sponsor != "")
+                new AutoSizeText(
+                  "Sponsor: " + sponsor,
+                  minFontSize: 18,
+                ),
               if (cost != "")
                 new AutoSizeText(
                   "Cost: " + cost,
@@ -111,6 +111,7 @@ class pageInfo extends StatelessWidget {
               new Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
+                  Padding(padding: EdgeInsets.only(top: 100.0)),
                   new FlatButton(
                     onPressed: () {
                       Navigator.of(context).push(

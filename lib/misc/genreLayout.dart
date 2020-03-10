@@ -4,11 +4,13 @@ import 'package:flutter/cupertino.dart';
 class genreListLayout extends StatelessWidget {
   final String eventName;
   final String eventDate;
+  final String eventArtist;
   final String eventImage;
   final StatelessWidget eventInfo;
 
   genreListLayout({
     @required this.eventName,
+    @required this.eventArtist,
     @required this.eventDate,
     @required this.eventImage,
     @required this.eventInfo,
@@ -28,7 +30,7 @@ class genreListLayout extends StatelessWidget {
         children: <Widget>[
           new ListTile(
             title: new Text(eventName),
-            subtitle: new Text(eventDate),
+            subtitle: new Text(eventDate + "\n" + eventArtist),
             onTap: () {
               Navigator.push(
                 context,
@@ -40,8 +42,9 @@ class genreListLayout extends StatelessWidget {
             enabled: true,
             leading: new Image.asset(
               eventImage,
-              fit: BoxFit.cover,
+              fit: BoxFit.fill,
               width: 100.0,
+              height: 200.0,
             ),
           ),
         ],

@@ -37,6 +37,7 @@ class jazzlist extends StatelessWidget {
         genreListLayout(
           eventName: JazzWithIt().name,
           eventDate: JazzWithIt().date,
+          eventArtist: JazzWithIt().artist,
           eventImage: JazzWithIt().image,
           eventInfo: JazzWithIt(thmColor: JazzPage().bgrColor),
         ),
@@ -44,13 +45,23 @@ class jazzlist extends StatelessWidget {
         genreListLayout(
           eventName: KeestoneJazzFest().name,
           eventDate: KeestoneJazzFest().date,
+          eventArtist: KeestoneJazzFest().artist,
           eventImage: KeestoneJazzFest().image,
           eventInfo: KeestoneJazzFest(thmColor: JazzPage().bgrColor),
         ),
         //list 3 ***********************************************
         genreListLayout(
+          eventName: HMNRicatonis().name,
+          eventDate: HMNRicatonis().date,
+          eventArtist: HMNRicatonis().artist,
+          eventImage: HMNRicatonis().image,
+          eventInfo: HMNRicatonis(thmColor: JazzPage().bgrColor),
+        ),
+        //list 4 ***********************************************
+        genreListLayout(
           eventName: SunriseCenter().name,
           eventDate: SunriseCenter().date,
+          eventArtist: SunriseCenter().artist,
           eventImage: SunriseCenter().image,
           eventInfo: SunriseCenter(thmColor: JazzPage().bgrColor),
         ),

@@ -36,6 +36,7 @@ class rocklist extends StatelessWidget {
         genreListLayout(
           eventName: LambJam().name,
           eventDate: LambJam().date,
+          eventArtist: LambJam().artist,
           eventImage: LambJam().image,
           eventInfo: LambJam(thmColor: RockPage().bgrColor),
           // eventInfo: LambJam(),
@@ -44,6 +45,7 @@ class rocklist extends StatelessWidget {
         genreListLayout(
           eventName: HHHSwampersMarriot1().name,
           eventDate: HHHSwampersMarriot1().date,
+          eventArtist: HHHSwampersMarriot1().artist,
           eventImage: HHHSwampersMarriot1().image,
           eventInfo: HHHSwampersMarriot1(thmColor: RockPage().bgrColor),
         ),
@@ -51,8 +53,33 @@ class rocklist extends StatelessWidget {
         genreListLayout(
           eventName: HHHFlobama1().name,
           eventDate: HHHFlobama1().date,
+          eventArtist: HHHFlobama1().artist,
           eventImage: HHHFlobama1().image,
           eventInfo: HHHFlobama1(thmColor: RockPage().bgrColor),
+        ),
+        // list 4 **********************************************
+        genreListLayout(
+          eventName: HMN306().name,
+          eventDate: HMN306().date,
+          eventArtist: HMN306().artist,
+          eventImage: HMN306().image,
+          eventInfo: HMN306(thmColor: RockPage().bgrColor),
+        ),
+        //list 5 ******************************************************
+        genreListLayout(
+          eventName: firstMetro().name,
+          eventDate: firstMetro().date,
+          eventArtist: firstMetro().artist,
+          eventImage: firstMetro().image,
+          eventInfo: firstMetro(thmColor: RockPage().bgrColor),
+        ),
+        //list 6 ******************************************************
+        genreListLayout(
+          eventName: HMNOTRocks1().name,
+          eventDate: HMNOTRocks1().date,
+          eventArtist: HMNOTRocks1().artist,
+          eventImage: HMNOTRocks1().image,
+          eventInfo: HMNOTRocks1(thmColor: RockPage().bgrColor),
         ),
       ],
     );
