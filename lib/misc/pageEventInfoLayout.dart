@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:handy_app/misc/handywebview.dart';
 import 'package:auto_size_text/auto_size_text.dart';
+import 'package:gradient_app_bar/gradient_app_bar.dart';
 
 class pageInfo extends StatelessWidget {
   final Color bgrColor;
@@ -43,11 +44,12 @@ class pageInfo extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       resizeToAvoidBottomPadding: false,
-      appBar: AppBar(
+      appBar: GradientAppBar(
+        backgroundColorStart: bgrColor,
+        backgroundColorEnd: Colors.grey[100],
         automaticallyImplyLeading: true,
-        backgroundColor: bgrColor,
         title: Center(
-          child: Text(event),
+          child: AutoSizeText(event, overflow: TextOverflow.visible),
         ),
         leading: IconButton(
           //back button
@@ -109,10 +111,11 @@ class pageInfo extends StatelessWidget {
                   minFontSize: 18,
                 ),
               new Row(
-                mainAxisAlignment: MainAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: <Widget>[
                   Padding(padding: EdgeInsets.only(top: 100.0)),
-                  new FlatButton(
+                  new RaisedButton.icon(
+                    color: bgrColor,
                     onPressed: () {
                       Navigator.of(context).push(
                         new MaterialPageRoute(
@@ -124,10 +127,13 @@ class pageInfo extends StatelessWidget {
                         ),
                       );
                     },
-                    child: Icon(Icons.library_music),
+                    icon: Icon(Icons.library_music),
+                    label: Text("Youtube Link"),
                   ),
-                  new FlatButton(
+                  new RaisedButton.icon(
+                    color: bgrColor,
                     onPressed: () {
+                      'Map';
                       Navigator.of(context).push(
                         MaterialPageRoute(
                           builder: (BuildContext context) => new HandyWebView(
@@ -138,9 +144,11 @@ class pageInfo extends StatelessWidget {
                         ),
                       );
                     },
-                    child: Icon(Icons.map),
+                    icon: Icon(Icons.map),
+                    label: Text("Map"),
                   ),
-                  new FlatButton(
+                  new RaisedButton.icon(
+                    color: bgrColor,
                     //favorite needs a function that collects fav data
                     onPressed: () {
                       Navigator.of(context).push(
@@ -153,7 +161,8 @@ class pageInfo extends StatelessWidget {
                         ),
                       );
                     },
-                    child: Icon(Icons.favorite_border),
+                    icon: Icon(Icons.favorite_border),
+                    label: Text("Favorite"),
                   ),
                 ],
               ),

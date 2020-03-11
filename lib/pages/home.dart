@@ -9,14 +9,15 @@ import 'package:handy_app/pages/misc.dart';
 import 'package:handy_app/pages/allevents.dart';
 import 'package:handy_app/pages/schedule.dart';
 import 'package:handy_app/misc/dataSearch.dart';
+import 'package:gradient_app_bar/gradient_app_bar.dart';
 
 class Homepage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        automaticallyImplyLeading: true,
-        backgroundColor: Colors.black12,
+      appBar: GradientAppBar(
+        backgroundColorStart: Colors.grey[200],
+        backgroundColorEnd: Colors.blueGrey[200],
         title: Center(
           child: Text('W.C. Handy Music Festival'),
         ),
@@ -31,7 +32,7 @@ class Homepage extends StatelessWidget {
       body: Center(
         child: SingleChildScrollView(
           child: Container(
-            padding: EdgeInsets.only(left: 20.0, right: 20.0, top: 15.0),
+            padding: EdgeInsets.only(left: 20.0, right: 20.0, top: 10.0),
             alignment: Alignment.bottomCenter,
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
@@ -154,7 +155,6 @@ class Page extends StatelessWidget {
           pageName,
           textDirection: TextDirection.ltr,
           style: TextStyle(
-              decoration: TextDecoration.none,
               fontSize: 20.0,
               fontFamily: 'Roboto',
               fontWeight: FontWeight.w500,

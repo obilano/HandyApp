@@ -1,14 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:handy_app/misc/handywebview.dart';
+import 'package:gradient_app_bar/gradient_app_bar.dart';
 
 class ArtPage extends StatelessWidget {
   final Color bgrColor = Colors.orange[300];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
+      appBar: GradientAppBar(
+        backgroundColorStart: bgrColor,
+        backgroundColorEnd: Colors.deepOrange[100],
         automaticallyImplyLeading: true,
-        backgroundColor: ArtPage().bgrColor,
         title: Center(
           child: Text('Art Festivities     '),
         ),

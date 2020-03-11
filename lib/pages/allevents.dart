@@ -1,15 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:handy_app/misc/genreLayout.dart';
 import 'package:handy_app/misc/eventClasses.dart';
+import 'package:gradient_app_bar/gradient_app_bar.dart';
 
 class allEventsPage extends StatelessWidget {
   final Color bgrColor = Colors.teal[900];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
+      appBar: GradientAppBar(
+        backgroundColorStart: bgrColor,
+        backgroundColorEnd: Colors.teal[100],
         automaticallyImplyLeading: true,
-        backgroundColor: bgrColor,
         title: Center(
           child: Text('All Events      '),
         ),

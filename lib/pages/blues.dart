@@ -1,15 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:handy_app/misc/eventClasses.dart';
 import 'package:handy_app/misc/genreLayout.dart';
+import 'package:gradient_app_bar/gradient_app_bar.dart';
 
 class BluesPage extends StatelessWidget {
   final Color bgrColor = Colors.green;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
+      appBar: GradientAppBar(
+        backgroundColorStart: bgrColor,
+        backgroundColorEnd: Colors.green[100],
         automaticallyImplyLeading: true,
-        backgroundColor: BluesPage().bgrColor,
         title: Center(
           child: Text('Blues         '),
         ),
