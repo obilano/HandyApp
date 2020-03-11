@@ -725,3 +725,256 @@ class WCHandyMovie extends EventInfo {
                 "https://www.google.com/maps/place/Alabama+Music+Hall+of+Fame/@34.7131004,-87.7078857,17z/data=!3m1!4b1!4m5!3m4!1s0x887d4f7c548947cb:0x1320e7896de25e90!8m2!3d34.7131004!4d-87.7056917",
             image: "images/slb.jpg");
 }
+
+//START JULY 26 EVENTS
+class WCHandyMovie2 extends EventInfo {
+  Color thmColor;
+  WCHandyMovie2({thmColor})
+      : super(
+            mainColor: thmColor,
+            name: "W.C. HANDY MOVIE: ST. LOUIS BLUES",
+            artist: "Nat \"King\" Cole",
+            genre: "Other",
+            location: "Alabama Music Hall of Fame Lobby",
+            address: "617 US Hwy 72 West Tuscumbia, AL 35674",
+            date: "July 26",
+            time: "10:00 am",
+            sponsor: "Friends of the Florence-Lauderdale Public Library",
+            cost: "",
+            feat:
+                "St. Louis Blues, movie starring Nat “King” Cole as W.C. Handy",
+            info: "",
+            YTUrl:
+                "https://www.youtube.com/watch?v=S1UEzL9poPM&list=PL6law6Uk-M4EjSzCvC3DQKZXxCPBtY4IK",
+            mapUrl:
+                "https://www.google.com/maps/place/Alabama+Music+Hall+of+Fame/@34.7131004,-87.7078857,17z/data=!3m1!4b1!4m5!3m4!1s0x887d4f7c548947cb:0x1320e7896de25e90!8m2!3d34.7131004!4d-87.7056917",
+            image: "images/slb.jpg");
+}
+
+class HMLRicatonis extends EventInfo {
+  Color thmColor;
+  HMLRicatonis({thmColor})
+      : super(
+            mainColor: thmColor,
+            name: "W.C. HANDY MOVIE: ST. LOUIS BLUES",
+            artist: "Christian Turner",
+            genre: "Rock/Country",
+            location: "Ricatonis Italian Grill",
+            address: "107 N Court St, Florence, AL 35630",
+            date: "July 26",
+            time: "11:00 am",
+            sponsor: "",
+            cost: "",
+            feat: "",
+            info: "",
+            YTUrl: "https://www.youtube.com/watch?v=q3mx_GAhRAY",
+            mapUrl:
+                "https://www.google.com/maps/place/Ricatoni's+Italian+Grill/@34.8004494,-87.6785382,17z/data=!3m1"
+                "!4b1!4m5!3m4!1s0x887d485e68519345:0x18acecd12070777b!8m2!3d34.8004494!4d-87.6763495",
+            image: "");
+}
+
+class MountMoriah extends EventInfo {
+  Color thmColor;
+  MountMoriah({thmColor})
+      : super(
+            mainColor: thmColor,
+            name: "MOUNT MORIAH HANDY FEST FISH FRY",
+            artist: "Mt. Moriah Choir and other musical guests",
+            genre: "Gospel",
+            location: "Mount Moriah P.B. Church",
+            address: "818 West Irvine St Florence, AL 35630",
+            date: "July 26",
+            time: "11:00 am - 4:00 pm",
+            sponsor: "Mt. Moriah P.B. Church",
+            cost:
+                "Free to attend \$10 Old Fashioned Fried Fish plates available for purchase",
+            feat: "",
+            info: "",
+            YTUrl: "",
+            mapUrl:
+                "https://www.google.com/maps?q=mount+moriah+church+florence+al&rlz=1C1CHBF_enUS808US808&um=1&ie=UTF-8&sa=X&ved=2ahUKEwjNjPm4yZLoAhWKVN8KHei7BL8Q_AUoAXoECBEQAw",
+            image: "");
+}
+
+class HML306 extends EventInfo {
+  Color thmColor;
+  HML306({thmColor})
+      : super(
+            mainColor: thmColor,
+            name: "HANDY MUSICAL LUNCHES: 306 BARBEQUE",
+            artist: "Jazz Allstars Duo",
+            genre: "Jazz",
+            location: "306 Barbeque",
+            address: "322 North Court St. Florence, AL 35630",
+            date: "July 26",
+            time: "11:00 am - 4:00 pm",
+            sponsor: "",
+            cost: "",
+            feat: "",
+            info: "",
+            YTUrl: "",
+            mapUrl:
+                "https://www.google.com/maps/place/322+N+Court+St,+Florence,+AL+35630/@34.8027082,-87.6794574,17z/data=!3m1!4b1!4m5!3m4!1s0x887d485df1107971:0x738c8e8c09a08be1!8m2!3d34.8027082!4d-87.6772687",
+            image: "");
+}
+
+class HMLFlobama extends EventInfo {
+  Color thmColor;
+  HMLFlobama({thmColor})
+      : super(
+            mainColor: thmColor,
+            name: "HANDY MUSICAL LUNCHES: FLOBAMA",
+            artist: "Microwave Dave",
+            genre: "Blues",
+            location: "Flobama",
+            address: "311 North Court St. Florence, AL 35630",
+            date: "July 26",
+            time: "11:30 am - 2:30 pm",
+            sponsor: "",
+            cost: "",
+            feat: "",
+            info: "",
+            YTUrl: "",
+            mapUrl:
+                "https://www.google.com/maps/place/311+N+Court+St,+Florence,+AL+35630/@34.8022742,-87.6798339,17z/data=!3m1!4b1!4m5!3m4!1s0x887d485df857e62d:0xc614ea38bee7bb9a!8m2!3d34.8022742!4d-87.6776452",
+            image: "");
+}
+
+class Swampfest4 extends EventInfo {
+  Color thmColor;
+  Swampfest4({thmColor})
+      : super(
+            mainColor: thmColor,
+            name: "SWAMPFEST SONGWRITER SHOWCASE SERIES #4",
+            artist: "Mitch Mann, Russell Mefford and Andreas Werner",
+            genre: "Rock",
+            location: "Florence-Lauderdale Tourism & Visitors Center Gallery",
+            address: "McFarland Park 200 Jim Spain Dr. Florence, AL 35630",
+            date: "July 26",
+            time: "2:00 pm",
+            sponsor:
+                "Florence-Lauderdale Convention & Visitors Bureau * Muscle Shoals National Heritage Area* Crazy Chester Music",
+            cost: "",
+            feat: "",
+            info: "",
+            YTUrl: "",
+            mapUrl:
+                "https://www.google.com/maps?q=McFarland+Park+200+Jim+Spain+Dr.+Florence,+AL+35630&rlz=1C1CHBF_enUS808US808&um=1&ie=UTF-8&sa=X&ved=2ahUKEwich-35zZLoAhXvYN8KHem0AQ8Q_AUoAXoECBQQAw",
+            image: "");
+}
+
+class RiversideJazz extends EventInfo {
+  Color thmColor;
+  RiversideJazz({thmColor})
+      : super(
+            mainColor: thmColor,
+            name: "RIVERSIDE JAZZ",
+            artist:
+                "Joseph Baldwin * John Bull & Skyler Saufley *Judy Toney & Sunshine Band * Wes Sheffield &The Slow Burners * Red Mouth Band * Deidra & Ruff Pro Band * Longevity * Mary Mason Band * Off The Chain",
+            genre: "Jazz",
+            location:
+                "McFarland Park - Florence Harbor OR Florence-Lauderdale Coliseum (weather)",
+            address: "1050 Clayborn Liles Dr. Florence, AL 35630",
+            date: "July 26",
+            time: "5:00 pm — 10:00 pm",
+            sponsor: "City of Florence",
+            cost: "",
+            feat: "",
+            info:
+                "Transportation: Free shuttle from Florence Parking Deck to McFarland Park",
+            YTUrl: "",
+            mapUrl:
+                "https://www.google.com/maps/place/1050+Clayborn+Liles+Dr,+Florence,+AL+35630/@34.7866684,-87.6758508,17z/data=!3m1!4b1!4m5!3m4!1s0x887d48f23cf99381:0x5d8516ab6f3f7faf!8m2!3d34.7866684!4d-87.6736621",
+            image: "");
+}
+
+class HHHSwampers extends EventInfo {
+  Color thmColor;
+  HHHSwampers({thmColor})
+      : super(
+            mainColor: thmColor,
+            name: "HANDY HAPPY HOURS: SWAMPERS/MARRIOTT SHOALS",
+            artist: "Erik Smallwood",
+            genre: "Rock",
+            location: "Marriott Shoals Hotel & Spa",
+            address: "10 Hightower Pl Florence, AL 35630",
+            date: "July 26",
+            time: "5:00 pm — 7:00 pm",
+            sponsor: "",
+            cost: "",
+            feat: "",
+            info: "",
+            YTUrl: "",
+            mapUrl:
+                "https://www.google.com/maps/place/10+Hightower+Pl,+Florence,+AL+35630/@34.8087386,-87.634747,17z/data=!3m1!4b1!4m5!3m4!1s0x887d4990dbfb7095:0x67f4155b7aa719e2!8m2!3d34.8087386!4d-87.6325583",
+            image: "");
+}
+
+class ChildrensMuseum extends EventInfo {
+  Color thmColor;
+  ChildrensMuseum({thmColor})
+      : super(
+            mainColor: thmColor,
+            name: "CHILDREN'S MUSEUM HANDY PARTY",
+            artist: "Erik Kirkman",
+            genre: "Jazz",
+            location: "Singin' River Brewing Co.",
+            address: "526 E College St Florence, AL 35630",
+            date: "July 26",
+            time: "5:30 pm — 7:30 pm",
+            sponsor: "TVA Central Credit Union",
+            cost:
+                " Free Family Friendly Event (Donations for the Children's Museum Shoals are appreciated)",
+            feat: "",
+            info: "",
+            YTUrl: "",
+            mapUrl:
+                "https://www.google.com/maps/place/526+E+College+St,+Florence,+AL+35630/@34.8016348,-87.6711668,17z/data=!3m1!4b1!4m5!3m4!1s0x887d485a1e6bd4f9:0x76954f87b58863bf!8m2!3d34.8016348!4d-87.6689781",
+            image: "");
+}
+
+class HHHOTR extends EventInfo {
+  Color thmColor;
+  HHHOTR({thmColor})
+      : super(
+            mainColor: thmColor,
+            name: "HANDY HAPPY HOURS: ON THE ROCKS",
+            artist: "Coffee Black",
+            genre: "Blues",
+            location: "On The Rocks",
+            address: "110 N Court St Florence, AL 35630",
+            date: "July 26",
+            time: "5:30 pm — 9:30 pm",
+            sponsor: "",
+            cost: "",
+            feat: "",
+            info: "",
+            YTUrl: "",
+            mapUrl:
+                "https://www.google.com/maps/place/110+N+Court+St,+Florence,+AL+35630/@34.8006663,-87.6780428,17z/data=!3m1!4b1!4m5!3m4!1s0x887d485e65ce7b47:0xdc94b2762c21ae06!8m2!3d34.8006663!4d-87.6758541",
+            image: "");
+}
+
+class HHHLegends extends EventInfo {
+  Color thmColor;
+  HHHLegends({thmColor})
+      : super(
+            mainColor: thmColor,
+            name: "HANDY HAPPY HOURS: LEGENDS",
+            artist: "The Midnighters",
+            genre: "Blues",
+            location: "Legends Steakhouse",
+            address: "201 N Seminary St Florence, AL 35630",
+            date: "July 26",
+            time: "6:00 - 9:00 pm",
+            sponsor: "",
+            cost: "",
+            feat: "",
+            info: "",
+            YTUrl: "",
+            mapUrl:
+                "https://www.google.com/maps/place/201+N+Seminary+St,+Florence,+AL+35630/@34.8016295,-87.6776769,17z/data=!3m1!4b1!4m5!3m4!1s0x887d485dd57c842f:0x12eab80e3a4b1b9c!8m2!3d34.8016295!4d-87.6754882",
+            image: "");
+}
+//END JULY 26 EVENTS
