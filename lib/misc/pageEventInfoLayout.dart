@@ -127,13 +127,15 @@ class pageInfo extends StatelessWidget {
                         ),
                       );
                     },
-                    icon: Icon(Icons.library_music),
-                    label: Text("Youtube Link"),
+                    icon: Icon(Icons.library_music, color: Colors.white),
+                    label: Text(
+                      "Youtube Link",
+                      style: TextStyle(color: Colors.white),
+                    ),
                   ),
                   new RaisedButton.icon(
                     color: bgrColor,
                     onPressed: () {
-                      'Map';
                       Navigator.of(context).push(
                         MaterialPageRoute(
                           builder: (BuildContext context) => new HandyWebView(
@@ -144,8 +146,11 @@ class pageInfo extends StatelessWidget {
                         ),
                       );
                     },
-                    icon: Icon(Icons.map),
-                    label: Text("Map"),
+                    icon: Icon(Icons.map, color: Colors.white),
+                    label: Text(
+                      "Map",
+                      style: TextStyle(color: Colors.white),
+                    ),
                   ),
                   new RaisedButton.icon(
                     color: bgrColor,
@@ -161,8 +166,11 @@ class pageInfo extends StatelessWidget {
                         ),
                       );
                     },
-                    icon: Icon(Icons.favorite_border),
-                    label: Text("Favorite"),
+                    icon: Icon(Icons.favorite_border, color: Colors.white),
+                    label: Text(
+                      "Favorite",
+                      style: TextStyle(color: Colors.white),
+                    ),
                   ),
                 ],
               ),
