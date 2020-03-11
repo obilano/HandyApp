@@ -977,4 +977,161 @@ class HHHLegends extends EventInfo {
                 "https://www.google.com/maps/place/201+N+Seminary+St,+Florence,+AL+35630/@34.8016295,-87.6776769,17z/data=!3m1!4b1!4m5!3m4!1s0x887d485dd57c842f:0x12eab80e3a4b1b9c!8m2!3d34.8016295!4d-87.6754882",
             image: "");
 }
+
+class AirConditionFestival extends EventInfo {
+  Color thmColor;
+  AirConditionFestival({thmColor})
+      : super(
+            mainColor: thmColor,
+            name: "11TH ANNUAL MASSIVELY COOL AIR-CONDITIONED STREET FESTIVAL",
+            artist: "The Kerry Gilbert Band * Rewind",
+            genre: "Blues",
+            location: "Marriott Shoals Conference Center",
+            address: "10 Hightower Place Florence, AL 35630",
+            date: "July 26",
+            time: "6:00 pm",
+            sponsor: "",
+            cost:
+                "\$15 with BBQ Buffet or \$13 General Admission (tickets available at the door and at Eventbrite.com",
+            feat: "",
+            info: "",
+            YTUrl: "",
+            mapUrl:
+                "https://www.google.com/maps/place/Church+of+the+Highlands+%7C+Shoals+Campus/@34.8087386,-87.634747,17z/data=!4m13!1m7!3m6!1s0x887d4990dbfb7095:0x67f4155b7aa719e2!2s10+Hightower+Pl,+Florence,+AL+35630!3b1!8m2!3d34.8087386!4d-87.6325583!3m4!1s0x887d4990ef2400ed:0x36889e4988f1cba5!8m2!3d34.8075881!4d-87.633316",
+            image: "");
+}
+
+class HHHPieFactory extends EventInfo {
+  Color thmColor;
+  HHHPieFactory({thmColor})
+      : super(
+            mainColor: thmColor,
+            name: "HANDY HAPPY HOURS: PIE FACTORY",
+            artist: "Jeff Henson & Jordan Denton",
+            genre: "Blues",
+            location: "Pie Factory",
+            address: "106 North Court St. Florence, AL 35630",
+            date: "July 26",
+            time: "6:00 pm — 10:00 pm",
+            sponsor: "",
+            cost: "",
+            feat: "",
+            info: "",
+            YTUrl: "",
+            mapUrl:
+                "https://www.google.com/maps/place/106+N+Court+St,+Florence,+AL+35630/@34.8005468,-87.6779947,17z/data=!3m1!4b1!4m5!3m4!1s0x887d485e6694c36d:0x4628d0a21fb9b015!8m2!3d34.8005468!4d-87.675806",
+            image: "");
+}
+
+class HHHFlobama extends EventInfo {
+  Color thmColor;
+  HHHFlobama({thmColor})
+      : super(
+            mainColor: thmColor,
+            name: "HANDY HAPPY HOURS: FLOBAMA",
+            artist: "Asleep By Ten",
+            genre: "Rock",
+            location: "Flobama",
+            address: "311 North Court St. Florence, AL 35630",
+            date: "July 26",
+            time: "6:30 pm — 9:30 pm",
+            sponsor: "",
+            cost: "",
+            feat: "",
+            info: "",
+            YTUrl: "",
+            mapUrl:
+                "https://www.google.com/maps/place/311+N+Court+St,+Florence,+AL+35630/@34.8022742,-87.6798339,17z/data=!3m1!4b1!4m5!3m4!1s0x887d485df857e62d:0xc614ea38bee7bb9a!8m2!3d34.8022742!4d-87.6776452",
+            image: "");
+}
+
+class ListeningRoom extends EventInfo {
+  Color thmColor;
+  ListeningRoom({thmColor})
+      : super(
+            mainColor: thmColor,
+            name: "LISTENING ROOM",
+            artist: "Jazz Allstars",
+            genre: "Jazz",
+            location: "The Mane Room",
+            address: "310 N.Pine St. Florence, AL 35630",
+            date: "July 26",
+            time: "6:30 pm — 8:30 pm",
+            sponsor: "Friends of the Festival",
+            cost: "",
+            feat: "",
+            info: "",
+            YTUrl: "",
+            mapUrl:
+                "https://www.google.com/maps/place/310+N+Pine+St,+Florence,+AL+35630/@34.8017958,-87.6803328,17z/data=!3m1!4b1!4m5!3m4!1s0x887d4860ad2de68b:0x27fae9518e38e6f5!8m2!3d34.8017958!4d-87.6781441",
+            image: "");
+}
+
+class RollinOnTheRiver extends EventInfo {
+  Color thmColor;
+  RollinOnTheRiver({thmColor})
+      : super(
+            mainColor: thmColor,
+            name: "18TH ANNUAL ROLLIN’ ON THE RIVER",
+            artist:
+                "Dorothy Cole as ‘Tina Turner’ * McTazz Band * Charlie Brown & Lacey Snider",
+            genre: "Rock",
+            location: "Joe Wheeler State Park",
+            address: "4401 McLean Dr. Rogersville, AL 35652",
+            date: "July 26",
+            time: "6:30 pm",
+            sponsor:
+                "Joe Wheeler State Park * Florence-Lauderdale Convention & Visitors Bureau",
+            cost: "",
+            feat: "",
+            info: "",
+            YTUrl: "",
+            mapUrl:
+                "https://www.google.com/maps/place/4401+McLean+Dr,+Rogersville,+AL+35652/@34.8116077,-87.3346628,17z/data=!3m1!4b1!4m5!3m4!1s0x8862b88d35e52279:0xa7e8967d48d0422a!8m2!3d34.8116077!4d-87.3324741",
+            image: "");
+}
+
+class ParkNSoul extends EventInfo {
+  Color thmColor;
+  ParkNSoul({thmColor})
+      : super(
+            mainColor: thmColor,
+            name: "PARK'N SOUL",
+            artist: " CC Jags",
+            genre: "Jazz",
+            location: "Wilson Park",
+            address: "350 North Wood Ave. Florence, AL 35630",
+            date: "July 26",
+            time: "7:00 pm — 9:00 pm",
+            sponsor: "Cook’s Pest Control",
+            cost: "",
+            feat: "",
+            info: "",
+            YTUrl: "",
+            mapUrl:
+                "https://www.google.com/maps/place/350+N+Wood+Ave,+Florence,+AL+35630/@34.8036319,-87.6764058,17z/data=!3m1!4b1!4m5!3m4!1s0x887d485c42cbff69:0x5d33cabdc7347c07!8m2!3d34.8036319!4d-87.6742171",
+            image: "");
+}
+
+class HMNLilCapones extends EventInfo {
+  Color thmColor;
+  HMNLilCapones({thmColor})
+      : super(
+            mainColor: thmColor,
+            name: "HANDY MUSICAL NIGHTS: LIL CAPONE'S",
+            artist: "Cold War Relic",
+            genre: "Rock/Blues",
+            location: "Lil Capone's",
+            address: "3370 Cloverdale Rd Florence, AL 35633",
+            date: "July 26",
+            time: "7:00 pm",
+            sponsor: "",
+            cost: "",
+            feat: "",
+            info: "",
+            YTUrl: "",
+            mapUrl:
+                "https://www.google.com/maps/place/3370+Cloverdale+Rd,+Florence,+AL+35633/@34.8514874,-87.6923613,17z/data=!3m1!4b1!4m5!3m4!1s0x887d37fa7fd9b1a3:0x6b5421c39cf480df!8m2!3d34.8514874!4d-87.6901726",
+            image: "");
+}
 //END JULY 26 EVENTS
