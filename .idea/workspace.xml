@@ -5,25 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4ae2cd73-f37a-45a9-8d8d-ddb7ee3cb44a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/fonts/Jelytta.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.flutter-plugins" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.packages" beforeDir="false" afterPath="$PROJECT_DIR$/.packages" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/misc/pageEventInfoLayout.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/misc/pageEventInfoLayout.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/pages/allevents.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pages/allevents.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/pages/art.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pages/art.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/pages/blues.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pages/blues.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/pages/food.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pages/food.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/pages/home.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pages/home.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/pages/jazz.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pages/jazz.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/pages/misc.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pages/misc.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/pages/rock.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pages/rock.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/pages/schedule.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pages/schedule.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -242,7 +225,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583865060153</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Modified icons">
+      <created>1583939191738</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1583939191738</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -274,6 +264,7 @@
     <MESSAGE value="Added more data" />
     <MESSAGE value="Added more data&#10;Separated location name and address" />
     <MESSAGE value="All data for July 18 &amp; 19 are added." />
-    <option name="LAST_COMMIT_MESSAGE" value="All data for July 18 &amp; 19 are added." />
+    <MESSAGE value="Modified icons" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modified icons" />
   </component>
 </project>
