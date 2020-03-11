@@ -2,15 +2,17 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:handy_app/misc/genreLayout.dart';
 import 'package:handy_app/misc/eventClasses.dart';
+import 'package:gradient_app_bar/gradient_app_bar.dart';
 
 class JazzPage extends StatelessWidget {
   final Color bgrColor = Colors.red[900];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
+      appBar: GradientAppBar(
+        backgroundColorStart: bgrColor,
+        backgroundColorEnd: Colors.red[200],
         automaticallyImplyLeading: true,
-        backgroundColor: JazzPage().bgrColor,
         title: Center(
           child: Text('Jazz          '),
         ),

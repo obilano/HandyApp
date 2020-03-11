@@ -7,16 +7,15 @@ class HandyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    var title = 'W. C. Handy Music Festival';
     return MaterialApp(
       debugShowCheckedModeBanner: false, //turn off debug mode
-      home: Homepage(), //call background for home page
+      home: backgroundImage(), //call background for home page
     );
   }
 }
 
 //background for homepage
-/*class backgroundImage extends StatelessWidget {
+class backgroundImage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -31,4 +30,4 @@ class HandyApp extends StatelessWidget {
       ),
     );
   }
-}*/
+}

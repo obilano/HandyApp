@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:gradient_app_bar/gradient_app_bar.dart';
 
 class allSchedulePage extends StatelessWidget {
   final Color bgrColor = Colors.indigo[900];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
+      appBar: GradientAppBar(
+        backgroundColorStart: bgrColor,
+        backgroundColorEnd: Colors.indigo[300],
         automaticallyImplyLeading: true,
-        backgroundColor: allSchedulePage().bgrColor,
         title: Center(
           child: Text('View Schedule     '),
         ),

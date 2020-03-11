@@ -1,15 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:photo_view/photo_view.dart';
+import 'package:gradient_app_bar/gradient_app_bar.dart';
 
 class MiscPage extends StatelessWidget {
   final Color bgrColor = Colors.red[300];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
+      appBar: GradientAppBar(
+        backgroundColorStart: bgrColor,
+        backgroundColorEnd: Colors.red[100],
         automaticallyImplyLeading: true,
-        backgroundColor: MiscPage().bgrColor,
         title: Center(
           child: Text('Misc         '),
         ),
