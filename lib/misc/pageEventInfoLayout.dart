@@ -49,7 +49,13 @@ class pageInfo extends StatelessWidget {
         backgroundColorEnd: Colors.grey[100],
         automaticallyImplyLeading: true,
         title: Center(
-          child: AutoSizeText(event, overflow: TextOverflow.visible),
+          child: FlexibleSpaceBar(
+            title: AutoSizeText(
+              event,
+              overflow: TextOverflow.visible,
+            ),
+            centerTitle: true,
+          ),
         ),
         leading: IconButton(
           //back button
@@ -75,9 +81,22 @@ class pageInfo extends StatelessWidget {
                 "Genre: " + genre,
                 minFontSize: 18,
               ),
-              new AutoSizeText(
-                "Location: " + location,
-                minFontSize: 18,
+              new RichText(
+                text: TextSpan(
+                  text: "Location:",
+                  style: new TextStyle(
+                    fontSize: 18,
+                    color: Colors.black87,
+                    //   fontWeight: FontWeight.w900  // make location bold
+                  ),
+                  children: <TextSpan>[
+                    new TextSpan(
+                      text: " " + location,
+                      style: TextStyle(
+                          fontWeight: FontWeight.w400, color: Colors.black87),
+                    ),
+                  ],
+                ),
               ),
               new AutoSizeText(
                 "Address: " + address,
