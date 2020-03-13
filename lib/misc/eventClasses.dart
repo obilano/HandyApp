@@ -1134,4 +1134,49 @@ class HMNLilCapones extends EventInfo {
                 "https://www.google.com/maps/place/3370+Cloverdale+Rd,+Florence,+AL+35633/@34.8514874,-87.6923613,17z/data=!3m1!4b1!4m5!3m4!1s0x887d37fa7fd9b1a3:0x6b5421c39cf480df!8m2!3d34.8514874!4d-87.6901726",
             image: "");
 }
+
+class HMNCityHardware2 extends EventInfo {
+  Color thmColor;
+  HMNCityHardware2({thmColor})
+      : super(
+            mainColor: thmColor,
+            name: "HANDY MUSICAL NIGHTS: CITY HARDWARE",
+            artist: " Lovell-Sledge Band",
+            genre: "Blues",
+            location: "City Hardware",
+            address: "105 North Court St. Florence, AL 35630",
+            date: "July 26",
+            time: "7:00 pm",
+            sponsor: "",
+            cost: "",
+            feat: "",
+            info: "",
+            YTUrl: "",
+            mapUrl:
+                "https://www.google.com/maps/place/105+N+Court+St,+Florence,+AL+35630/@34.8002907,-87.6786976,17z/data=!3m1!4b1!4m5!3m4!1s0x887d485e40288f8b:0x8bfd002c2225073e!8m2!3d34.8002907!4d-87.6765089",
+            image: "");
+}
+
+class BluesOnTheBluff extends EventInfo {
+  Color thmColor;
+  BluesOnTheBluff({thmColor})
+      : super(
+            mainColor: thmColor,
+            name: "BLUES ON THE BLUFF",
+            artist: "Doctors, Lawyers & Such",
+            genre: "Blues",
+            location: "Standpipe Park",
+            address: "North End of Montgomery Avenue Sheffield, AL 35660",
+            date: "July 26",
+            time: "7:00 pm — 9:00 pm",
+            sponsor:
+                "Leigh, King, Underwood, Norton * Rebecca Stutts Hovater, State Farm Insurance * City of Sheffield",
+            cost: "",
+            feat: "",
+            info: "",
+            YTUrl: "",
+            mapUrl:
+                "https://www.google.com/maps/place/Tennessee+River+Overlook/@34.7718094,-87.699719,17.51z/data=!4m13!1m7!3m6!1s0x887d460210e678bb:0xc0971feafcc724fa!2sMontgomery+Ave,+Sheffield,+AL+35660!3b1!8m2!3d34.7587404!4d-87.6986758!3m4!1s0x887d461fc5cf5071:0xfa3e912293ea75c!8m2!3d34.7725676!4d-87.6984226",
+            image: "");
+}
 //END JULY 26 EVENTS
