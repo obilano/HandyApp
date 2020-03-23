@@ -75,6 +75,21 @@ class bluesList extends StatelessWidget {
           eventImage: WCHandyMovie().image,
           eventInfo: WCHandyMovie(thmColor: BluesPage().bgrColor),
         ),
+        genreListLayout(
+          eventName: JazzTrash().name,
+          eventDate: JazzTrash().date,
+          eventTime: JazzTrash().time,
+          eventImage: JazzTrash().image,
+          eventInfo: JazzTrash(thmColor: BluesPage().bgrColor),
+        ),
+
+        genreListLayout(
+          eventName:  MusicalLunchTaziki().name,
+          eventDate:  MusicalLunchTaziki().date,
+          eventTime:  MusicalLunchTaziki().time,
+          eventImage:  MusicalLunchTaziki().image,
+          eventInfo:  MusicalLunchTaziki(thmColor: BluesPage().bgrColor),
+        ),
       ],
     );
   }

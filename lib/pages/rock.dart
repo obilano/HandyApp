@@ -83,6 +83,27 @@ class rocklist extends StatelessWidget {
           eventImage: HMNOTRocks1().image,
           eventInfo: HMNOTRocks1(thmColor: RockPage().bgrColor),
         ),
+        genreListLayout(
+          eventName: CountsBrother().name,
+          eventDate: CountsBrother().date,
+          eventTime: CountsBrother().time,
+          eventImage: CountsBrother().image,
+          eventInfo: CountsBrother(thmColor: RockPage().bgrColor),
+        ),
+        genreListLayout(
+          eventName: SummerSolos().name,
+          eventDate: SummerSolos().date,
+          eventTime: SummerSolos().time,
+          eventImage: SummerSolos().image,
+          eventInfo:SummerSolos(thmColor: RockPage().bgrColor),
+        ),
+        genreListLayout(
+          eventName: MusicalLunch().name,
+          eventDate: MusicalLunch().date,
+          eventTime: MusicalLunch().time,
+          eventImage: MusicalLunch().image,
+          eventInfo:MusicalLunch(thmColor: RockPage().bgrColor),
+        ),
       ],
     );
   }

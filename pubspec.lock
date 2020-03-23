@@ -169,7 +169,7 @@ packages:
       name: flutter_webview_plugin
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.3.10+1"
+    version: "0.3.10+2"
   get_it:
     dependency: "direct main"
     description:
@@ -190,7 +190,7 @@ packages:
       name: google_maps_flutter
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.5.24+1"
+    version: "0.5.25"
   gradient_app_bar:
     dependency: "direct main"
     description:
@@ -281,7 +281,7 @@ packages:
       name: package_config
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "1.9.1"
+    version: "1.9.2"
   path:
     dependency: transitive
     description:
@@ -330,7 +330,7 @@ packages:
       name: pub_semver
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "1.4.3"
+    version: "1.4.4"
   quiver:
     dependency: transitive
     description:

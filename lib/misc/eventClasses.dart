@@ -1180,3 +1180,276 @@ class BluesOnTheBluff extends EventInfo {
             image: "");
 }
 //END JULY 26 EVENTS
+
+//Start July 24 Events
+class CountsBrother extends EventInfo {
+  Color thmColor;
+  CountsBrother({thmColor})
+      : super(
+      mainColor: thmColor,
+      name: "COUNTS BROTHERS MASTER CLASS",
+      artist: "The Thompson Trio",
+      genre: "Rock",
+      location: "Counts Brother Music",
+      address: "713 Waverly Ave Muscle Shoals, AL 35661",
+      date: "July 24",
+      time: "10:30 am — 12:00 pm",
+      sponsor:
+      "Counts Brothers Music",
+      cost: "",
+      feat: "",
+      info: "",
+      YTUrl: "",
+      mapUrl:
+      "https://www.google.com/maps/place/713+Waverly+Ave,+Muscle+Shoals,+AL+35661/@34.7474914,-87.6657346,17z/data=!3m1!4b1!4m5!3m4!1s0x887d4f2c0d0ce581:0xeeb6fd5237a85550!8m2!3d34.747487!4d-87.6635459",
+      image: "");
+}
+class SummerSolos extends EventInfo {
+  Color thmColor;
+  SummerSolos({thmColor})
+      : super(
+      mainColor: thmColor,
+      name: "SUMMER SOLOS WITH KATLYN BARNES",
+      artist: "Katlyn Barnes",
+      genre: "Rock",
+      location: "Florence-Lauderdale Tourism & Visitors Center Gallery",
+      address: "McFarland Park 200 Jim Spain Dr. Florence, AL 35630",
+      date: "July 24",
+      time: "11:00 AM",
+      sponsor:
+      "",
+      cost: "",
+      feat: "",
+      info: "",
+      YTUrl: "",
+      mapUrl:
+      "https://www.google.com/maps/place/McFarland+Park/@34.7836596,-87.686428,16.48z/data=!4m5!3m4!1s0x887d4891d4c40eef:0x697f0e6d5ad6044d!8m2!3d34.7838951!4d-87.684",
+      image: "");
+}
+class JazzTrash extends EventInfo {
+  Color thmColor;
+  JazzTrash({thmColor})
+      : super(
+      mainColor: thmColor,
+      name: "JAZZ IT UP WITH TRASH",
+      artist: "Microwave Dave",
+      genre: "Blues",
+      location: "Helen Keller Library",
+      address: "511 North Main St. Tuscumbia, AL 35674",
+      date: "July 24",
+      time: "11:00 am — 1:00 pm",
+      sponsor:
+      "Shoals Solid Waste Authority * Keep the Shoals Beautiful * Shoals Earth Month, Inc.",
+      cost: "",
+      feat: "",
+      info: "",
+      YTUrl: "",
+      mapUrl:
+      "https://www.google.com/maps/place/511+N+Main+St,+Tuscumbia,+AL+35674/@34.7375581,-87.7062487,17z/data=!3m1!4b1!4m5!3m4!1s0x887d45f113841591:0xa55cc8bb747c1aba!8m2!3d34.7375537!4d-87.70406",
+      image: "");
+}
+class MusicalLunch extends EventInfo {
+  Color thmColor;
+  MusicalLunch({thmColor})
+      : super(
+      mainColor: thmColor,
+      name: "HANDY MUSICAL LUNCHES: RICATONI'S ITALIAN GRILL",
+      artist: "Michael Granda (of the Ozark Mtn. Daredevils)",
+      genre: "Rock",
+      location: "Ricatoni's Italian Grill",
+      address: "107 North Court St. Florence, AL 35630",
+      date: "July 24",
+      time: "11:00 am — 2:00 pm",
+      sponsor:
+      "",
+      cost: "",
+      feat: "",
+      info: "",
+      YTUrl: "",
+      mapUrl:
+      "https://www.google.com/maps/place/107+N+Court+St,+Florence,+AL+35630/@34.8003806,-87.6786591,17z/data=!3m1!4b1!4m5!3m4!1s0x887d485e6a97f113:0x983721ecae2ec2ba!8m2!3d34.8003762!4d-87.6764704",
+      image: "");
+}
+class MusicalLunch306 extends EventInfo {
+  Color thmColor;
+  MusicalLunch306({thmColor})
+      : super(
+      mainColor: thmColor,
+      name: "HANDY MUSICAL LUNCHES: 306 BARBEQUE",
+      artist: "Eric Kirkman Combo",
+      genre: "Jazz",
+      location: "306 Barbeque",
+      address: "322 North Court St. Florence, AL 35630",
+      date: "July 24",
+      time: "11:00 am — 1:00 pm",
+      sponsor:
+      "",
+      cost: "",
+      feat: "",
+      info: "",
+      YTUrl: "",
+      mapUrl:
+      "https://www.google.com/maps/place/322+N+Court+St,+Florence,+AL+35630/@34.8027126,-87.6794574,17z/data=!3m1!4b1!4m5!3m4!1s0x887d485df1107971:0x738c8e8c09a08be1!8m2!3d34.8027082!4d-87.6772687",
+      image: "");
+}
+class MusicalLunchBad extends EventInfo {
+  Color thmColor;
+  MusicalLunchBad({thmColor})
+      : super(
+      mainColor: thmColor,
+      name: "HANDY MUSICAL LUNCHES: BIG BAD BREAKFAST",
+      artist: "Jazz Allstars Trio",
+      genre: "Jazz",
+      location: "Big Bad Breakfast",
+      address: "315 N. Court St. Florence, AL 35630",
+      date: "July 24",
+      time: "11:00 am — 1:00 pm",
+      sponsor:
+      "",
+      cost: "",
+      feat: "",
+      info: "",
+      YTUrl: "",
+      mapUrl:
+      "https://www.google.com/maps/place/315+N+Court+St,+Florence,+AL+35630/@34.802345,-87.6799815,17z/data=!3m1!4b1!4m5!3m4!1s0x887d485df8122693:0x1b6bfd67b33d0cca!8m2!3d34.8023406!4d-87.6777928",
+      image: "");
+}
+class MusicalLunchTaziki extends EventInfo {
+  Color thmColor;
+  MusicalLunchTaziki({thmColor})
+      : super(
+      mainColor: thmColor,
+      name: "HANDY MUSICAL LUNCHES: TAZIKI'S",
+      artist: "Kent Duchaine",
+      genre: "Blues",
+      location: "Taziki's Grill",
+      address: "261 Cox Creek Pkwy Florence, AL 35630",
+      date: "July 24",
+      time: "11:00 am — 1:00 pm",
+      sponsor:
+      "",
+      cost: "",
+      feat: "",
+      info: "",
+      YTUrl: "",
+      mapUrl:
+      "https://www.google.com/maps/place/261+Cox+Creek+Pkwy,+Florence,+AL+35630/@34.8353403,-87.6330649,17z/data=!3m1!4b1!4m5!3m4!1s0x887d49e30acf1f8f:0x16c2e41315ca349b!8m2!3d34.8353359!4d-87.6308762",
+      image: "");
+}
+class MusicalLunchChampy extends EventInfo {
+  Color thmColor;
+  MusicalLunchChampy({thmColor})
+      : super(
+      mainColor: thmColor,
+      name: "HANDY MUSICAL LUNCHES: CHAMPY'S",
+      artist: " James LeBlanc & Angela Hacker",
+      genre: "Rock",
+      location: "Champy's",
+      address: "102 Second St. Muscle Shoals, AL 35661",
+      date: "July 24",
+      time: "11:30 am — 1:00 pm",
+      sponsor:
+      "",
+      cost: "",
+      feat: "",
+      info: "",
+      YTUrl: "",
+      mapUrl:
+      "https://www.google.com/maps/place/102+E+2nd+St,+Sheffield,+AL+35660/@34.7597487,-87.6998477,17z/data=!3m1!4b1!4m5!3m4!1s0x887d460271c11b93:0x85db83a0ddea7134!8m2!3d34.7597443!4d-87.697659",
+      image: "");
+}
+class MusicalLunchFlobama extends EventInfo {
+  Color thmColor;
+  MusicalLunchFlobama({thmColor})
+      : super(
+      mainColor: thmColor,
+      name: "HANDY MUSICAL LUNCHES: FLOBAMA",
+      artist: "Denise Thimes and her Jazz Allstar Friends",
+      genre: "Jazz",
+      location: "Flobama",
+      address: "311 North Court St.Florence, AL 35630",
+      date: "July 24",
+      time: "11:30 am — 2:30 pm",
+      sponsor:
+      "",
+      cost: "",
+      feat: "",
+      info: "",
+      YTUrl: "",
+      mapUrl:
+      "https://www.google.com/maps/place/311+N+Court+St,+Florence,+AL+35630/@34.8022786,-87.6798339,17z/data=!3m1!4b1!4m5!3m4!1s0x887d485df857e62d:0xc614ea38bee7bb9a!8m2!3d34.8022742!4d-87.6776452",
+      image: "");
+}
+class MusicMunchin extends EventInfo {
+  Color thmColor;
+  MusicMunchin({thmColor})
+      : super(
+      mainColor: thmColor,
+      name: "MUSIC AND MUNCHIN' IN MUSCLE SHOALS",
+      artist: "CC Jags",
+      genre: "Jazz",
+      location: "Gattman Park Recreation Center",
+      address: "Gattman Park Drive Muscle Shoals, AL 35661",
+      date: "July 24",
+      time: "11:30 am — 1:00 pm",
+      sponsor:
+      "City of Muscle Shoals",
+      cost: "",
+      feat: "",
+      info: "",
+      YTUrl: "",
+      mapUrl:
+      "https://www.google.com/maps/place/Gattman+Park+Dr,+Muscle+Shoals,+AL+35661/@34.7386749,-87.6602368,17z/data=!3m1!4b1!4m5!3m4!1s0x887d4ed8788924cd:0xb95662fd885ec34c!8m2!3d34.7386705!4d-87.6580481",
+      image: "");
+}
+class ComboKings extends EventInfo {
+  Color thmColor;
+  ComboKings({thmColor})
+      : super(
+      mainColor: thmColor,
+      name: "THE COMBO KINGS IN CONCERT",
+      artist: "The Combo Kings",
+      genre: "Blues",
+      location: "Alabama Music Hall of Fame Lobby",
+      address: "617 US Hwy 72 West Tuscumbia, AL 35674",
+      date: "July 24",
+      time: "12:00 PM",
+      sponsor:
+      "Alabama Music Hall of Fame * The Combo Kings",
+      cost: "",
+      feat: "",
+      info: "",
+      YTUrl: "",
+      mapUrl:
+      "https://www.google.com/maps/place/617+US-72,+Tuscumbia,+AL+35674/@34.7118538,-87.7091296,17z/data=!3m1!4b1!4m5!3m4!1s0x887d4583302aeeab:0x120769e7f203725!8m2!3d34.7118494!4d-87.7069409",
+      image: "");
+}
+class BehindTheMusic extends EventInfo {
+  Color thmColor;
+  BehindTheMusic({thmColor})
+      : super(
+      mainColor: thmColor,
+      name: "BEHIND THE MUSIC – SONGS AND STORIES OF THE KGB SERIES 2",
+      artist: "Presentation By: Kerry Gilbert & Hugh Banks",
+      genre: "Misc",
+      location: "Florence-Lauderdale Tourism & Visitors Center Gallery",
+      address: "McFarland Park 200 Jim Spain Dr. Florence, AL 35630",
+      date: "July 24",
+      time: "2:00 PM",
+      sponsor:
+      "Florence-Lauderdale Convention & Visitors Bureau * Muscle Shoals National Heritage Area * Crazy Chester Music",
+      cost: "",
+      feat: "",
+      info: "",
+      YTUrl: "",
+      mapUrl:
+      "https://www.google.com/maps/place/McFarland+Park/@34.7838995,-87.6861887,17z/data=!3m1!4b1!4m5!3m4!1s0x887d4891d4c40eef:0x697f0e6d5ad6044d!8m2!3d34.7838951!4d-87.684",
+      image: "");
+}
+
+
+
+
+
+
+

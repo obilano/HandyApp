@@ -67,6 +67,20 @@ class jazzlist extends StatelessWidget {
           eventImage: SunriseCenter().image,
           eventInfo: SunriseCenter(thmColor: JazzPage().bgrColor),
         ),
+        genreListLayout(
+          eventName: MusicalLunch306().name,
+          eventDate: MusicalLunch306().date,
+          eventTime: MusicalLunch306().time,
+          eventImage: MusicalLunch306().image,
+          eventInfo: MusicalLunch306(thmColor: JazzPage().bgrColor),
+        ),
+        genreListLayout(
+          eventName: MusicalLunchBad().name,
+          eventDate: MusicalLunchBad().date,
+          eventTime: MusicalLunchBad().time,
+          eventImage: MusicalLunchBad().image,
+          eventInfo: MusicalLunchBad(thmColor: JazzPage().bgrColor),
+        ),
       ],
     );
   }
