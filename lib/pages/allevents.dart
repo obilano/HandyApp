@@ -34,13 +34,14 @@ class alleventlist extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListView(
       children: <Widget>[
+        //JULY 18 EVENTS********************************************************
         // list 1 **********************************************************
         genreListLayout(
           eventName: LambJam().name,
           eventDate: LambJam().date,
           eventTime: LambJam().time,
           eventImage: LambJam().image,
-          eventInfo: LambJam(thmColor: allEventsPage().bgrColor),
+          eventClass: LambJam(thmColor: allEventsPage().bgrColor),
         ),
 
         // list 2 **********************************************
@@ -49,16 +50,16 @@ class alleventlist extends StatelessWidget {
           eventDate: FondaSkipworth().date,
           eventTime: FondaSkipworth().time,
           eventImage: FondaSkipworth().image,
-          eventInfo: FondaSkipworth(thmColor: allEventsPage().bgrColor),
+          eventClass: FondaSkipworth(thmColor: allEventsPage().bgrColor),
         ),
-
+        //JULY 19 EVENTS********************************************************
         //list 3 ******************************************************
         genreListLayout(
           eventName: TennValleyStrum().name,
           eventDate: TennValleyStrum().date,
           eventTime: TennValleyStrum().time,
           eventImage: TennValleyStrum().image,
-          eventInfo: TennValleyStrum(thmColor: allEventsPage().bgrColor),
+          eventClass: TennValleyStrum(thmColor: allEventsPage().bgrColor),
         ),
         //list 4 ******************************************************
         genreListLayout(
@@ -66,7 +67,7 @@ class alleventlist extends StatelessWidget {
           eventDate: JazzWithIt().date,
           eventTime: JazzWithIt().time,
           eventImage: JazzWithIt().image,
-          eventInfo: JazzWithIt(thmColor: allEventsPage().bgrColor),
+          eventClass: JazzWithIt(thmColor: allEventsPage().bgrColor),
         ),
         // list 5 *****************************************************
         genreListLayout(
@@ -74,7 +75,7 @@ class alleventlist extends StatelessWidget {
           eventDate: KeestoneJazzFest().date,
           eventTime: KeestoneJazzFest().time,
           eventImage: KeestoneJazzFest().image,
-          eventInfo: KeestoneJazzFest(thmColor: allEventsPage().bgrColor),
+          eventClass: KeestoneJazzFest(thmColor: allEventsPage().bgrColor),
         ),
 
         // list 7 **********************************************
@@ -83,7 +84,7 @@ class alleventlist extends StatelessWidget {
           eventDate: SwampFest1().date,
           eventTime: SwampFest1().time,
           eventImage: SwampFest1().image,
-          eventInfo: SwampFest1(thmColor: allEventsPage().bgrColor),
+          eventClass: SwampFest1(thmColor: allEventsPage().bgrColor),
         ),
         // list 7 **********************************************
         genreListLayout(
@@ -91,7 +92,7 @@ class alleventlist extends StatelessWidget {
           eventDate: HHHSwampersMarriot1().date,
           eventTime: HHHSwampersMarriot1().time,
           eventImage: HHHSwampersMarriot1().image,
-          eventInfo: HHHSwampersMarriot1(thmColor: allEventsPage().bgrColor),
+          eventClass: HHHSwampersMarriot1(thmColor: allEventsPage().bgrColor),
         ),
         // list 8 *********************************************************
         genreListLayout(
@@ -99,7 +100,7 @@ class alleventlist extends StatelessWidget {
           eventDate: Morningside().date,
           eventTime: Morningside().time,
           eventImage: Morningside().image,
-          eventInfo: Morningside(thmColor: allEventsPage().bgrColor),
+          eventClass: Morningside(thmColor: allEventsPage().bgrColor),
         ),
         //list  9******************************************************
         genreListLayout(
@@ -107,7 +108,7 @@ class alleventlist extends StatelessWidget {
           eventDate: HHHStephano().date,
           eventTime: HHHStephano().time,
           eventImage: HHHStephano().image,
-          eventInfo: HHHStephano(thmColor: allEventsPage().bgrColor),
+          eventClass: HHHStephano(thmColor: allEventsPage().bgrColor),
         ),
         //list  10************************************************************
         genreListLayout(
@@ -115,7 +116,7 @@ class alleventlist extends StatelessWidget {
           eventDate: HHHFlobama1().date,
           eventTime: HHHFlobama1().time,
           eventImage: HHHFlobama1().image,
-          eventInfo: HHHFlobama1(thmColor: allEventsPage().bgrColor),
+          eventClass: HHHFlobama1(thmColor: allEventsPage().bgrColor),
         ),
         //list  11************************************************************
         genreListLayout(
@@ -123,7 +124,7 @@ class alleventlist extends StatelessWidget {
           eventDate: HMNCapones().date,
           eventTime: HMNCapones().time,
           eventImage: HMNCapones().image,
-          eventInfo: HMNCapones(thmColor: allEventsPage().bgrColor),
+          eventClass: HMNCapones(thmColor: allEventsPage().bgrColor),
         ),
         //list 12************************************************************
         genreListLayout(
@@ -131,14 +132,14 @@ class alleventlist extends StatelessWidget {
           eventDate: HMNCityHardware().date,
           eventTime: HMNCityHardware().time,
           eventImage: HMNCityHardware().image,
-          eventInfo: HMNCityHardware(thmColor: allEventsPage().bgrColor),
+          eventClass: HMNCityHardware(thmColor: allEventsPage().bgrColor),
         ), //list 13*************************************************************
         genreListLayout(
           eventName: HMNRicatonis().name,
           eventDate: HMNRicatonis().date,
           eventTime: HMNRicatonis().time,
           eventImage: HMNRicatonis().image,
-          eventInfo: HMNRicatonis(thmColor: allEventsPage().bgrColor),
+          eventClass: HMNRicatonis(thmColor: allEventsPage().bgrColor),
         ),
         //list 14*************************************************************
         genreListLayout(
@@ -146,7 +147,7 @@ class alleventlist extends StatelessWidget {
           eventDate: HMN306().date,
           eventTime: HMN306().time,
           eventImage: HMN306().image,
-          eventInfo: HMN306(thmColor: allEventsPage().bgrColor),
+          eventClass: HMN306(thmColor: allEventsPage().bgrColor),
         ),
         //list 15*************************************************************
         genreListLayout(
@@ -154,28 +155,28 @@ class alleventlist extends StatelessWidget {
           eventDate: HMNBoiler().date,
           eventTime: HMNBoiler().time,
           eventImage: HMNBoiler().image,
-          eventInfo: HMNBoiler(thmColor: allEventsPage().bgrColor),
+          eventClass: HMNBoiler(thmColor: allEventsPage().bgrColor),
         ), //list 16*************************************************************
         genreListLayout(
           eventName: HMNSuperheroChef().name,
           eventDate: HMNSuperheroChef().date,
           eventTime: HMNSuperheroChef().time,
           eventImage: HMNSuperheroChef().image,
-          eventInfo: HMNSuperheroChef(thmColor: allEventsPage().bgrColor),
+          eventClass: HMNSuperheroChef(thmColor: allEventsPage().bgrColor),
         ), //list 17*************************************************************
         genreListLayout(
           eventName: firstMetro().name,
           eventDate: firstMetro().date,
           eventTime: firstMetro().time,
           eventImage: firstMetro().image,
-          eventInfo: firstMetro(thmColor: allEventsPage().bgrColor),
+          eventClass: firstMetro(thmColor: allEventsPage().bgrColor),
         ), //list 18*************************************************************
         genreListLayout(
           eventName: kappaAlphaPsi().name,
           eventDate: kappaAlphaPsi().date,
           eventTime: kappaAlphaPsi().time,
           eventImage: kappaAlphaPsi().image,
-          eventInfo: kappaAlphaPsi(thmColor: allEventsPage().bgrColor),
+          eventClass: kappaAlphaPsi(thmColor: allEventsPage().bgrColor),
         ),
         //list 19*************************************************************
         genreListLayout(
@@ -183,7 +184,7 @@ class alleventlist extends StatelessWidget {
           eventDate: HMNChampys().date,
           eventTime: HMNChampys().time,
           eventImage: HMNChampys().image,
-          eventInfo: HMNChampys(thmColor: allEventsPage().bgrColor),
+          eventClass: HMNChampys(thmColor: allEventsPage().bgrColor),
         ),
         //list 20*************************************************************
         genreListLayout(
@@ -191,7 +192,7 @@ class alleventlist extends StatelessWidget {
           eventDate: HMNSwampMarriott().date,
           eventTime: HMNSwampMarriott().time,
           eventImage: HMNSwampMarriott().image,
-          eventInfo: HMNSwampMarriott(thmColor: allEventsPage().bgrColor),
+          eventClass: HMNSwampMarriott(thmColor: allEventsPage().bgrColor),
         ),
         //list 21*************************************************************
         genreListLayout(
@@ -199,7 +200,7 @@ class alleventlist extends StatelessWidget {
           eventDate: HMNOTRocks1().date,
           eventTime: HMNOTRocks1().time,
           eventImage: HMNOTRocks1().image,
-          eventInfo: HMNOTRocks1(thmColor: allEventsPage().bgrColor),
+          eventClass: HMNOTRocks1(thmColor: allEventsPage().bgrColor),
         ),
         //list 22*************************************************************
         genreListLayout(
@@ -207,7 +208,7 @@ class alleventlist extends StatelessWidget {
           eventDate: HMNFlobama1().date,
           eventTime: HMNFlobama1().time,
           eventImage: HMNFlobama1().image,
-          eventInfo: HMNFlobama1(thmColor: allEventsPage().bgrColor),
+          eventClass: HMNFlobama1(thmColor: allEventsPage().bgrColor),
         ),
         //list 23*************************************************************
         genreListLayout(
@@ -215,25 +216,229 @@ class alleventlist extends StatelessWidget {
           eventDate: HMNOTRocks2().date,
           eventTime: HMNOTRocks2().time,
           eventImage: HMNOTRocks2().image,
-          eventInfo: HMNOTRocks2(thmColor: allEventsPage().bgrColor),
+          eventClass: HMNOTRocks2(thmColor: allEventsPage().bgrColor),
         ),
-//END OF JULY 19 EVENTS*********************************************************
+        //JULY 20 EVENTS********************************************************
+        //list 24*************************************************************
+        genreListLayout(
+          eventName: SunriseCenter().name,
+          eventDate: SunriseCenter().date,
+          eventTime: SunriseCenter().time,
+          eventImage: SunriseCenter().image,
+          eventClass: SunriseCenter(thmColor: allEventsPage().bgrColor),
+        ),
+        //JULY 21 EVENTS********************************************************
+        //list 25*************************************************************
         genreListLayout(
           eventName: BbqBlues().name,
           eventDate: BbqBlues().date,
           eventTime: BbqBlues().time,
           eventImage: BbqBlues().image,
-          eventInfo: BbqBlues(thmColor: allEventsPage().bgrColor),
+          eventClass: BbqBlues(thmColor: allEventsPage().bgrColor),
         ),
-        //list  ******************************************************
+        //JULY 23 EVENTS********************************************************
+        //list  26******************************************************
         genreListLayout(
           eventName: WCHandyMovie().name,
           eventDate: WCHandyMovie().date,
           eventTime: WCHandyMovie().time,
           eventImage: WCHandyMovie().image,
-          eventInfo: WCHandyMovie(thmColor: allEventsPage().bgrColor),
+          eventClass: WCHandyMovie(thmColor: allEventsPage().bgrColor),
         ),
-        //list  ******************************************************
+        //JULY 24 EVENTS********************************************************
+        //list  27******************************************************
+        genreListLayout(
+          eventName: CountsBrother().name,
+          eventDate: CountsBrother().date,
+          eventTime: CountsBrother().time,
+          eventImage: CountsBrother().image,
+          eventClass: CountsBrother(thmColor: allEventsPage().bgrColor),
+        ),
+        //list  28******************************************************
+        genreListLayout(
+          eventName: SummerSolos().name,
+          eventDate: SummerSolos().date,
+          eventTime: SummerSolos().time,
+          eventImage: SummerSolos().image,
+          eventClass: SummerSolos(thmColor: allEventsPage().bgrColor),
+        ),
+        //list  29******************************************************
+        genreListLayout(
+          eventName: JazzTrash().name,
+          eventDate: JazzTrash().date,
+          eventTime: JazzTrash().time,
+          eventImage: JazzTrash().image,
+          eventClass: JazzTrash(thmColor: allEventsPage().bgrColor),
+        ),
+        //list  30******************************************************
+        genreListLayout(
+          eventName: MusicalLunch().name,
+          eventDate: MusicalLunch().date,
+          eventTime: MusicalLunch().time,
+          eventImage: MusicalLunch().image,
+          eventClass: MusicalLunch(thmColor: allEventsPage().bgrColor),
+        ),
+        //list  31******************************************************
+        genreListLayout(
+          eventName: MusicalLunch306().name,
+          eventDate: MusicalLunch306().date,
+          eventTime: MusicalLunch306().time,
+          eventImage: MusicalLunch306().image,
+          eventClass: MusicalLunch306(thmColor: allEventsPage().bgrColor),
+        ),
+        //list  32******************************************************
+        genreListLayout(
+          eventName: MusicalLunchBad().name,
+          eventDate: MusicalLunchBad().date,
+          eventTime: MusicalLunchBad().time,
+          eventImage: MusicalLunchBad().image,
+          eventClass: MusicalLunchBad(thmColor: allEventsPage().bgrColor),
+        ),
+        //list  33******************************************************
+        genreListLayout(
+          eventName: MusicalLunchTaziki().name,
+          eventDate: MusicalLunchTaziki().date,
+          eventTime: MusicalLunchTaziki().time,
+          eventImage: MusicalLunchTaziki().image,
+          eventClass: MusicalLunchTaziki(thmColor: allEventsPage().bgrColor),
+        ),
+        //list  34******************************************************
+        genreListLayout(
+          eventName: MusicalLunchChampy().name,
+          eventDate: MusicalLunchChampy().date,
+          eventTime: MusicalLunchChampy().time,
+          eventImage: MusicalLunchChampy().image,
+          eventClass: MusicalLunchChampy(thmColor: allEventsPage().bgrColor),
+        ),
+        //list  35******************************************************
+        genreListLayout(
+          eventName: MusicalLunchFlobama().name,
+          eventDate: MusicalLunchFlobama().date,
+          eventTime: MusicalLunchFlobama().time,
+          eventImage: MusicalLunchFlobama().image,
+          eventClass: MusicalLunchFlobama(thmColor: allEventsPage().bgrColor),
+        ),
+        //list  36******************************************************
+        genreListLayout(
+          eventName: MusicMunchin().name,
+          eventDate: MusicMunchin().date,
+          eventTime: MusicMunchin().time,
+          eventImage: MusicMunchin().image,
+          eventClass: MusicMunchin(thmColor: allEventsPage().bgrColor),
+        ),
+        //list  37******************************************************
+        genreListLayout(
+          eventName: ComboKings().name,
+          eventDate: ComboKings().date,
+          eventTime: ComboKings().time,
+          eventImage: ComboKings().image,
+          eventClass: ComboKings(thmColor: allEventsPage().bgrColor),
+        ),
+        //list  38******************************************************
+        genreListLayout(
+          eventName: BehindTheMusic().name,
+          eventDate: BehindTheMusic().date,
+          eventTime: BehindTheMusic().time,
+          eventImage: BehindTheMusic().image,
+          eventClass: BehindTheMusic(thmColor: allEventsPage().bgrColor),
+        ),
+        //JULY 26 EVENTS********************************************************
+        //list  39******************************************************
+        genreListLayout(
+          eventName: WCHandyMovie2().name,
+          eventDate: WCHandyMovie2().date,
+          eventTime: WCHandyMovie2().time,
+          eventImage: WCHandyMovie2().image,
+          eventClass: WCHandyMovie2(thmColor: allEventsPage().bgrColor),
+        ),
+        //list  40******************************************************
+        genreListLayout(
+          eventName: HMLRicatonis().name,
+          eventDate: HMLRicatonis().date,
+          eventTime: HMLRicatonis().time,
+          eventImage: HMLRicatonis().image,
+          eventClass: HMLRicatonis(thmColor: allEventsPage().bgrColor),
+        ),
+        //list  41******************************************************
+        genreListLayout(
+          eventName: MountMoriah().name,
+          eventDate: MountMoriah().date,
+          eventTime: MountMoriah().time,
+          eventImage: MountMoriah().image,
+          eventClass: MountMoriah(thmColor: allEventsPage().bgrColor),
+        ),
+        //list  42******************************************************
+        genreListLayout(
+          eventName: HML306().name,
+          eventDate: HML306().date,
+          eventTime: HML306().time,
+          eventImage: HML306().image,
+          eventClass: HML306(thmColor: allEventsPage().bgrColor),
+        ),
+        //list  43******************************************************
+        genreListLayout(
+          eventName: HMLFlobama().name,
+          eventDate: HMLFlobama().date,
+          eventTime: HMLFlobama().time,
+          eventImage: HMLFlobama().image,
+          eventClass: HMLFlobama(thmColor: allEventsPage().bgrColor),
+        ),
+        //list  44******************************************************
+        genreListLayout(
+          eventName: Swampfest4().name,
+          eventDate: Swampfest4().date,
+          eventTime: Swampfest4().time,
+          eventImage: Swampfest4().image,
+          eventClass: Swampfest4(thmColor: allEventsPage().bgrColor),
+        ),
+        //list  45******************************************************
+        genreListLayout(
+          eventName: RiversideJazz().name,
+          eventDate: RiversideJazz().date,
+          eventTime: RiversideJazz().time,
+          eventImage: RiversideJazz().image,
+          eventClass: RiversideJazz(thmColor: allEventsPage().bgrColor),
+        ),
+        //list  46******************************************************
+        genreListLayout(
+          eventName: HHHSwampers().name,
+          eventDate: HHHSwampers().date,
+          eventTime: HHHSwampers().time,
+          eventImage: HHHSwampers().image,
+          eventClass: HHHSwampers(thmColor: allEventsPage().bgrColor),
+        ),
+        //list  47******************************************************
+        genreListLayout(
+          eventName: ChildrensMuseum().name,
+          eventDate: ChildrensMuseum().date,
+          eventTime: ChildrensMuseum().time,
+          eventImage: ChildrensMuseum().image,
+          eventClass: ChildrensMuseum(thmColor: allEventsPage().bgrColor),
+        ),
+        //list  48******************************************************
+        genreListLayout(
+          eventName: HHHOTR().name,
+          eventDate: HHHOTR().date,
+          eventTime: HHHOTR().time,
+          eventImage: HHHOTR().image,
+          eventClass: HHHOTR(thmColor: allEventsPage().bgrColor),
+        ),
+        //list  49******************************************************
+        genreListLayout(
+          eventName: HHHLegends().name,
+          eventDate: HHHLegends().date,
+          eventTime: HHHLegends().time,
+          eventImage: HHHLegends().image,
+          eventClass: HHHLegends(thmColor: allEventsPage().bgrColor),
+        ),
+        //list  50******************************************************
+        genreListLayout(
+          eventName: Dadoorun().name,
+          eventDate: Dadoorun().date,
+          eventTime: Dadoorun().time,
+          eventImage: Dadoorun().image,
+          eventClass: Dadoorun(thmColor: allEventsPage().bgrColor),
+        ),
       ],
     );
   }

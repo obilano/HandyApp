@@ -3,8 +3,10 @@ import 'package:flutter/material.dart';
 import 'package:handy_app/misc/handywebview.dart';
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:gradient_app_bar/gradient_app_bar.dart';
+import 'package:handy_app/pages/favPage.dart';
 
 class pageInfo extends StatelessWidget {
+  Color iconColor = Colors.white;
   final Color bgrColor;
   final String event;
   final String artist;
@@ -20,11 +22,10 @@ class pageInfo extends StatelessWidget {
   final String youtubeUrl;
   final String mapUrl;
   final String image;
+  final StatelessWidget pg;
 
   pageInfo(
-      {
-      //@required this.pg,
-      @required this.bgrColor,
+      {@required this.bgrColor,
       @required this.event,
       @required this.artist,
       @required this.genre,
@@ -38,7 +39,8 @@ class pageInfo extends StatelessWidget {
       this.description,
       @required this.youtubeUrl,
       @required this.mapUrl,
-      @required this.image});
+      @required this.image,
+      @required this.pg});
 
   @override
   Widget build(BuildContext context) {
@@ -173,19 +175,13 @@ class pageInfo extends StatelessWidget {
                   ),
                   new RaisedButton.icon(
                     color: bgrColor,
-                    //favorite needs a function that collects fav data
                     onPressed: () {
-                      Navigator.of(context).push(
-                        new MaterialPageRoute(
-                          builder: (BuildContext context) => new HandyWebView(
-                            title: "Favorite",
-                            selectedUrl: mapUrl,
-                            bgrColor: bgrColor,
-                          ),
-                        ),
-                      );
+                      setState(() {
+                        iconColor = Colors.deepPurpleAccent;
+                        FavoriteState().favorites.add(pg);
+                      });
                     },
-                    icon: Icon(Icons.favorite_border, color: Colors.white),
+                    icon: Icon(Icons.favorite, color: iconColor),
                     label: Text(
                       "Favorite",
                       style: TextStyle(color: Colors.white),

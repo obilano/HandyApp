@@ -1,0 +1,137 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.wchandymusicfestival.handy_app"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="16"
+9        android:targetSdkVersion="28" />
+10    <!--
+11         Flutter needs it to communicate with the running application
+12         to allow setting breakpoints, to provide hot reload, etc.
+13    -->
+14    <uses-permission android:name="android.permission.INTERNET" />
+14-->C:\Users\obi20\Desktop\HandyApp\android\app\src\debug\AndroidManifest.xml:6:5-66
+14-->C:\Users\obi20\Desktop\HandyApp\android\app\src\debug\AndroidManifest.xml:6:22-64
+15    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+15-->[:location] C:\Users\obi20\Desktop\HandyApp\build\location\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-81
+15-->[:location] C:\Users\obi20\Desktop\HandyApp\build\location\intermediates\library_manifest\debug\AndroidManifest.xml:7:22-78
+16    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> <!-- Include required permissions for Google Maps API to run. -->
+16-->[:location] C:\Users\obi20\Desktop\HandyApp\build\location\intermediates\library_manifest\debug\AndroidManifest.xml:8:5-79
+16-->[:location] C:\Users\obi20\Desktop\HandyApp\build\location\intermediates\library_manifest\debug\AndroidManifest.xml:8:22-76
+17    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+17-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\obi20\.gradle\caches\transforms-2\files-2.1\6b9b7fc1ad481537ed0a66d62976ec46\play-services-maps-17.0.0\AndroidManifest.xml:23:5-79
+17-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\obi20\.gradle\caches\transforms-2\files-2.1\6b9b7fc1ad481537ed0a66d62976ec46\play-services-maps-17.0.0\AndroidManifest.xml:23:22-76
+18
+19    <uses-feature
+19-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\obi20\.gradle\caches\transforms-2\files-2.1\6b9b7fc1ad481537ed0a66d62976ec46\play-services-maps-17.0.0\AndroidManifest.xml:26:5-28:35
+20        android:glEsVersion="0x00020000"
+20-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\obi20\.gradle\caches\transforms-2\files-2.1\6b9b7fc1ad481537ed0a66d62976ec46\play-services-maps-17.0.0\AndroidManifest.xml:27:9-41
+21        android:required="true" />
+21-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\obi20\.gradle\caches\transforms-2\files-2.1\6b9b7fc1ad481537ed0a66d62976ec46\play-services-maps-17.0.0\AndroidManifest.xml:28:9-32
+22    <!--
+23 io.flutter.app.FlutterApplication is an android.app.Application that
+24         calls FlutterMain.startInitialization(this); in its onCreate method.
+25         In most cases you can leave this as-is, but you if you want to provide
+26         additional functionality it is fine to subclass or reimplement
+27         FlutterApplication and put your custom class here.
+28    -->
+29    <application
+29-->C:\Users\obi20\Desktop\HandyApp\android\app\src\main\AndroidManifest.xml:8:5-29:19
+30        android:name="io.flutter.app.FlutterApplication"
+30-->C:\Users\obi20\Desktop\HandyApp\android\app\src\main\AndroidManifest.xml:9:9-57
+31        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+31-->[androidx.core:core:1.1.0] C:\Users\obi20\.gradle\caches\transforms-2\files-2.1\a528b13ac93e64cafa3d0480e2c93207\core-1.1.0\AndroidManifest.xml:24:18-86
+32        android:debuggable="true"
+33        android:icon="@mipmap/ic_launcher"
+33-->C:\Users\obi20\Desktop\HandyApp\android\app\src\main\AndroidManifest.xml:11:9-43
+34        android:label="W. C. Handy" >
+34-->C:\Users\obi20\Desktop\HandyApp\android\app\src\main\AndroidManifest.xml:10:9-36
+35        <activity
+35-->C:\Users\obi20\Desktop\HandyApp\android\app\src\main\AndroidManifest.xml:12:9-23:20
+36            android:name="com.wchandymusicfestival.handy_app.MainActivity"
+36-->C:\Users\obi20\Desktop\HandyApp\android\app\src\main\AndroidManifest.xml:13:13-41
+37            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+37-->C:\Users\obi20\Desktop\HandyApp\android\app\src\main\AndroidManifest.xml:16:13-163
+38            android:hardwareAccelerated="true"
+38-->C:\Users\obi20\Desktop\HandyApp\android\app\src\main\AndroidManifest.xml:17:13-47
+39            android:launchMode="singleTop"
+39-->C:\Users\obi20\Desktop\HandyApp\android\app\src\main\AndroidManifest.xml:14:13-43
+40            android:theme="@style/LaunchTheme"
+40-->C:\Users\obi20\Desktop\HandyApp\android\app\src\main\AndroidManifest.xml:15:13-47
+41            android:windowSoftInputMode="adjustResize" >
+41-->C:\Users\obi20\Desktop\HandyApp\android\app\src\main\AndroidManifest.xml:18:13-55
+42            <intent-filter>
+42-->C:\Users\obi20\Desktop\HandyApp\android\app\src\main\AndroidManifest.xml:19:13-22:29
+43                <action android:name="android.intent.action.MAIN" />
+43-->C:\Users\obi20\Desktop\HandyApp\android\app\src\main\AndroidManifest.xml:20:17-68
+43-->C:\Users\obi20\Desktop\HandyApp\android\app\src\main\AndroidManifest.xml:20:25-66
+44
+45                <category android:name="android.intent.category.LAUNCHER" />
+45-->C:\Users\obi20\Desktop\HandyApp\android\app\src\main\AndroidManifest.xml:21:17-76
+45-->C:\Users\obi20\Desktop\HandyApp\android\app\src\main\AndroidManifest.xml:21:27-74
+46            </intent-filter>
+47        </activity>
+48        <!--
+49             Don't delete the meta-data below.
+50             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+51        -->
+52        <meta-data
+52-->C:\Users\obi20\Desktop\HandyApp\android\app\src\main\AndroidManifest.xml:26:9-28:33
+53            android:name="flutterEmbedding"
+53-->C:\Users\obi20\Desktop\HandyApp\android\app\src\main\AndroidManifest.xml:27:13-44
+54            android:value="2" />
+54-->C:\Users\obi20\Desktop\HandyApp\android\app\src\main\AndroidManifest.xml:28:13-30
+55
+56        <provider
+56-->[:flutter_webview_plugin] C:\Users\obi20\Desktop\HandyApp\build\flutter_webview_plugin\intermediates\library_manifest\debug\AndroidManifest.xml:9:9-18:20
+57            android:name="androidx.core.content.FileProvider"
+57-->[:flutter_webview_plugin] C:\Users\obi20\Desktop\HandyApp\build\flutter_webview_plugin\intermediates\library_manifest\debug\AndroidManifest.xml:10:13-62
+58            android:authorities="com.wchandymusicfestival.handy_app.fileprovider"
+58-->[:flutter_webview_plugin] C:\Users\obi20\Desktop\HandyApp\build\flutter_webview_plugin\intermediates\library_manifest\debug\AndroidManifest.xml:11:13-64
+59            android:exported="false"
+59-->[:flutter_webview_plugin] C:\Users\obi20\Desktop\HandyApp\build\flutter_webview_plugin\intermediates\library_manifest\debug\AndroidManifest.xml:12:13-37
+60            android:grantUriPermissions="true" >
+60-->[:flutter_webview_plugin] C:\Users\obi20\Desktop\HandyApp\build\flutter_webview_plugin\intermediates\library_manifest\debug\AndroidManifest.xml:13:13-47
+61            <meta-data
+61-->[:flutter_webview_plugin] C:\Users\obi20\Desktop\HandyApp\build\flutter_webview_plugin\intermediates\library_manifest\debug\AndroidManifest.xml:15:13-17:53
+62                android:name="android.support.FILE_PROVIDER_PATHS"
+62-->[:flutter_webview_plugin] C:\Users\obi20\Desktop\HandyApp\build\flutter_webview_plugin\intermediates\library_manifest\debug\AndroidManifest.xml:16:17-67
+63                android:resource="@xml/filepaths" />
+63-->[:flutter_webview_plugin] C:\Users\obi20\Desktop\HandyApp\build\flutter_webview_plugin\intermediates\library_manifest\debug\AndroidManifest.xml:17:17-50
+64        </provider>
+65
+66        <activity
+66-->[:url_launcher] C:\Users\obi20\Desktop\HandyApp\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-11:74
+67            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+67-->[:url_launcher] C:\Users\obi20\Desktop\HandyApp\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-74
+68            android:exported="false"
+68-->[:url_launcher] C:\Users\obi20\Desktop\HandyApp\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:10:13-37
+69            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" /> <!-- Needs to be explicitly declared on P+ -->
+69-->[:url_launcher] C:\Users\obi20\Desktop\HandyApp\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:11:13-71
+70        <uses-library
+70-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\obi20\.gradle\caches\transforms-2\files-2.1\6b9b7fc1ad481537ed0a66d62976ec46\play-services-maps-17.0.0\AndroidManifest.xml:33:9-35:40
+71            android:name="org.apache.http.legacy"
+71-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\obi20\.gradle\caches\transforms-2\files-2.1\6b9b7fc1ad481537ed0a66d62976ec46\play-services-maps-17.0.0\AndroidManifest.xml:34:13-50
+72            android:required="false" />
+72-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\obi20\.gradle\caches\transforms-2\files-2.1\6b9b7fc1ad481537ed0a66d62976ec46\play-services-maps-17.0.0\AndroidManifest.xml:35:13-37
+73
+74        <activity
+74-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\obi20\.gradle\caches\transforms-2\files-2.1\5ac9ad6f13ea0190a3570ea7a43d9f59\play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
+75            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+75-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\obi20\.gradle\caches\transforms-2\files-2.1\5ac9ad6f13ea0190a3570ea7a43d9f59\play-services-base-17.0.0\AndroidManifest.xml:24:13-79
+76            android:exported="false"
+76-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\obi20\.gradle\caches\transforms-2\files-2.1\5ac9ad6f13ea0190a3570ea7a43d9f59\play-services-base-17.0.0\AndroidManifest.xml:25:13-37
+77            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+77-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\obi20\.gradle\caches\transforms-2\files-2.1\5ac9ad6f13ea0190a3570ea7a43d9f59\play-services-base-17.0.0\AndroidManifest.xml:26:13-72
+78
+79        <meta-data
+79-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\obi20\.gradle\caches\transforms-2\files-2.1\e8a51589bda8acc0dd0561927407c6ea\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
+80            android:name="com.google.android.gms.version"
+80-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\obi20\.gradle\caches\transforms-2\files-2.1\e8a51589bda8acc0dd0561927407c6ea\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
+81            android:value="@integer/google_play_services_version" />
+81-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\obi20\.gradle\caches\transforms-2\files-2.1\e8a51589bda8acc0dd0561927407c6ea\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
+82    </application>
+83
+84</manifest>

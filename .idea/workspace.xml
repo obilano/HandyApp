@@ -4,9 +4,27 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ae2cd73-f37a-45a9-8d8d-ddb7ee3cb44a" name="Default Changelist" comment="">
+    <list default="true" id="4ae2cd73-f37a-45a9-8d8d-ddb7ee3cb44a" name="Default Changelist" comment="Modified icons">
+      <change afterPath="$PROJECT_DIR$/lib/pages/favPage.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.flutter-plugins" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins-dependencies" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.packages" beforeDir="false" afterPath="$PROJECT_DIR$/.packages" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/misc/dataSearch.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/misc/dataSearch.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/misc/eventClasses.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/misc/eventClasses.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/misc/genreLayout.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/misc/genreLayout.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/misc/pageEventInfoLayout.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/misc/pageEventInfoLayout.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/pages/allevents.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pages/allevents.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/pages/blues.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pages/blues.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/pages/home.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pages/home.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/pages/jazz.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pages/jazz.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/pages/rock.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pages/rock.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,7 +48,7 @@
     <property name="dart.analysis.tool.window.force.activate" value="false" />
     <property name="io.flutter.reload.alreadyRun" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/fonts" />
-    <property name="settings.editor.selected.configurable" value="preferences.updates" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.language" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
@@ -239,7 +257,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583939855923</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Modified icons">
+      <created>1583951280666</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1583951280666</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -273,5 +298,16 @@
     <MESSAGE value="All data for July 18 &amp; 19 are added." />
     <MESSAGE value="Modified icons" />
     <option name="LAST_COMMIT_MESSAGE" value="Modified icons" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="Dart">
+          <url>file://$PROJECT_DIR$/lib/misc/pageEventInfoLayout.dart</url>
+          <line>163</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

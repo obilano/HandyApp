@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gradient_app_bar/gradient_app_bar.dart';
 import 'package:handy_app/pages/art.dart';
 import 'package:handy_app/pages/blues.dart';
 import 'package:handy_app/pages/allevents.dart';
@@ -9,22 +10,38 @@ import 'package:handy_app/pages/schedule.dart';
 import 'package:rflutter_alert/rflutter_alert.dart';
 import 'package:handy_app/misc/eventClasses.dart';
 
-class DataSearch extends SearchDelegate<String> {
-  static Color thmColor;
-  static String event;
-  static String artist;
-  static String genre;
-  static String location;
-  static String date;
-  static String time;
-  static String sponsor;
-  static String cost;
-  static String feat;
-  static String info;
-  static String YTUrl;
-  static String mapUrl;
-  static String image;
+List<EventInfo> Events = <EventInfo>[
+  EventInfo(
+    pg: LambJam(thmColor: Colors.black12),
+    name: LambJam().name,
+    artist: LambJam().artist,
+    address: LambJam().address,
+    location: LambJam().location,
+  ),
+  EventInfo(
+    pg: FondaSkipworth(thmColor: Colors.black12),
+    name: FondaSkipworth().name,
+    artist: FondaSkipworth().artist,
+    address: FondaSkipworth().address,
+    location: FondaSkipworth().location,
+  ),
+  EventInfo(
+    pg: TennValleyStrum(thmColor: Colors.black12),
+    name: TennValleyStrum().name,
+    artist: TennValleyStrum().artist,
+    address: TennValleyStrum().address,
+    location: TennValleyStrum().location,
+  ),
+  EventInfo(
+    pg: JazzWithIt(thmColor: Colors.black12),
+    name: JazzWithIt().name,
+    artist: JazzWithIt().artist,
+    address: JazzWithIt().address,
+    location: JazzWithIt().location,
+  ),
+];
 
+class DataSearch extends SearchDelegate<String> {
   final data = [
     "Jazz",
     "Food",
@@ -33,17 +50,11 @@ class DataSearch extends SearchDelegate<String> {
     "Events",
     "Schedule",
     "Art",
-    LambJam().name,
-    LambJam().artist,
-    LambJam().location
   ];
   final recent = [
     "Food",
     "Jazz",
     "Rock",
-    LambJam().name,
-    LambJam().artist,
-    LambJam().location
   ];
 
   @override
@@ -72,69 +83,89 @@ class DataSearch extends SearchDelegate<String> {
   Widget buildResults(BuildContext context) {
 //    Map<String, StatelessWidget> search = Map();
 // show some result based on the selection
-
-    if (query == LambJam().name ||
+    for (var i = 0; i < Events.length; i++) {
+      if (Events[i].name == query ||
+              Events[i].artist == query ||
+              Events[i].location == query ||
+              Events[i].address ==
+                  query /*query == LambJam().name ||
         query == LambJam().artist ||
         query == LambJam().location ||
-        query == LambJam().address) {
-      //key
-      return new MaterialApp(
-        debugShowCheckedModeBanner: false,
-        home: LambJam(thmColor: Colors.black12),
-        //   search[key]
-      );
-    } else if (query == "Jazz") {
-      return new MaterialApp(
-        home: new JazzPage(),
-      );
-    } else if (query == "Blues") {
-      return new MaterialApp(
-        home: new BluesPage(),
-      );
-    } else if (query == "Art") {
-      return new MaterialApp(
-        home: new ArtPage(),
-      );
-    } else if (query == "Rock") {
-      return new MaterialApp(
-        home: new RockPage(),
-      );
-    } else if (query == "Events") {
-      return new MaterialApp(
-        home: new allEventsPage(),
-      );
-    } else if (query == "Food") {
-      return new MaterialApp(
-        home: new FoodPage(),
-      );
-    } else if (query == "Schedule") {
-      return new MaterialApp(
-        home: new allSchedulePage(),
-      );
-    } else {
-      return Container(
-        alignment: Alignment.center,
-        child: Text(
-          'Not Found!',
-          style: TextStyle(color: Colors.black),
-          textDirection: TextDirection.ltr,
-        ),
-      );
-      //   }
+        query == LambJam().address*/
+          ) {
+        //key
+        return new MaterialApp(
+          debugShowCheckedModeBanner: false,
+          home: Scaffold(
+            appBar: GradientAppBar(
+              backgroundColorStart: Colors.black45,
+              backgroundColorEnd: Colors.black12,
+            ),
+            body: Events[i].pg,
+            //   search[key]
+          ),
+        );
+      } else if (query == "Jazz") {
+        return new MaterialApp(
+          home: new JazzPage(),
+        );
+      } else if (query == "Blues") {
+        return new MaterialApp(
+          home: new BluesPage(),
+        );
+      } else if (query == "Art") {
+        return new MaterialApp(
+          home: new ArtPage(),
+        );
+      } else if (query == "Rock") {
+        return new MaterialApp(
+          home: new RockPage(),
+        );
+      } else if (query == "Events") {
+        return new MaterialApp(
+          home: new allEventsPage(),
+        );
+      } else if (query == "Food") {
+        return new MaterialApp(
+          home: new FoodPage(),
+        );
+      } else if (query == "Schedule") {
+        return new MaterialApp(
+          home: new allSchedulePage(),
+        );
+      } else {
+        return Container(
+          alignment: Alignment.center,
+          child: Text(
+            'Not Found!',
+            style: TextStyle(color: Colors.black),
+            textDirection: TextDirection.ltr,
+          ),
+        );
+      }
     }
   }
 
   @override
   Widget buildSuggestions(BuildContext context) {
+    for (var i = 0; i < Events.length; i++) {
+      data.add(Events[i].name);
+      data.add(Events[i].artist);
+      data.add(Events[i].location);
+      data.add(Events[i].address);
+      recent.add(Events[i].name);
+      recent.add(Events[i].artist);
+      recent.add(Events[i].location);
+      recent.add(Events[i].address);
+    }
 // show when someone searches for something
     final suggestionList = query.isEmpty
         ? recent
         : data.where((p) => p.startsWith(query)).toList();
-
     return ListView.builder(
-      itemBuilder: (context, index) => ListTile(
+      itemBuilder: (Events, index) => ListTile(
         onTap: () {
-          showResults(context);
+          showResults(Events);
         },
         leading: Icon(Icons.event),
         title: RichText(
@@ -145,7 +176,7 @@ class DataSearch extends SearchDelegate<String> {
               children: [
                 TextSpan(
                     text: suggestionList[index].substring(query.length),
-                    style: TextStyle(color: Colors.grey))
+                    style: TextStyle(color: Colors.grey)),
               ]),
         ),
       ),

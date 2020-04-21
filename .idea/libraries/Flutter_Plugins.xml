@@ -1,15 +1,16 @@
 <component name="libraryTable">
   <library name="Flutter Plugins" type="FlutterPluginsLibraryType">
     <CLASSES>
-      <root url="file://C:/src/flutter/flutter/.pub-cache/hosted/pub.dartlang.org/location-2.5.3" />
-      <root url="file://C:/src/flutter/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_webview_plugin-0.3.10+1" />
       <root url="file://C:/src/flutter/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_plugin_android_lifecycle-1.0.6" />
       <root url="file://C:/src/flutter/flutter/.pub-cache/hosted/pub.dartlang.org/url_launcher_macos-0.0.1+4" />
       <root url="file://C:/src/flutter/flutter/.pub-cache/hosted/pub.dartlang.org/url_launcher-5.4.2" />
-      <root url="file://C:/src/flutter/flutter/.pub-cache/hosted/pub.dartlang.org/google_maps_flutter-0.5.24+1" />
       <root url="file://C:/src/flutter/flutter/.pub-cache/hosted/pub.dartlang.org/url_launcher_web-0.1.1+1" />
-      <root url="file://C:/src/flutter/flutter/.pub-cache/hosted/pub.dartlang.org/webview_flutter-0.3.19+9" />
-      <root url="file://C:/src/flutter/flutter/.pub-cache/hosted/pub.dartlang.org/android_intent-0.3.6+1" />
+      <root url="file://C:/src/flutter/flutter/.pub-cache/hosted/pub.dartlang.org/location-2.5.4" />
+      <root url="file://C:/src/flutter/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_keyboard_visibility-0.7.0" />
+      <root url="file://C:/src/flutter/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_webview_plugin-0.3.11" />
+      <root url="file://C:/src/flutter/flutter/.pub-cache/hosted/pub.dartlang.org/android_intent-0.3.7" />
+      <root url="file://C:/src/flutter/flutter/.pub-cache/hosted/pub.dartlang.org/google_maps_flutter-0.5.26+1" />
+      <root url="file://C:/src/flutter/flutter/.pub-cache/hosted/pub.dartlang.org/webview_flutter-0.3.20+1" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

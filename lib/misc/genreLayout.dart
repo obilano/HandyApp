@@ -6,14 +6,14 @@ class genreListLayout extends StatelessWidget {
   final String eventDate;
   final String eventTime;
   final String eventImage;
-  final StatelessWidget eventInfo;
+  final StatelessWidget eventClass;
 
   genreListLayout({
     @required this.eventName,
     @required this.eventTime,
     @required this.eventDate,
     @required this.eventImage,
-    @required this.eventInfo,
+    @required this.eventClass,
   });
 
   @override
@@ -35,7 +35,7 @@ class genreListLayout extends StatelessWidget {
               Navigator.push(
                 context,
                 new MaterialPageRoute(
-                  builder: (context) => eventInfo, //call jazz class page
+                  builder: (context) => eventClass, //call jazz class page
                 ),
               );
             },

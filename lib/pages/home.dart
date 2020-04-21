@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:handy_app/pages/favPage.dart';
 import 'package:handy_app/pages/food.dart';
 import 'package:handy_app/pages/jazz.dart';
 import 'package:handy_app/pages/blues.dart';
@@ -10,16 +11,39 @@ import 'package:handy_app/pages/allevents.dart';
 import 'package:handy_app/pages/schedule.dart';
 import 'package:handy_app/misc/dataSearch.dart';
 import 'package:gradient_app_bar/gradient_app_bar.dart';
+import 'package:auto_size_text/auto_size_text.dart';
 
-class Homepage extends StatelessWidget {
+class Homepage extends StatefulWidget {
   @override
+  _HomePageState createState() => _HomePageState();
+}
+
+class _HomePageState extends State<Homepage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: GradientAppBar(
         backgroundColorStart: Colors.grey[200],
         backgroundColorEnd: Colors.blueGrey[200],
+        leading: IconButton(
+            icon: Icon(
+              Icons.favorite,
+              color: Colors.deepPurpleAccent,
+            ),
+            onPressed: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (BuildContext context) => Favorites(),
+                ),
+              );
+            }),
         title: Center(
-          child: Text('W.C. Handy Music Festival'),
+          child: FlexibleSpaceBar(
+            title: AutoSizeText(
+              "W. C. Handy Music Festival",
+              overflow: TextOverflow.visible,
+            ),
+            centerTitle: true,
+          ),
         ),
         actions: <Widget>[
           IconButton(
@@ -29,9 +53,11 @@ class Homepage extends StatelessWidget {
               })
         ],
       ),
+      drawer: Drawer(),
       body: Center(
         child: SingleChildScrollView(
           child: Container(
+            decoration: BoxDecoration(),
             padding: EdgeInsets.only(left: 20.0, right: 20.0, top: 10.0),
             alignment: Alignment.bottomCenter,
             child: Column(
