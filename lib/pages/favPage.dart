@@ -3,6 +3,10 @@ import 'package:handy_app/misc/eventClasses.dart';
 import 'package:gradient_app_bar/gradient_app_bar.dart';
 import 'package:handy_app/pages/home.dart';
 
+
+
+//**********TEST CODE FOR FAVORITES ************************************
+
 class Favorites extends HandyApp {
   Color bgrColor = Colors.deepPurpleAccent[400];
 
