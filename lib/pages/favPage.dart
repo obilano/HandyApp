@@ -1,14 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:handy_app/misc/eventClasses.dart';
 import 'package:gradient_app_bar/gradient_app_bar.dart';
+import 'package:handy_app/pages/home.dart';
 
-class Favorites extends StatefulWidget {
-  @override
-  FavoriteState createState() => FavoriteState();
-}
-
-class FavoriteState extends State<Favorites> {
+class Favorites extends HandyApp {
   Color bgrColor = Colors.deepPurpleAccent[400];
+
   List<EventInfo> favorites = <EventInfo>[];
 
   StatefulWidget addFavorite(EventInfo pg) {

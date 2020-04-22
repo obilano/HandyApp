@@ -1,6 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:handy_app/pages/favPage.dart';
 import 'package:handy_app/pages/food.dart';
 import 'package:handy_app/pages/jazz.dart';
 import 'package:handy_app/pages/blues.dart';
@@ -13,29 +12,28 @@ import 'package:handy_app/misc/dataSearch.dart';
 import 'package:gradient_app_bar/gradient_app_bar.dart';
 import 'package:auto_size_text/auto_size_text.dart';
 
-class Homepage extends StatefulWidget {
+void main() => runApp(HandyApp());
+
+class HandyApp extends StatefulWidget {
   @override
-  _HomePageState createState() => _HomePageState();
+  _HandyAppState createState() => _HandyAppState();
 }
 
-class _HomePageState extends State<Homepage> {
+class _HandyAppState extends State<HandyApp> {
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: Homepage(),
+    );
+  }
+}
+
+class Homepage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: GradientAppBar(
         backgroundColorStart: Colors.grey[200],
         backgroundColorEnd: Colors.blueGrey[200],
-        leading: IconButton(
-            icon: Icon(
-              Icons.favorite,
-              color: Colors.deepPurpleAccent,
-            ),
-            onPressed: () {
-              Navigator.of(context).push(
-                MaterialPageRoute(
-                  builder: (BuildContext context) => Favorites(),
-                ),
-              );
-            }),
         title: Center(
           child: FlexibleSpaceBar(
             title: AutoSizeText(
@@ -53,7 +51,7 @@ class _HomePageState extends State<Homepage> {
               })
         ],
       ),
-      drawer: Drawer(),
+      //drawer: Drawer(),
       body: Center(
         child: SingleChildScrollView(
           child: Container(

@@ -1,8 +1,8 @@
 import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:handy_app/misc/pageEventInfoLayout.dart';
-import 'dataSearch.dart';
 
+// default youtube link and image
 class Default {
   String image;
   String YT; //default youtube link
@@ -1259,7 +1259,7 @@ class Dadoorun extends EventInfo {
           genre: "R&B/Soul",
           location: "W.C. Handy Home & Museum",
           address: "620 W. College St. Florence, AL 35630",
-          date: "July 26",
+          date: "July 27",
           time: "7:00 am",
           sponsor: "Abroms & Associates * All Sports Trophy "
               "\n* Anytime Fitness * City Hardware "

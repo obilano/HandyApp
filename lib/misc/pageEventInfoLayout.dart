@@ -178,10 +178,10 @@ class pageInfo extends StatelessWidget {
                     onPressed: () {
                       setState(() {
                         iconColor = Colors.deepPurpleAccent;
-                        FavoriteState().favorites.add(pg);
+                        Favorites().favorites.add(pg);
                       });
                     },
-                    icon: Icon(Icons.favorite, color: iconColor),
+                    icon: Icon(Icons.favorite_border, color: iconColor),
                     label: Text(
                       "Favorite",
                       style: TextStyle(color: Colors.white),
