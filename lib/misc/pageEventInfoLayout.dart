@@ -131,63 +131,65 @@ class pageInfo extends StatelessWidget {
                   overflow: TextOverflow.visible,
                   minFontSize: 18,
                 ),
-              new Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: <Widget>[
-                  Padding(padding: EdgeInsets.only(top: 100.0)),
-                  new RaisedButton.icon(
-                    color: bgrColor,
-                    onPressed: () {
-                      Navigator.of(context).push(
-                        new MaterialPageRoute(
-                          builder: (BuildContext context) => new HandyWebView(
-                            title: artist,
-                            selectedUrl: youtubeUrl,
-                            bgrColor: bgrColor,
+              new Center(
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: <Widget>[
+                    Padding(padding: EdgeInsets.only(top: 100.0)),
+                    new RaisedButton.icon(
+                      color: bgrColor,
+                      onPressed: () {
+                        Navigator.of(context).push(
+                          new MaterialPageRoute(
+                            builder: (BuildContext context) => new HandyWebView(
+                              title: artist,
+                              selectedUrl: youtubeUrl,
+                              bgrColor: bgrColor,
+                            ),
                           ),
-                        ),
-                      );
-                    },
-                    icon: Icon(Icons.library_music, color: Colors.white),
-                    label: Text(
-                      "Youtube Link",
-                      style: TextStyle(color: Colors.white),
+                        );
+                      },
+                      icon: Icon(Icons.library_music, color: Colors.white),
+                      label: AutoSizeText(
+                        "Youtube",
+                        style: TextStyle(color: Colors.white),
+                      ),
                     ),
-                  ),
-                  new RaisedButton.icon(
-                    color: bgrColor,
-                    onPressed: () {
-                      Navigator.of(context).push(
-                        MaterialPageRoute(
-                          builder: (BuildContext context) => new HandyWebView(
-                            title: "Map",
-                            selectedUrl: mapUrl,
-                            bgrColor: bgrColor,
+                    new RaisedButton.icon(
+                      color: bgrColor,
+                      onPressed: () {
+                        Navigator.of(context).push(
+                          MaterialPageRoute(
+                            builder: (BuildContext context) => new HandyWebView(
+                              title: "Map",
+                              selectedUrl: mapUrl,
+                              bgrColor: bgrColor,
+                            ),
                           ),
-                        ),
-                      );
-                    },
-                    icon: Icon(Icons.map, color: Colors.white),
-                    label: Text(
-                      "Map",
-                      style: TextStyle(color: Colors.white),
+                        );
+                      },
+                      icon: Icon(Icons.map, color: Colors.white),
+                      label: AutoSizeText(
+                        "Map",
+                        style: TextStyle(color: Colors.white),
+                      ),
                     ),
-                  ),
-                  new RaisedButton.icon(
-                    color: bgrColor,
-                    onPressed: () {
-                      setState(() {
-                        iconColor = Colors.deepPurpleAccent;
-                        Favorites().favorites.add(pg);
-                      });
-                    },
-                    icon: Icon(Icons.favorite_border, color: iconColor),
-                    label: Text(
-                      "Favorite",
-                      style: TextStyle(color: Colors.white),
+                    new RaisedButton.icon(
+                      color: bgrColor,
+                      onPressed: () {
+                        setState(() {
+                          iconColor = Colors.deepPurpleAccent;
+                          Favorites().favorites.add(pg);
+                        });
+                      },
+                      icon: Icon(Icons.favorite_border, color: iconColor),
+                      label: AutoSizeText(
+                        "Favorite",
+                        style: TextStyle(color: Colors.white),
+                      ),
                     ),
-                  ),
-                ],
+                  ],
+                ),
               ),
             ],
           ),
