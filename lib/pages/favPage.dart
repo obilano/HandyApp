@@ -1,13 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:handy_app/misc/eventClasses.dart';
 import 'package:gradient_app_bar/gradient_app_bar.dart';
-import 'package:handy_app/pages/home.dart';
 
 //**********TEST CODE FOR FAVORITES ************************************
 
-class Favorites extends HandyApp {
+class Favorites extends StatelessWidget {
   Color bgrColor = Colors.deepPurpleAccent[400];
-
   List<EventInfo> favorites = <EventInfo>[];
 
   StatefulWidget addFavorite(EventInfo pg) {
@@ -43,7 +41,7 @@ class Favorites extends HandyApp {
         body: ReorderableListView(
             children: List.generate(favorites.length, (index) {
               return ListTile(
-                //key: ValueKey("value$index"),
+                key: ValueKey("value$index"),
                 title: new Text(favorites[index].name),
                 subtitle: new Text(
                     favorites[index].date + "\n" + favorites[index].time),
@@ -51,8 +49,7 @@ class Favorites extends HandyApp {
                   Navigator.push(
                     context,
                     new MaterialPageRoute(
-                      builder: (context) =>
-                          favorites[index], //call jazz class page
+                      builder: (context) => favorites[index],
                     ),
                   );
                 },

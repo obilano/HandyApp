@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+//import 'package:handy_app/pages/favPage.dart'; //favorite list test
 import 'package:handy_app/pages/food.dart';
 import 'package:handy_app/pages/jazz.dart';
 import 'package:handy_app/pages/blues.dart';
@@ -32,6 +33,21 @@ class Homepage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: GradientAppBar(
+        /** icon link to favorite lists TEST ONLY
+        leading: IconButton(
+          icon: Icon(
+            Icons.favorite,
+            color: Colors.white
+          ),
+          onPressed: () {
+            Navigator.push(
+              context,
+              new MaterialPageRoute(
+                builder: (context) => Favorites(), //call jazz class page
+              ),
+            );
+          },
+        ), */
         backgroundColorStart: Colors.grey[200],
         backgroundColorEnd: Colors.blueGrey[200],
         title: Center(

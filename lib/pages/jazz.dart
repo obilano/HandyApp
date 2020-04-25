@@ -36,7 +36,6 @@ class jazzlist extends StatelessWidget {
     return ListView(
       children: <Widget>[
         //JULY 19 JAZZ EVENTS***************************************************
-        // list 1 **********************************************************
         genreListLayout(
           eventName: JazzWithIt().name,
           eventDate: JazzWithIt().date,
@@ -44,7 +43,6 @@ class jazzlist extends StatelessWidget {
           eventImage: JazzWithIt().image,
           eventClass: JazzWithIt(thmColor: JazzPage().bgrColor),
         ),
-        // list 2 **********************************************
         genreListLayout(
           eventName: KeestoneJazzFest().name,
           eventDate: KeestoneJazzFest().date,
@@ -52,7 +50,6 @@ class jazzlist extends StatelessWidget {
           eventImage: KeestoneJazzFest().image,
           eventClass: KeestoneJazzFest(thmColor: JazzPage().bgrColor),
         ),
-        //list 3 ***********************************************
         genreListLayout(
           eventName: HMNRicatonis().name,
           eventDate: HMNRicatonis().date,
@@ -61,7 +58,6 @@ class jazzlist extends StatelessWidget {
           eventClass: HMNRicatonis(thmColor: JazzPage().bgrColor),
         ),
         //JULY 20 JAZZ EVENTS***************************************************
-        //list 4 ***********************************************
         genreListLayout(
           eventName: SunriseCenter().name,
           eventDate: SunriseCenter().date,
@@ -69,8 +65,30 @@ class jazzlist extends StatelessWidget {
           eventImage: SunriseCenter().image,
           eventClass: SunriseCenter(thmColor: JazzPage().bgrColor),
         ),
+        //JULY 22 JAZZ EVENTS***************************************************
+        genreListLayout(
+          eventName: JazzItupWithJazz23().name,
+          eventDate: JazzItupWithJazz23().date,
+          eventTime: JazzItupWithJazz23().time,
+          eventImage: JazzItupWithJazz23().image,
+          eventClass: JazzItupWithJazz23(thmColor: JazzPage().bgrColor),
+        ),
+        genreListLayout(
+          eventName: BookItWithJazz().name,
+          eventDate: BookItWithJazz().date,
+          eventTime: BookItWithJazz().time,
+          eventImage: BookItWithJazz().image,
+          eventClass: BookItWithJazz(thmColor: JazzPage().bgrColor),
+        ),
+        //JULY 23 JAZZ EVENTS***************************************************
+        genreListLayout(
+          eventName: WCHandyJazzMelodies().name,
+          eventDate: WCHandyJazzMelodies().date,
+          eventTime: WCHandyJazzMelodies().time,
+          eventImage: WCHandyJazzMelodies().image,
+          eventClass: WCHandyJazzMelodies(thmColor: JazzPage().bgrColor),
+        ),
         //JULY 24 JAZZ EVENTS***************************************************
-        //list 5 ***********************************************
         genreListLayout(
           eventName: MusicalLunch306().name,
           eventDate: MusicalLunch306().date,
@@ -78,7 +96,6 @@ class jazzlist extends StatelessWidget {
           eventImage: MusicalLunch306().image,
           eventClass: MusicalLunch306(thmColor: JazzPage().bgrColor),
         ),
-        //list 6 ***********************************************
         genreListLayout(
           eventName: MusicalLunchBad().name,
           eventDate: MusicalLunchBad().date,
@@ -86,7 +103,6 @@ class jazzlist extends StatelessWidget {
           eventImage: MusicalLunchBad().image,
           eventClass: MusicalLunchBad(thmColor: JazzPage().bgrColor),
         ),
-        //list 7 ***********************************************
         genreListLayout(
           eventName: MusicalLunchFlobama().name,
           eventDate: MusicalLunchFlobama().date,
@@ -94,7 +110,6 @@ class jazzlist extends StatelessWidget {
           eventImage: MusicalLunchFlobama().image,
           eventClass: MusicalLunchFlobama(thmColor: JazzPage().bgrColor),
         ),
-        //list 8 ***********************************************
         genreListLayout(
           eventName: MusicMunchin().name,
           eventDate: MusicMunchin().date,
@@ -103,7 +118,6 @@ class jazzlist extends StatelessWidget {
           eventClass: MusicMunchin(thmColor: JazzPage().bgrColor),
         ),
         //JULY 26 JAZZ EVENTS**************************************************
-        //list 9 ***********************************************
         genreListLayout(
           eventName: HML306().name,
           eventDate: HML306().date,
@@ -111,7 +125,6 @@ class jazzlist extends StatelessWidget {
           eventImage: HML306().image,
           eventClass: HML306(thmColor: JazzPage().bgrColor),
         ),
-        //list 10 ***********************************************
         genreListLayout(
           eventName: RiversideJazz().name,
           eventDate: RiversideJazz().date,
@@ -119,13 +132,20 @@ class jazzlist extends StatelessWidget {
           eventImage: RiversideJazz().image,
           eventClass: RiversideJazz(thmColor: JazzPage().bgrColor),
         ),
-        //list 11 ***********************************************
         genreListLayout(
           eventName: ChildrensMuseum().name,
           eventDate: ChildrensMuseum().date,
           eventTime: ChildrensMuseum().time,
           eventImage: ChildrensMuseum().image,
           eventClass: ChildrensMuseum(thmColor: JazzPage().bgrColor),
+        ),
+        //JULY 27 JAZZ EVENTS**************************************************
+        genreListLayout(
+          eventName: StreetStrut().name,
+          eventDate: StreetStrut().date,
+          eventTime: StreetStrut().time,
+          eventImage: StreetStrut().image,
+          eventClass: StreetStrut(thmColor: JazzPage().bgrColor),
         ),
       ],
     );

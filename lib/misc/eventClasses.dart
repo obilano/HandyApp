@@ -2,17 +2,20 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:handy_app/misc/pageEventInfoLayout.dart';
 
-// default youtube link and image
+// default youtube link, map link, and image needs to be replaced to its actual data
 class Default {
-  String image;
+  String image; //default image
+  String map; //default to una
   String YT; //default youtube link
   Default(
       {this.image = "images/default.jpg",
+      this.map =
+          "https://www.google.com/maps/place/University+of+North+Alabama/@34.8056125,-87.6826459,16.41z/data=!4m5!3m4!1s0x887d48687074050b:0xf4645d431a1a1352!8m2!3d34.8074555!4d-87.6811676",
       this.YT = "https://www.youtube.com/watch?v=b6-EtzeRQ3k"});
 }
 
 class EventInfo extends StatelessWidget {
-  EventInfo pg;
+  StatelessWidget page;
   Color mainColor;
   String name;
   String artist;
@@ -30,7 +33,7 @@ class EventInfo extends StatelessWidget {
   String image;
 
   EventInfo({
-    this.pg,
+    this.page,
     this.mainColor,
     this.name,
     this.artist,
@@ -51,6 +54,7 @@ class EventInfo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return pageInfo(
+      pg: page,
       bgrColor: mainColor,
       event: name,
       artist: artist,
@@ -89,7 +93,7 @@ class REPLACE_THIS_WITH_NEW_CLASS_NAME extends EventInfo {
           feat: "",
           info: "",
           YTUrl: Default().YT, // replace this to its own youtube link
-          mapUrl: "",
+          mapUrl: Default().map, // replace this to its own map link
           image: Default().image, //replace this to its own image
         );
 }
@@ -657,7 +661,7 @@ class HMNOTRocks2 extends EventInfo {
         );
 }
 
-// July 20 Events ***************************************************************
+// July 20 Events **************************************************************
 class SunriseCenter extends EventInfo {
   Color thmColor;
   SunriseCenter({this.thmColor})
@@ -681,6 +685,33 @@ class SunriseCenter extends EventInfo {
             image: "images/mh.jpg");
 }
 
+class SumSolos extends EventInfo {
+  Color thmColor;
+  SumSolos({this.thmColor})
+      : super(
+            mainColor: thmColor,
+            name: "FLORENCE/LAUDERDALE TOURISM PRESENTS: SUMMER SOLOS",
+            artist: "Trey Nichols",
+            genre: "Rock",
+            location:
+                "Florence-Lauderdale Tourism & Visitors Center Gallery McFarland Park",
+            address: "200 Jim Spain Dr. Florence, AL 35630",
+            date: "July 20",
+            time: "11:00 am",
+            sponsor: "Florence-Lauderdale Convention & Visitors Bureau "
+                "\n* Muscle Shoals National Heritage Area "
+                "\n* Crazy Chester Music",
+            cost: "",
+            feat: "",
+            info: "",
+            YTUrl:
+                "https://www.youtube.com/watch?v=Du6JH9FRoHU&list=PL0IKFcWvXyK07E31CiztAU0sdckcTeSt_&index=2",
+            mapUrl:
+                "https://www.google.com/maps/place/307+N+Montgomery+Ave,+Sheffield,+AL+35660/@34.7611046,-87.7013211,17z/data=!3m1!4b1!4m5!3m4!1s0x887d4602f3976e85:0x301e9be265f4a6fd!8m2!3d34.7611046!4d-87.6991324",
+            image: Default().image);
+}
+
+// July 21 Events **************************************************************
 class BbqBlues extends EventInfo {
   Color thmColor;
   BbqBlues({this.thmColor})
@@ -704,9 +735,77 @@ class BbqBlues extends EventInfo {
             image: "images/tbd.jpg");
 }
 
+class PraisePark extends EventInfo {
+  Color thmColor;
+  PraisePark({this.thmColor})
+      : super(
+            mainColor: thmColor,
+            name: "PRAISE IN THE PARK WITH EKKLESIA MINISTRIES",
+            artist: " Bishop Kobee Fitzgerald brings the message "
+                "\n* Ekklesia Glory Seekers & Band brings the praise",
+            genre: "Gospel",
+            location: "Mt. Moriah P.B. Church",
+            address: "820 W Irvine Ave, Florence, AL 35630",
+            date: "July 21",
+            time: "10:55 am",
+            sponsor: "Mt. Moriah P.B. Church",
+            cost: "Free to attend. Enjoy the best in good gospel music!",
+            feat: "",
+            info: "",
+            YTUrl: Default().YT,
+            mapUrl: Default().map,
+            image: Default().image);
+}
+
+// July 22 Events **************************************************************
+class JazzItupWithJazz23 extends EventInfo {
+  Color thmColor;
+  JazzItupWithJazz23({this.thmColor})
+      : super(
+            mainColor: thmColor,
+            name: "JAZZ WITH IT WITH TRASH",
+            artist: "Microwave Dave",
+            genre: "Jazz",
+            location: "Florence-Lauderdale Public Library",
+            address: "316 North Montgomery Avenue, Sheffield, AL 35660",
+            date: "July 22",
+            time: "10:00 am",
+            sponsor: "",
+            cost: "Free",
+            feat: "",
+            info: "",
+            YTUrl:
+                "https://www.youtube.com/watch?v=SAu7gQGIErU&list=PLT0lvJBrkeeLG5-bQJ6HAan_cY7MC1PYf/",
+            mapUrl:
+                "https://www.google.com/maps/place/Florence-Lauderdale+Public+Library/@34.8036319,-87.6742171,15z/data=!4m2!3m1!1s0x0:0x5f0844e6f12fa810?sa=X&ved=2ahUKEwif2umUo4TpAhVFPq0KHUBnBCEQ_BIwDXoECBcQCA",
+            image: "images/md.jpg");
+}
+
+class BookItWithJazz extends EventInfo {
+  Color thmColor;
+  BookItWithJazz({this.thmColor})
+      : super(
+          mainColor: thmColor,
+          name: "BOOK IT WITH JAZZ",
+          artist: "Jazz Allstars Quartet",
+          genre: "Jazz",
+          location: "Helen Keller Library",
+          address: "511 N Main St, Tuscumbia, AL 35674",
+          date: "July 22",
+          time: "11:00 am - 1:00 pm",
+          cost: "Free (Boxed lunch available for purchase)",
+          feat: "",
+          info: "",
+          YTUrl: Default().YT,
+          mapUrl: Default().map,
+          image: "images/jrja.jpg",
+        );
+}
+
+//Start July 23 Events**********************************************************
 class WCHandyMovie extends EventInfo {
   Color thmColor;
-  WCHandyMovie({thmColor})
+  WCHandyMovie({this.thmColor})
       : super(
             mainColor: thmColor,
             name: "W.C. HANDY MOVIE: ST. LOUIS BLUES",
@@ -728,10 +827,32 @@ class WCHandyMovie extends EventInfo {
             image: "images/slb.jpg");
 }
 
-//Start July 24 Events
+class WCHandyJazzMelodies extends EventInfo {
+  Color thmColor;
+  WCHandyJazzMelodies({this.thmColor})
+      : super(
+            mainColor: thmColor,
+            name: "W.C. HANDY: JAZZ MELODIES",
+            artist: "Thompson Trio",
+            genre: "Jazz",
+            location: " Renaissance of Florence",
+            address: "3275 Co Rd 47, Florence, AL 35630",
+            date: "July 23",
+            time: "10:00 am",
+            sponsor: "",
+            cost: "Free",
+            feat: "",
+            info: "",
+            YTUrl: "https://www.youtube.com/watch?v=fzTVbIszJS8",
+            mapUrl:
+                "https://www.google.com/maps/place/The+Renaissance+of+Florence/@34.8505002,-87.6443713,17z/data=!3m1!4b1!4m5!3m4!1s0x887d36234afcdc6d:0xfaeed40ff00e7a39!8m2!3d34.8505002!4d-87.6421773",
+            image: "images/tt.jpg");
+}
+
+//Start July 24 Events*********************************************************
 class CountsBrother extends EventInfo {
   Color thmColor;
-  CountsBrother({thmColor})
+  CountsBrother({this.thmColor})
       : super(
             mainColor: thmColor,
             name: "COUNTS BROTHERS MASTER CLASS",
@@ -745,15 +866,15 @@ class CountsBrother extends EventInfo {
             cost: "",
             feat: "",
             info: "",
-            YTUrl: "",
+            YTUrl: "https://www.youtube.com/watch?v=fzTVbIszJS8",
             mapUrl:
                 "https://www.google.com/maps/place/713+Waverly+Ave,+Muscle+Shoals,+AL+35661/@34.7474914,-87.6657346,17z/data=!3m1!4b1!4m5!3m4!1s0x887d4f2c0d0ce581:0xeeb6fd5237a85550!8m2!3d34.747487!4d-87.6635459",
-            image: "");
+            image: "images/tt.jpg");
 }
 
 class SummerSolos extends EventInfo {
   Color thmColor;
-  SummerSolos({thmColor})
+  SummerSolos({this.thmColor})
       : super(
             mainColor: thmColor,
             name: "SUMMER SOLOS WITH KATLYN BARNES",
@@ -767,15 +888,15 @@ class SummerSolos extends EventInfo {
             cost: "",
             feat: "",
             info: "",
-            YTUrl: "",
+            YTUrl: Default().YT,
             mapUrl:
                 "https://www.google.com/maps/place/McFarland+Park/@34.7836596,-87.686428,16.48z/data=!4m5!3m4!1s0x887d4891d4c40eef:0x697f0e6d5ad6044d!8m2!3d34.7838951!4d-87.684",
-            image: "");
+            image: Default().image);
 }
 
 class JazzTrash extends EventInfo {
   Color thmColor;
-  JazzTrash({thmColor})
+  JazzTrash({this.thmColor})
       : super(
             mainColor: thmColor,
             name: "JAZZ IT UP WITH TRASH",
@@ -790,15 +911,16 @@ class JazzTrash extends EventInfo {
             cost: "",
             feat: "",
             info: "",
-            YTUrl: "",
+            YTUrl:
+                "https://www.youtube.com/watch?v=SAu7gQGIErU&list=PLT0lvJBrkeeLG5-bQJ6HAan_cY7MC1PYf/",
             mapUrl:
                 "https://www.google.com/maps/place/511+N+Main+St,+Tuscumbia,+AL+35674/@34.7375581,-87.7062487,17z/data=!3m1!4b1!4m5!3m4!1s0x887d45f113841591:0xa55cc8bb747c1aba!8m2!3d34.7375537!4d-87.70406",
-            image: "");
+            image: "images/md.jpg");
 }
 
 class MusicalLunch extends EventInfo {
   Color thmColor;
-  MusicalLunch({thmColor})
+  MusicalLunch({this.thmColor})
       : super(
             mainColor: thmColor,
             name: "HANDY MUSICAL LUNCHES: RICATONI'S ITALIAN GRILL",
@@ -812,15 +934,15 @@ class MusicalLunch extends EventInfo {
             cost: "",
             feat: "",
             info: "",
-            YTUrl: "",
+            YTUrl: Default().YT,
             mapUrl:
                 "https://www.google.com/maps/place/107+N+Court+St,+Florence,+AL+35630/@34.8003806,-87.6786591,17z/data=!3m1!4b1!4m5!3m4!1s0x887d485e6a97f113:0x983721ecae2ec2ba!8m2!3d34.8003762!4d-87.6764704",
-            image: "");
+            image: Default().image);
 }
 
 class MusicalLunch306 extends EventInfo {
   Color thmColor;
-  MusicalLunch306({thmColor})
+  MusicalLunch306({this.thmColor})
       : super(
             mainColor: thmColor,
             name: "HANDY MUSICAL LUNCHES: 306 BARBEQUE",
@@ -834,15 +956,15 @@ class MusicalLunch306 extends EventInfo {
             cost: "",
             feat: "",
             info: "",
-            YTUrl: "",
+            YTUrl: Default().YT,
             mapUrl:
                 "https://www.google.com/maps/place/322+N+Court+St,+Florence,+AL+35630/@34.8027126,-87.6794574,17z/data=!3m1!4b1!4m5!3m4!1s0x887d485df1107971:0x738c8e8c09a08be1!8m2!3d34.8027082!4d-87.6772687",
-            image: "");
+            image: Default().image);
 }
 
 class MusicalLunchBad extends EventInfo {
   Color thmColor;
-  MusicalLunchBad({thmColor})
+  MusicalLunchBad({this.thmColor})
       : super(
             mainColor: thmColor,
             name: "HANDY MUSICAL LUNCHES: BIG BAD BREAKFAST",
@@ -856,15 +978,15 @@ class MusicalLunchBad extends EventInfo {
             cost: "",
             feat: "",
             info: "",
-            YTUrl: "",
+            YTUrl: Default().YT,
             mapUrl:
                 "https://www.google.com/maps/place/315+N+Court+St,+Florence,+AL+35630/@34.802345,-87.6799815,17z/data=!3m1!4b1!4m5!3m4!1s0x887d485df8122693:0x1b6bfd67b33d0cca!8m2!3d34.8023406!4d-87.6777928",
-            image: "");
+            image: "images/jrja.jpg");
 }
 
 class MusicalLunchTaziki extends EventInfo {
   Color thmColor;
-  MusicalLunchTaziki({thmColor})
+  MusicalLunchTaziki({this.thmColor})
       : super(
             mainColor: thmColor,
             name: "HANDY MUSICAL LUNCHES: TAZIKI'S",
@@ -878,37 +1000,38 @@ class MusicalLunchTaziki extends EventInfo {
             cost: "",
             feat: "",
             info: "",
-            YTUrl: "",
+            YTUrl: Default().YT,
             mapUrl:
                 "https://www.google.com/maps/place/261+Cox+Creek+Pkwy,+Florence,+AL+35630/@34.8353403,-87.6330649,17z/data=!3m1!4b1!4m5!3m4!1s0x887d49e30acf1f8f:0x16c2e41315ca349b!8m2!3d34.8353359!4d-87.6308762",
-            image: "");
+            image: Default().image);
 }
 
 class MusicalLunchChampy extends EventInfo {
   Color thmColor;
-  MusicalLunchChampy({thmColor})
+  MusicalLunchChampy({this.thmColor})
       : super(
-            mainColor: thmColor,
-            name: "HANDY MUSICAL LUNCHES: CHAMPY'S",
-            artist: " James LeBlanc & Angela Hacker",
-            genre: "Rock",
-            location: "Champy's",
-            address: "102 Second St. Muscle Shoals, AL 35661",
-            date: "July 24",
-            time: "11:30 am — 1:00 pm",
-            sponsor: "",
-            cost: "",
-            feat: "",
-            info: "",
-            YTUrl: "",
-            mapUrl:
-                "https://www.google.com/maps/place/102+E+2nd+St,+Sheffield,+AL+35660/@34.7597487,-87.6998477,17z/data=!3m1!4b1!4m5!3m4!1s0x887d460271c11b93:0x85db83a0ddea7134!8m2!3d34.7597443!4d-87.697659",
-            image: "");
+          mainColor: thmColor,
+          name: "HANDY MUSICAL LUNCHES: CHAMPY'S",
+          artist: " James LeBlanc & Angela Hacker",
+          genre: "Rock",
+          location: "Champy's",
+          address: "102 Second St. Muscle Shoals, AL 35661",
+          date: "July 24",
+          time: "11:30 am — 1:00 pm",
+          sponsor: "",
+          cost: "",
+          feat: "",
+          info: "",
+          YTUrl: "https://www.youtube.com/watch?v=YrvAW0L1d7s",
+          mapUrl:
+              "https://www.google.com/maps/place/102+E+2nd+St,+Sheffield,+AL+35660/@34.7597487,-87.6998477,17z/data=!3m1!4b1!4m5!3m4!1s0x887d460271c11b93:0x85db83a0ddea7134!8m2!3d34.7597443!4d-87.697659",
+          image: "images/jlah.jpg",
+        );
 }
 
 class MusicalLunchFlobama extends EventInfo {
   Color thmColor;
-  MusicalLunchFlobama({thmColor})
+  MusicalLunchFlobama({this.thmColor})
       : super(
             mainColor: thmColor,
             name: "HANDY MUSICAL LUNCHES: FLOBAMA",
@@ -922,15 +1045,15 @@ class MusicalLunchFlobama extends EventInfo {
             cost: "",
             feat: "",
             info: "",
-            YTUrl: "",
+            YTUrl: Default().YT,
             mapUrl:
                 "https://www.google.com/maps/place/311+N+Court+St,+Florence,+AL+35630/@34.8022786,-87.6798339,17z/data=!3m1!4b1!4m5!3m4!1s0x887d485df857e62d:0xc614ea38bee7bb9a!8m2!3d34.8022742!4d-87.6776452",
-            image: "");
+            image: "images/jrja.jpg");
 }
 
 class MusicMunchin extends EventInfo {
   Color thmColor;
-  MusicMunchin({thmColor})
+  MusicMunchin({this.thmColor})
       : super(
             mainColor: thmColor,
             name: "MUSIC AND MUNCHIN' IN MUSCLE SHOALS",
@@ -944,15 +1067,15 @@ class MusicMunchin extends EventInfo {
             cost: "",
             feat: "",
             info: "",
-            YTUrl: "",
+            YTUrl: Default().YT,
             mapUrl:
                 "https://www.google.com/maps/place/Gattman+Park+Dr,+Muscle+Shoals,+AL+35661/@34.7386749,-87.6602368,17z/data=!3m1!4b1!4m5!3m4!1s0x887d4ed8788924cd:0xb95662fd885ec34c!8m2!3d34.7386705!4d-87.6580481",
-            image: "");
+            image: Default().image);
 }
 
 class ComboKings extends EventInfo {
   Color thmColor;
-  ComboKings({thmColor})
+  ComboKings({this.thmColor})
       : super(
             mainColor: thmColor,
             name: "THE COMBO KINGS IN CONCERT",
@@ -966,15 +1089,15 @@ class ComboKings extends EventInfo {
             cost: "",
             feat: "",
             info: "",
-            YTUrl: "",
+            YTUrl: Default().YT,
             mapUrl:
                 "https://www.google.com/maps/place/617+US-72,+Tuscumbia,+AL+35674/@34.7118538,-87.7091296,17z/data=!3m1!4b1!4m5!3m4!1s0x887d4583302aeeab:0x120769e7f203725!8m2!3d34.7118494!4d-87.7069409",
-            image: "");
+            image: Default().image);
 }
 
 class BehindTheMusic extends EventInfo {
   Color thmColor;
-  BehindTheMusic({thmColor})
+  BehindTheMusic({this.thmColor})
       : super(
             mainColor: thmColor,
             name: "BEHIND THE MUSIC – SONGS AND STORIES OF THE KGB SERIES 2",
@@ -989,16 +1112,65 @@ class BehindTheMusic extends EventInfo {
             cost: "",
             feat: "",
             info: "",
-            YTUrl: "",
+            YTUrl: Default().YT,
             mapUrl:
                 "https://www.google.com/maps/place/McFarland+Park/@34.7838995,-87.6861887,17z/data=!3m1!4b1!4m5!3m4!1s0x887d4891d4c40eef:0x697f0e6d5ad6044d!8m2!3d34.7838951!4d-87.684",
-            image: "");
+            image: Default().image);
 }
 
-//START JULY 26 EVENTS
+//START JULY 25 EVENTS**********************************************************
+class WCHMovieSTLouis extends EventInfo {
+  Color thmColor;
+  WCHMovieSTLouis({this.thmColor})
+      : super(
+            mainColor: thmColor,
+            name: "W.C. HANDY MOVIE: ST. LOUIS BLUES",
+            artist: "Nat \"King\" Cole",
+            genre: "Other",
+            location: "Alabama Music Hall of Fame Lobby",
+            address: "617 US Hwy 72 West Tuscumbia, AL 35674",
+            date: "July 25",
+            time: "10:00 am",
+            sponsor: "Friends of the Florence-Lauderdale Public Library",
+            cost: "",
+            feat:
+                "St. Louis Blues, movie starring Nat “King” Cole as W.C. Handy",
+            info: "",
+            YTUrl:
+                "https://www.youtube.com/watch?v=S1UEzL9poPM&list=PL6law6Uk-M4EjSzCvC3DQKZXxCPBtY4IK",
+            mapUrl:
+                "https://www.google.com/maps/place/Alabama+Music+Hall+of+Fame/@34.7131004,-87.7078857,17z/data=!3m1!4b1!4m5!3m4!1s0x887d4f7c548947cb:0x1320e7896de25e90!8m2!3d34.7131004!4d-87.7056917",
+            image: "images/slb.jpg");
+}
+
+class KidsJamm extends EventInfo {
+  Color thmColor;
+  KidsJamm({this.thmColor})
+      : super(
+            mainColor: thmColor,
+            name: "W.C. HANDY MOVIE: ST. LOUIS BLUES",
+            artist:
+                "Shoals Area piano students with drummer James Counts and bassist Bob Wray",
+            genre: "Other",
+            location: "First Presbyterian Church Sheffield",
+            address: "130 East 5th St. Sheffield, AL 35660",
+            date: "July 25",
+            time: "10:00 am",
+            sponsor:
+                "Shoals Area Music Teachers Forum * Music Preservation Society, Inc.",
+            cost: "",
+            feat: "",
+            info: "",
+            YTUrl: Default().YT,
+            mapUrl:
+                "https://www.google.com/maps/place/First+Presbyterian+Church/@34.7626909,-87.699781,17z/data=!3m1!4b1!4m5!3m4!1s0x887d4602b06b29c3:0xc04cd91307e4a418!8m2!3d34.7626909!4d-87.6975923",
+            image: Default().image);
+}
+
+//START JULY 26 EVENTS**********************************************************
 class WCHandyMovie2 extends EventInfo {
   Color thmColor;
-  WCHandyMovie2({thmColor})
+  WCHandyMovie2({this.thmColor})
       : super(
             mainColor: thmColor,
             name: "W.C. HANDY MOVIE: ST. LOUIS BLUES",
@@ -1022,7 +1194,7 @@ class WCHandyMovie2 extends EventInfo {
 
 class HMLRicatonis extends EventInfo {
   Color thmColor;
-  HMLRicatonis({thmColor})
+  HMLRicatonis({this.thmColor})
       : super(
             mainColor: thmColor,
             name: "W.C. HANDY MOVIE: ST. LOUIS BLUES",
@@ -1040,12 +1212,12 @@ class HMLRicatonis extends EventInfo {
             mapUrl:
                 "https://www.google.com/maps/place/Ricatoni's+Italian+Grill/@34.8004494,-87.6785382,17z/data=!3m1"
                 "!4b1!4m5!3m4!1s0x887d485e68519345:0x18acecd12070777b!8m2!3d34.8004494!4d-87.6763495",
-            image: "");
+            image: "images/ct.jpg");
 }
 
 class MountMoriah extends EventInfo {
   Color thmColor;
-  MountMoriah({thmColor})
+  MountMoriah({this.thmColor})
       : super(
             mainColor: thmColor,
             name: "MOUNT MORIAH HANDY FEST FISH FRY",
@@ -1060,15 +1232,15 @@ class MountMoriah extends EventInfo {
                 "Free to attend \$10 Old Fashioned Fried Fish plates available for purchase",
             feat: "",
             info: "",
-            YTUrl: "",
+            YTUrl: Default().YT,
             mapUrl:
                 "https://www.google.com/maps?q=mount+moriah+church+florence+al&rlz=1C1CHBF_enUS808US808&um=1&ie=UTF-8&sa=X&ved=2ahUKEwjNjPm4yZLoAhWKVN8KHei7BL8Q_AUoAXoECBEQAw",
-            image: "");
+            image: Default().image);
 }
 
 class HML306 extends EventInfo {
   Color thmColor;
-  HML306({thmColor})
+  HML306({this.thmColor})
       : super(
             mainColor: thmColor,
             name: "HANDY MUSICAL LUNCHES: 306 BARBEQUE",
@@ -1082,15 +1254,15 @@ class HML306 extends EventInfo {
             cost: "",
             feat: "",
             info: "",
-            YTUrl: "",
+            YTUrl: Default().YT,
             mapUrl:
                 "https://www.google.com/maps/place/322+N+Court+St,+Florence,+AL+35630/@34.8027082,-87.6794574,17z/data=!3m1!4b1!4m5!3m4!1s0x887d485df1107971:0x738c8e8c09a08be1!8m2!3d34.8027082!4d-87.6772687",
-            image: "");
+            image: Default().image);
 }
 
 class HMLFlobama extends EventInfo {
   Color thmColor;
-  HMLFlobama({thmColor})
+  HMLFlobama({this.thmColor})
       : super(
             mainColor: thmColor,
             name: "HANDY MUSICAL LUNCHES: FLOBAMA",
@@ -1104,15 +1276,16 @@ class HMLFlobama extends EventInfo {
             cost: "",
             feat: "",
             info: "",
-            YTUrl: "",
+            YTUrl:
+                "https://www.youtube.com/watch?v=SAu7gQGIErU&list=PLT0lvJBrkeeLG5-bQJ6HAan_cY7MC1PYf/",
             mapUrl:
                 "https://www.google.com/maps/place/311+N+Court+St,+Florence,+AL+35630/@34.8022742,-87.6798339,17z/data=!3m1!4b1!4m5!3m4!1s0x887d485df857e62d:0xc614ea38bee7bb9a!8m2!3d34.8022742!4d-87.6776452",
-            image: "");
+            image: "images/md.jpg");
 }
 
 class Swampfest4 extends EventInfo {
   Color thmColor;
-  Swampfest4({thmColor})
+  Swampfest4({this.thmColor})
       : super(
             mainColor: thmColor,
             name: "SWAMPFEST SONGWRITER SHOWCASE SERIES #4",
@@ -1127,40 +1300,41 @@ class Swampfest4 extends EventInfo {
             cost: "",
             feat: "",
             info: "",
-            YTUrl: "",
+            YTUrl: Default().YT,
             mapUrl:
                 "https://www.google.com/maps?q=McFarland+Park+200+Jim+Spain+Dr.+Florence,+AL+35630&rlz=1C1CHBF_enUS808US808&um=1&ie=UTF-8&sa=X&ved=2ahUKEwich-35zZLoAhXvYN8KHem0AQ8Q_AUoAXoECBQQAw",
-            image: "");
+            image: Default().image);
 }
 
 class RiversideJazz extends EventInfo {
   Color thmColor;
-  RiversideJazz({thmColor})
+  RiversideJazz({this.thmColor})
       : super(
-            mainColor: thmColor,
-            name: "RIVERSIDE JAZZ",
-            artist:
-                "Joseph Baldwin * John Bull & Skyler Saufley *Judy Toney & Sunshine Band * Wes Sheffield &The Slow Burners * Red Mouth Band * Deidra & Ruff Pro Band * Longevity * Mary Mason Band * Off The Chain",
-            genre: "Jazz",
-            location:
-                "McFarland Park - Florence Harbor OR Florence-Lauderdale Coliseum (weather)",
-            address: "1050 Clayborn Liles Dr. Florence, AL 35630",
-            date: "July 26",
-            time: "5:00 pm — 10:00 pm",
-            sponsor: "City of Florence",
-            cost: "",
-            feat: "",
-            info:
-                "Transportation: Free shuttle from Florence Parking Deck to McFarland Park",
-            YTUrl: "",
-            mapUrl:
-                "https://www.google.com/maps/place/1050+Clayborn+Liles+Dr,+Florence,+AL+35630/@34.7866684,-87.6758508,17z/data=!3m1!4b1!4m5!3m4!1s0x887d48f23cf99381:0x5d8516ab6f3f7faf!8m2!3d34.7866684!4d-87.6736621",
-            image: "");
+          mainColor: thmColor,
+          name: "RIVERSIDE JAZZ",
+          artist:
+              "Joseph Baldwin * John Bull & Skyler Saufley *Judy Toney & Sunshine Band * Wes Sheffield &The Slow Burners * Red Mouth Band * Deidra & Ruff Pro Band * Longevity * Mary Mason Band * Off The Chain",
+          genre: "Jazz",
+          location:
+              "McFarland Park - Florence Harbor OR Florence-Lauderdale Coliseum (weather)",
+          address: "1050 Clayborn Liles Dr. Florence, AL 35630",
+          date: "July 26",
+          time: "5:00 pm — 10:00 pm",
+          sponsor: "City of Florence",
+          cost: "",
+          feat: "",
+          info:
+              "Transportation: Free shuttle from Florence Parking Deck to McFarland Park",
+          YTUrl: "https://www.youtube.com/watch?v=na7n21j3VXY",
+          mapUrl:
+              "https://www.google.com/maps/place/1050+Clayborn+Liles+Dr,+Florence,+AL+35630/@34.7866684,-87.6758508,17z/data=!3m1!4b1!4m5!3m4!1s0x887d48f23cf99381:0x5d8516ab6f3f7faf!8m2!3d34.7866684!4d-87.6736621",
+          image: "images/jb.jpg",
+        );
 }
 
 class HHHSwampers extends EventInfo {
   Color thmColor;
-  HHHSwampers({thmColor})
+  HHHSwampers({this.thmColor})
       : super(
             mainColor: thmColor,
             name: "HANDY HAPPY HOURS: SWAMPERS/MARRIOTT SHOALS",
@@ -1174,15 +1348,15 @@ class HHHSwampers extends EventInfo {
             cost: "",
             feat: "",
             info: "",
-            YTUrl: "",
+            YTUrl: Default().YT,
             mapUrl:
                 "https://www.google.com/maps/place/10+Hightower+Pl,+Florence,+AL+35630/@34.8087386,-87.634747,17z/data=!3m1!4b1!4m5!3m4!1s0x887d4990dbfb7095:0x67f4155b7aa719e2!8m2!3d34.8087386!4d-87.6325583",
-            image: "");
+            image: Default().image);
 }
 
 class ChildrensMuseum extends EventInfo {
   Color thmColor;
-  ChildrensMuseum({thmColor})
+  ChildrensMuseum({this.thmColor})
       : super(
             mainColor: thmColor,
             name: "CHILDREN'S MUSEUM HANDY PARTY",
@@ -1197,15 +1371,15 @@ class ChildrensMuseum extends EventInfo {
                 " Free Family Friendly Event (Donations for the Children's Museum Shoals are appreciated)",
             feat: "",
             info: "",
-            YTUrl: "",
+            YTUrl: Default().YT,
             mapUrl:
                 "https://www.google.com/maps/place/526+E+College+St,+Florence,+AL+35630/@34.8016348,-87.6711668,17z/data=!3m1!4b1!4m5!3m4!1s0x887d485a1e6bd4f9:0x76954f87b58863bf!8m2!3d34.8016348!4d-87.6689781",
-            image: "");
+            image: Default().image);
 }
 
 class HHHOTR extends EventInfo {
   Color thmColor;
-  HHHOTR({thmColor})
+  HHHOTR({this.thmColor})
       : super(
             mainColor: thmColor,
             name: "HANDY HAPPY HOURS: ON THE ROCKS",
@@ -1219,34 +1393,35 @@ class HHHOTR extends EventInfo {
             cost: "",
             feat: "",
             info: "",
-            YTUrl: "",
+            YTUrl: Default().YT,
             mapUrl:
                 "https://www.google.com/maps/place/110+N+Court+St,+Florence,+AL+35630/@34.8006663,-87.6780428,17z/data=!3m1!4b1!4m5!3m4!1s0x887d485e65ce7b47:0xdc94b2762c21ae06!8m2!3d34.8006663!4d-87.6758541",
-            image: "");
+            image: Default().image);
 }
 
 class HHHLegends extends EventInfo {
   Color thmColor;
-  HHHLegends({thmColor})
+  HHHLegends({this.thmColor})
       : super(
-            mainColor: thmColor,
-            name: "HANDY HAPPY HOURS: LEGENDS",
-            artist: "The Midnighters",
-            genre: "Blues",
-            location: "Legends Steakhouse",
-            address: "201 N Seminary St Florence, AL 35630",
-            date: "July 26",
-            time: "6:00 - 9:00 pm",
-            sponsor: "",
-            cost: "",
-            feat: "",
-            info: "",
-            YTUrl: "",
-            mapUrl:
-                "https://www.google.com/maps/place/201+N+Seminary+St,+Florence,+AL+35630/@34.8016295,-87.6776769,17z/data=!3m1!4b1!4m5!3m4!1s0x887d485dd57c842f:0x12eab80e3a4b1b9c!8m2!3d34.8016295!4d-87.6754882",
-            image: "");
+          mainColor: thmColor,
+          name: "HANDY HAPPY HOURS: LEGENDS",
+          artist: "The Midnighters",
+          genre: "Blues",
+          location: "Legends Steakhouse",
+          address: "201 N Seminary St Florence, AL 35630",
+          date: "July 26",
+          time: "6:00 - 9:00 pm",
+          sponsor: "",
+          cost: "",
+          feat: "",
+          info: "",
+          YTUrl:
+              "https://www.youtube.com/watch?v=USWRNalM0pU&list=UUaX58lZJuRLr_Vk18kQQGFQ",
+          mapUrl:
+              "https://www.google.com/maps/place/201+N+Seminary+St,+Florence,+AL+35630/@34.8016295,-87.6776769,17z/data=!3m1!4b1!4m5!3m4!1s0x887d485dd57c842f:0x12eab80e3a4b1b9c!8m2!3d34.8016295!4d-87.6754882",
+          image: "images/tm.jpg",
+        );
 }
-//END JULY 26 EVENTS
 
 // JULY EVENTS 27 *******************************************************
 class Dadoorun extends EventInfo {
@@ -1281,6 +1456,77 @@ class Dadoorun extends EventInfo {
           YTUrl: "https://www.youtube.com/watch?v=JXsb1R-3gaQ",
           mapUrl:
               "https://www.google.com/maps/place/620+W+College+St,+Florence,+AL+35630/@34.7958837,-87.6873301,17z/data=!3m1!4b1!4m5!3m4!1s0x887d4889d324a05d:0x5e85c84f1e88f506!8m2!3d34.7958837!4d-87.6851361",
-          image: "images/mmd.jpg", //replace this to its own image
+          image: "images/mmb.JPG",
+        );
+}
+
+class StreetStrut extends EventInfo {
+  Color thmColor;
+  StreetStrut({this.thmColor})
+      : super(
+            mainColor: thmColor,
+            name: "STREET STRUT AND PARADE",
+            artist: "Thompson Trio",
+            genre: "Jazz",
+            location: "Wilson Park",
+            address: "350 North Wood Ave. Florence, AL 35630",
+            date: "July 27",
+            time: "10:00 am",
+            sponsor: "Music Preservation Society Inc.",
+            cost: "Free to participate in the parade, registration requested. "
+                "\nCall Gwen Woods at 256-412-0316 or e-mail gwenwoods02@comcast.net",
+            feat: "",
+            info: "",
+            YTUrl: "https://www.youtube.com/watch?v=fzTVbIszJS8",
+            mapUrl:
+                "https://www.google.com/maps/place/350+N+Wood+Ave,+Florence,+AL+35630/data=!4m2!3m1!1s0x887d485c42cbff69:0x5d33cabdc7347c07?sa=X&ved=2ahUKEwimo7GProTpAhWHnOAKHSSPC1cQ8gEwAHoECAsQAQ",
+            image: "images/tt.jpg");
+}
+
+class BlueNavigators extends EventInfo {
+  Color thmColor;
+  BlueNavigators({this.thmColor})
+      : super(
+          mainColor: thmColor,
+          name: "BLUE NAVIGATORS",
+          artist: "Blue Navigators",
+          genre: "Blues",
+          location: "Unitarian Universalist Congregation",
+          address: "1332 North Pine St. Florence, AL 35630",
+          date: "July 28",
+          time: "11:00 am",
+          sponsor: "Unitarian Universalist Congregation of the Shoals",
+          cost: "",
+          feat: "",
+          info: "",
+          YTUrl: Default().YT, // replace this to its own youtube link
+          mapUrl: Default().map, // replace this to its own map link
+          image: Default().image, //replace this to its own image
+        );
+}
+
+class CollegeStGospel extends EventInfo {
+  Color thmColor;
+  CollegeStGospel({this.thmColor})
+      : super(
+          mainColor: thmColor,
+          name: "COLLEGE STREET GOSPEL",
+          artist: "Phillip Sisters "
+              "\n* Carrine Thompson "
+              "\n* St. James Special Chorus"
+              "\n* Reggie Thompson",
+          genre: "Gospel",
+          location: "College Street Park Corner",
+          address:
+              "Intersection of W. College St. and Beverly Ave. Florence, AL 35630",
+          date: "July 28",
+          time: "3:00 pm - 5:00 pm",
+          sponsor: "Music Preservation Society, Inc.",
+          cost: "",
+          feat: "",
+          info: "",
+          YTUrl: Default().YT, // replace this to its own youtube link
+          mapUrl: Default().map, // replace this to its own map link
+          image: Default().image, //replace this to its own image
         );
 }

@@ -35,7 +35,6 @@ class bluesList extends StatelessWidget {
     return ListView(
       children: <Widget>[
         //JULY 19 EVENTS********************************************************
-        // list 1 **********************************************************
         genreListLayout(
           eventName: Morningside().name,
           eventDate: Morningside().date,
@@ -43,7 +42,6 @@ class bluesList extends StatelessWidget {
           eventImage: Morningside().image,
           eventClass: Morningside(thmColor: BluesPage().bgrColor),
         ),
-        // list 2 **********************************************
         genreListLayout(
           eventName: HMNCityHardware().name,
           eventDate: HMNCityHardware().date,
@@ -51,8 +49,6 @@ class bluesList extends StatelessWidget {
           eventImage: HMNCityHardware().image,
           eventClass: HMNCityHardware(thmColor: BluesPage().bgrColor),
         ),
-        //list 3 ******************************************************
-
         genreListLayout(
           eventName: HMNSuperheroChef().name,
           eventDate: HMNSuperheroChef().date,
@@ -61,7 +57,6 @@ class bluesList extends StatelessWidget {
           eventClass: HMNSuperheroChef(thmColor: BluesPage().bgrColor),
         ),
         //JULy 21 EVENTS********************************************************
-        //list 4  ******************************************************
         genreListLayout(
           eventName: BbqBlues().name,
           eventDate: BbqBlues().date,
@@ -70,7 +65,6 @@ class bluesList extends StatelessWidget {
           eventClass: BbqBlues(thmColor: BluesPage().bgrColor),
         ),
         //JULy 23 EVENTS********************************************************
-        //list 4 ******************************************************
         genreListLayout(
           eventName: WCHandyMovie().name,
           eventDate: WCHandyMovie().date,
@@ -79,7 +73,6 @@ class bluesList extends StatelessWidget {
           eventClass: WCHandyMovie(thmColor: BluesPage().bgrColor),
         ),
         //JULy 24 EVENTS********************************************************
-        //list 5 ******************************************************
         genreListLayout(
           eventName: JazzTrash().name,
           eventDate: JazzTrash().date,
@@ -87,7 +80,6 @@ class bluesList extends StatelessWidget {
           eventImage: JazzTrash().image,
           eventClass: JazzTrash(thmColor: BluesPage().bgrColor),
         ),
-        //list 6 ******************************************************
         genreListLayout(
           eventName: MusicalLunchTaziki().name,
           eventDate: MusicalLunchTaziki().date,
@@ -96,7 +88,6 @@ class bluesList extends StatelessWidget {
           eventClass: MusicalLunchTaziki(thmColor: BluesPage().bgrColor),
         ),
         //JULY 26 EVENTS********************************************************
-        //list 7 ******************************************************
         genreListLayout(
           eventName: HMLFlobama().name,
           eventDate: HMLFlobama().date,
@@ -104,7 +95,6 @@ class bluesList extends StatelessWidget {
           eventImage: HMLFlobama().image,
           eventClass: HMLFlobama(thmColor: BluesPage().bgrColor),
         ),
-        //list 8 ******************************************************
         genreListLayout(
           eventName: HHHOTR().name,
           eventDate: HHHOTR().date,
@@ -112,13 +102,20 @@ class bluesList extends StatelessWidget {
           eventImage: HHHOTR().image,
           eventClass: HHHOTR(thmColor: BluesPage().bgrColor),
         ),
-        //list 9 ******************************************************
         genreListLayout(
           eventName: HHHLegends().name,
           eventDate: HHHLegends().date,
           eventTime: HHHLegends().time,
           eventImage: HHHLegends().image,
           eventClass: HHHLegends(thmColor: BluesPage().bgrColor),
+        ),
+        //JULY 28 EVENTS********************************************************
+        genreListLayout(
+          eventName: BlueNavigators().name,
+          eventDate: BlueNavigators().date,
+          eventTime: BlueNavigators().time,
+          eventImage: BlueNavigators().image,
+          eventClass: BlueNavigators(thmColor: BluesPage().bgrColor),
         ),
       ],
     );

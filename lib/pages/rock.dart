@@ -35,7 +35,6 @@ class rocklist extends StatelessWidget {
     return ListView(
       children: <Widget>[
         //JULY 18 ROCK EVENTS***************************************************
-        // list 1 **********************************************************
         genreListLayout(
           eventName: LambJam().name,
           eventDate: LambJam().date,
@@ -45,7 +44,6 @@ class rocklist extends StatelessWidget {
           // eventInfo: LambJam(),
         ),
         //JULY 19 ROCK EVENTS***************************************************
-        // list 2 **********************************************
         genreListLayout(
           eventName: HHHSwampersMarriot1().name,
           eventDate: HHHSwampersMarriot1().date,
@@ -53,7 +51,6 @@ class rocklist extends StatelessWidget {
           eventImage: HHHSwampersMarriot1().image,
           eventClass: HHHSwampersMarriot1(thmColor: RockPage().bgrColor),
         ),
-        //list 3 ******************************************************
         genreListLayout(
           eventName: HHHFlobama1().name,
           eventDate: HHHFlobama1().date,
@@ -61,7 +58,6 @@ class rocklist extends StatelessWidget {
           eventImage: HHHFlobama1().image,
           eventClass: HHHFlobama1(thmColor: RockPage().bgrColor),
         ),
-        // list 4 **********************************************
         genreListLayout(
           eventName: HMN306().name,
           eventDate: HMN306().date,
@@ -69,7 +65,6 @@ class rocklist extends StatelessWidget {
           eventImage: HMN306().image,
           eventClass: HMN306(thmColor: RockPage().bgrColor),
         ),
-        //list 5 ******************************************************
         genreListLayout(
           eventName: HMNBoiler().name,
           eventDate: HMNBoiler().date,
@@ -77,7 +72,6 @@ class rocklist extends StatelessWidget {
           eventImage: HMNBoiler().image,
           eventClass: HMNBoiler(thmColor: RockPage().bgrColor),
         ),
-        //list 6 ******************************************************
         genreListLayout(
           eventName: firstMetro().name,
           eventDate: firstMetro().date,
@@ -85,7 +79,6 @@ class rocklist extends StatelessWidget {
           eventImage: firstMetro().image,
           eventClass: firstMetro(thmColor: RockPage().bgrColor),
         ),
-        //list 7 ******************************************************
         genreListLayout(
           eventName: HMNSwampMarriott().name,
           eventDate: HMNSwampMarriott().date,
@@ -93,7 +86,6 @@ class rocklist extends StatelessWidget {
           eventImage: HMNSwampMarriott().image,
           eventClass: HMNSwampMarriott(thmColor: RockPage().bgrColor),
         ),
-        //list 8 ******************************************************
         genreListLayout(
           eventName: HMNOTRocks1().name,
           eventDate: HMNOTRocks1().date,
@@ -101,8 +93,15 @@ class rocklist extends StatelessWidget {
           eventImage: HMNOTRocks1().image,
           eventClass: HMNOTRocks1(thmColor: RockPage().bgrColor),
         ),
+        //JULY 20 ROCK EVENTS***************************************************
+        genreListLayout(
+          eventName: SumSolos().name,
+          eventDate: SumSolos().date,
+          eventTime: SumSolos().time,
+          eventImage: SumSolos().image,
+          eventClass: SumSolos(thmColor: RockPage().bgrColor),
+        ),
         //JULY 24 ROCK EVENTS***************************************************
-        // list 9 **********************************************
         genreListLayout(
           eventName: CountsBrother().name,
           eventDate: CountsBrother().date,
@@ -110,7 +109,6 @@ class rocklist extends StatelessWidget {
           eventImage: CountsBrother().image,
           eventClass: CountsBrother(thmColor: RockPage().bgrColor),
         ),
-        // list 10 **********************************************
         genreListLayout(
           eventName: SummerSolos().name,
           eventDate: SummerSolos().date,
@@ -118,7 +116,6 @@ class rocklist extends StatelessWidget {
           eventImage: SummerSolos().image,
           eventClass: SummerSolos(thmColor: RockPage().bgrColor),
         ),
-        // list 11 **********************************************
         genreListLayout(
           eventName: MusicalLunch().name,
           eventDate: MusicalLunch().date,
@@ -126,7 +123,6 @@ class rocklist extends StatelessWidget {
           eventImage: MusicalLunch().image,
           eventClass: MusicalLunch(thmColor: RockPage().bgrColor),
         ),
-        // list 12 **********************************************
         genreListLayout(
           eventName: MusicalLunchChampy().name,
           eventDate: MusicalLunchChampy().date,
@@ -135,7 +131,6 @@ class rocklist extends StatelessWidget {
           eventClass: MusicalLunchChampy(thmColor: RockPage().bgrColor),
         ),
         //JULY 26 ROCK EVENTS***************************************************
-        // list 13 **********************************************
         genreListLayout(
           eventName: HMLRicatonis().name,
           eventDate: HMLRicatonis().date,
@@ -143,7 +138,6 @@ class rocklist extends StatelessWidget {
           eventImage: HMLRicatonis().image,
           eventClass: HMLRicatonis(thmColor: RockPage().bgrColor),
         ),
-        // list 14 **********************************************
         genreListLayout(
           eventName: Swampfest4().name,
           eventDate: Swampfest4().date,
@@ -151,7 +145,6 @@ class rocklist extends StatelessWidget {
           eventImage: Swampfest4().image,
           eventClass: Swampfest4(thmColor: RockPage().bgrColor),
         ),
-        // list 15 **********************************************
         genreListLayout(
           eventName: HHHSwampers().name,
           eventDate: HHHSwampers().date,
