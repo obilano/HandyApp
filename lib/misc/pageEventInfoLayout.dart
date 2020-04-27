@@ -8,7 +8,7 @@ import 'package:handy_app/pages/favPage.dart';
 class pageInfo extends StatelessWidget {
   Color iconColor = Colors.white;
   final Color bgrColor;
-  final String event;
+  final String eventName;
   final String artist;
   final String genre;
   final String location;
@@ -26,7 +26,7 @@ class pageInfo extends StatelessWidget {
 
   pageInfo(
       {@required this.bgrColor,
-      @required this.event,
+      @required this.eventName,
       @required this.artist,
       @required this.genre,
       @required this.location,
@@ -40,20 +40,21 @@ class pageInfo extends StatelessWidget {
       @required this.youtubeUrl,
       @required this.mapUrl,
       @required this.image,
-      @required this.pg});
+      @required this.pg}
+      );
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return Scaffold( //return a new page view
       resizeToAvoidBottomPadding: false,
-      appBar: GradientAppBar(
+      appBar: GradientAppBar( //design background color
         backgroundColorStart: bgrColor,
         backgroundColorEnd: Colors.grey[100],
         automaticallyImplyLeading: true,
         title: Center(
           child: FlexibleSpaceBar(
             title: AutoSizeText(
-              event,
+              eventName,
               overflow: TextOverflow.visible,
             ),
             centerTitle: true,
@@ -131,11 +132,13 @@ class pageInfo extends StatelessWidget {
                   overflow: TextOverflow.visible,
                   minFontSize: 18,
                 ),
+              //Youtube link, map, favorite buttons ***************************
               new Center(
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: <Widget>[
                     Padding(padding: EdgeInsets.only(top: 100.0)),
+                    //youtube button*******************************************
                     new RaisedButton.icon(
                       color: bgrColor,
                       onPressed: () {
@@ -155,6 +158,7 @@ class pageInfo extends StatelessWidget {
                         style: TextStyle(color: Colors.white),
                       ),
                     ),
+                    //map button***********************************************
                     new RaisedButton.icon(
                       color: bgrColor,
                       onPressed: () {
@@ -174,6 +178,7 @@ class pageInfo extends StatelessWidget {
                         style: TextStyle(color: Colors.white),
                       ),
                     ),
+                    //favorite button*******************************************
                     new RaisedButton.icon(
                       color: bgrColor,
                       onPressed: () {

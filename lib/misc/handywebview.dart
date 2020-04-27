@@ -18,7 +18,7 @@ class HandyWebView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return Scaffold( //new page view
       appBar: AppBar(
           title: Center(
             child: Text(title),

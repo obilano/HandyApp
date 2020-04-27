@@ -33,22 +33,9 @@ class EventInfo extends StatelessWidget {
   String image;
 
   EventInfo({
-    this.page,
-    this.mainColor,
-    this.name,
-    this.artist,
-    this.genre,
-    this.location,
-    this.address,
-    this.date,
-    this.time,
-    this.sponsor,
-    this.cost,
-    this.feat,
-    this.info,
-    this.YTUrl,
-    this.mapUrl,
-    this.image,
+    this.page, this.mainColor, this.name, this.artist, this.genre,
+    this.location, this.address, this.date, this.time, this.sponsor, this.cost,
+    this.feat, this.info, this.YTUrl, this.mapUrl, this.image,
   });
 
   @override
@@ -56,7 +43,7 @@ class EventInfo extends StatelessWidget {
     return pageInfo(
       pg: page,
       bgrColor: mainColor,
-      event: name,
+      eventName: name,
       artist: artist,
       genre: genre,
       location: location,
@@ -97,6 +84,7 @@ class REPLACE_THIS_WITH_NEW_CLASS_NAME extends EventInfo {
           image: Default().image, //replace this to its own image
         );
 }
+
 
 // EVENTS INFORMATIONS *********************************************************
 // Events for July 18***********************************************************

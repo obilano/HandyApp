@@ -221,13 +221,20 @@ class alleventlist extends StatelessWidget {
           eventClass: BbqBlues(thmColor: allEventsPage().bgrColor),
         ),
         genreListLayout(
+          eventName: PraisePark().name,
+          eventDate: PraisePark().date,
+          eventTime: PraisePark().time,
+          eventImage: PraisePark().image,
+          eventClass: PraisePark(thmColor: allEventsPage().bgrColor),
+        ),
+        //JULY 22 EVENTS********************************************************
+        genreListLayout(
           eventName: JazzItupWithJazz23().name,
           eventDate: JazzItupWithJazz23().date,
           eventTime: JazzItupWithJazz23().time,
           eventImage: JazzItupWithJazz23().image,
           eventClass: JazzItupWithJazz23(thmColor: allEventsPage().bgrColor),
         ),
-        //JULY 22 EVENTS********************************************************
         genreListLayout(
           eventName: BookItWithJazz().name,
           eventDate: BookItWithJazz().date,
@@ -235,13 +242,7 @@ class alleventlist extends StatelessWidget {
           eventImage: BookItWithJazz().image,
           eventClass: BookItWithJazz(thmColor: allEventsPage().bgrColor),
         ),
-        genreListLayout(
-          eventName: PraisePark().name,
-          eventDate: PraisePark().date,
-          eventTime: PraisePark().time,
-          eventImage: PraisePark().image,
-          eventClass: PraisePark(thmColor: allEventsPage().bgrColor),
-        ),
+
         //JULY 23 EVENTS********************************************************
         genreListLayout(
           eventName: WCHandyMovie().name,

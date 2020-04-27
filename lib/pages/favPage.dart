@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:handy_app/misc/eventClasses.dart';
 import 'package:gradient_app_bar/gradient_app_bar.dart';
 
-//**********TEST CODE FOR FAVORITES ************************************
+//**********TEST CODE FOR FAVORITES /CURRENTLY NOT WORKING**********************
 
 class Favorites extends StatelessWidget {
   Color bgrColor = Colors.deepPurpleAccent[400];

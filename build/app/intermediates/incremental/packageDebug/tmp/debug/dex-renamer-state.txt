@@ -1,4 +1,4 @@
-#Sat Apr 25 15:51:58 CDT 2020
-base.0=C\:\\Users\\obi20\\Desktop\\HandyApp\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
+#Mon Apr 27 12:29:07 CDT 2020
+base.0=/Users/chezleyilano/Desktop/HandyApp/build/app/intermediates/dex/debug/mergeDexDebug/out/classes.dex
 path.0=classes.dex
 renamed.0=classes.dex
