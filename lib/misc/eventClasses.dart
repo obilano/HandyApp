@@ -14,6 +14,9 @@ class Default {
       this.YT = "https://www.youtube.com/watch?v=b6-EtzeRQ3k"});
 }
 
+/* statelesswidget class type/ parent/based type, it will return
+  pageInfo (new page layout) every time a class is being called)
+ */
 class EventInfo extends StatelessWidget {
   StatelessWidget page;
   Color mainColor;

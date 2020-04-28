@@ -90,7 +90,7 @@ class pageInfo extends StatelessWidget {
                   style: new TextStyle(
                     fontSize: 18,
                     color: Colors.black87,
-                    //   fontWeight: FontWeight.w900  // make location bold
+                    //   fontWeight: FontWeight.w900  // make string location bold
                   ),
                   children: <TextSpan>[
                     new TextSpan(
